@@ -262,3 +262,14 @@
 2024-08-06 10:07:06 info: Users written to file successfully.
 2024-08-06 10:07:06 info: User added successfully:
 2024-08-06 10:09:38 info: Request: POST /api/login
+2024-08-06 10:18:03 info: Users written to file successfully.
+2024-08-06 10:18:03 info: User added successfully:
+2024-08-06 10:18:35 info: Users written to file successfully.
+2024-08-06 10:18:35 info: User added successfully:
+2024-08-06 10:19:09 info: Request: POST /api/login
+2024-08-06 10:19:43 info: Request: POST /api/login
+2024-08-06 10:20:09 info: Server is running on port 3001
+2024-08-06 10:20:13 error: Error in login: data and hash arguments required
+2024-08-06 10:22:19 info: Server is running on port 3001
+2024-08-06 10:22:25 error: Error in login: data and hash arguments required
+2024-08-06 10:23:04 info: User logged in successfully

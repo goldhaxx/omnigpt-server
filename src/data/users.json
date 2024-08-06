@@ -42,5 +42,24 @@
     "password": "",
     "id": "50984257-c57b-444f-8dca-77a73375f985",
     "created": 1722960426354
+  },
+  {
+    "username": "to be deleted",
+    "id": "d727280e-5e09-466d-a1dc-d55438caec87",
+    "created": 1722961083391
+  },
+  {
+    "username": "to be deleted",
+    "email": "email@email.com",
+    "password": "password",
+    "id": "e48e0ff0-d948-40e8-bdbc-64fc61d79f14",
+    "created": 1722961115625
+  },
+  {
+    "username": "1",
+    "email": "email@email.com",
+    "password": "$2b$10$pGPXVN4D21pgJf4rVY8beezA5kKRrw/iNLxmhGbrSvo.Qmhv0/iKa",
+    "id": "4d43ff3d-bef7-4ef6-904e-5f786798722b",
+    "created": "2024-08-06T16:22:51.257Z"
   }
 ]
