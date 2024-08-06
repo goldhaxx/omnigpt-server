@@ -1,0 +1,98 @@
+2024-08-05 19:46:34 info: Server is running on port 3001
+2024-08-05 19:51:13 info: Request: POST /api/user-api-providers/3dc36da9-e8bb-4084-8f56-2cb77814d088
+2024-08-05 19:55:26 info: Server is running on port 3001
+2024-08-05 19:57:38 info: Server is running on port 3001
+2024-08-05 19:57:40 info: Fetching all conversations...
+2024-08-05 19:57:40 error: Error reading conversations from file: Unexpected end of JSON input
+2024-08-05 19:57:40 error: Failed to fetch conversations: Failed to read conversations from file
+2024-08-05 20:00:18 info: Fetching all conversations...
+2024-08-05 20:00:18 error: Error reading conversations from file: Unexpected end of JSON input
+2024-08-05 20:00:18 error: Failed to fetch conversations: Failed to read conversations from file
+2024-08-05 20:00:22 info: Server is running on port 3001
+2024-08-05 20:00:25 info: Fetching all conversations...
+2024-08-05 20:00:25 info: Conversations fetched successfully:
+2024-08-05 20:06:22 info: Request: GET /api/messages
+2024-08-05 20:10:56 info: Request: GET /api/messages
+2024-08-05 20:11:01 info: Server is running on port 3001
+2024-08-05 20:11:03 info: Request: GET /api/messages
+2024-08-05 20:17:31 info: Request: GET /api/messages
+2024-08-05 20:17:35 info: Server is running on port 3001
+2024-08-05 20:17:38 info: Request: GET /api/messages
+2024-08-05 20:17:48 info: Request: GET /api/messages
+2024-08-05 20:18:43 info: Server is running on port 3001
+2024-08-05 20:18:48 info: Request: GET /api/messages
+2024-08-05 20:22:15 error: Failed to add message to conversation: getConversations is not a function
+2024-08-05 20:24:57 info: Server is running on port 3001
+2024-08-05 20:25:00 error: Error in addMessageToConversationService: Cannot read properties of undefined (reading 'push')
+2024-08-05 20:25:00 error: Failed to add message to conversation: Cannot read properties of undefined (reading 'push')
+2024-08-05 20:26:28 info: Server is running on port 3001
+2024-08-05 20:29:17 info: Request: GET /api/messages/a785adfc-d753-48ec-a66b-d7e9e8cc5dc9
+2024-08-05 20:30:55 info: Server is running on port 3001
+2024-08-05 20:54:28 info: Server is running on port 3001
+2024-08-05 20:56:49 info: Server is running on port 3001
+2024-08-05 20:58:38 info: Server is running on port 3001
+2024-08-05 21:00:30 info: Server is running on port 3001
+2024-08-05 21:00:35 info: Conversations written to file successfully.
+2024-08-05 21:00:35 info: Conversation added successfully:
+2024-08-05 21:00:35 info: Conversation created successfully:
+2024-08-05 21:02:40 info: Server is running on port 3001
+2024-08-05 21:02:47 info: Conversations written to file successfully.
+2024-08-05 21:02:47 info: Conversation added successfully:
+2024-08-05 21:02:47 info: Conversation created successfully:
+2024-08-05 21:03:51 info: Conversations written to file successfully.
+2024-08-05 21:03:51 info: Conversation added successfully:
+2024-08-05 21:03:51 info: Conversation created successfully:
+2024-08-05 21:04:08 info: Conversations written to file successfully.
+2024-08-05 21:04:08 info: Conversation added successfully:
+2024-08-05 21:04:08 info: Conversation created successfully:
+2024-08-05 21:08:31 info: Server is running on port 3001
+2024-08-05 21:08:40 info: Conversations written to file successfully.
+2024-08-05 21:08:40 info: Message added to conversation successfully:
+2024-08-05 21:08:40 info: Message added to conversation successfully TEST_MESSAGE
+2024-08-05 21:11:11 info: Conversations written to file successfully.
+2024-08-05 21:11:11 info: Message added to conversation successfully:
+2024-08-05 21:11:11 info: Message added to conversation successfully TEST_MESSAGE
+2024-08-05 21:22:47 info: Server is running on port 3001
+2024-08-05 21:23:17 info: Conversations written to file successfully.
+2024-08-05 21:23:17 info: Conversation added successfully:
+2024-08-05 21:23:17 info: Conversation created successfully:
+2024-08-05 21:24:10 info: Messages written to file successfully.
+2024-08-05 21:24:10 info: Message added to messages file successfully:
+2024-08-05 21:24:10 info: Message added to conversation successfully TEST_MESSAGE
+2024-08-05 21:29:35 info: Conversations written to file successfully.
+2024-08-05 21:29:35 info: Conversation added successfully:
+2024-08-05 21:29:35 info: Conversation created successfully:
+2024-08-05 21:30:57 info: Messages written to file successfully.
+2024-08-05 21:30:57 info: Message added to messages file successfully:
+2024-08-05 21:30:57 info: Message added to conversation successfully TEST_MESSAGE
+2024-08-05 21:31:07 info: Messages written to file successfully.
+2024-08-05 21:31:07 info: Message added to messages file successfully:
+2024-08-05 21:31:07 info: Message added to conversation successfully TEST_MESSAGE
+2024-08-05 21:34:38 info: Messages written to file successfully.
+2024-08-05 21:34:38 info: Message added to messages file successfully:
+2024-08-05 21:34:38 info: Message added to conversation successfully TEST_MESSAGE
+2024-08-05 21:35:01 info: Server is running on port 3001
+2024-08-05 21:35:05 info: Messages written to file successfully.
+2024-08-05 21:35:05 info: Message added to messages file successfully:
+2024-08-05 21:35:05 info: Message added to conversation successfully TEST_MESSAGE
+2024-08-05 21:40:10 info: Conversations written to file successfully.
+2024-08-05 21:40:10 info: Conversation added successfully:
+2024-08-05 21:40:10 info: Conversation created successfully:
+2024-08-05 21:40:14 info: Server is running on port 3001
+2024-08-05 21:40:17 info: Conversations written to file successfully.
+2024-08-05 21:40:17 info: Conversation added successfully:
+2024-08-05 21:40:17 info: Conversation created successfully:
+2024-08-05 21:43:18 info: Server is running on port 3001
+2024-08-05 21:43:22 info: Conversations written to file successfully.
+2024-08-05 21:43:22 info: Conversation added successfully:
+2024-08-05 21:45:24 info: Messages written to file successfully.
+2024-08-05 21:45:24 info: Message added to messages file successfully:
+2024-08-05 21:45:24 info: Message added to conversation successfully TEST_MESSAGE
+2024-08-05 22:39:19 info: Request: POST /api/get-conversations
+2024-08-05 22:39:19 info: Request: POST /api/get-conversations
+2024-08-05 23:40:12 info: Server is running on port 3001
+2024-08-05 23:40:15 info: Users written to file successfully.
+2024-08-05 23:40:15 info: User added successfully:
+2024-08-05 23:40:38 info: Server is running on port 3001
+2024-08-05 23:40:40 info: Users written to file successfully.
+2024-08-05 23:40:40 info: User added successfully:

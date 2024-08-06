@@ -1,33 +1,36 @@
 // messageBroker.js
 const axios = require('axios');
-const { getApiKey } = require('./serverApiKeyService');
+const { getUserApiKey } = require('../services/userApiProviderService');
+const { getProviderDetails } = require('../services/apiProviderService');
 
-const messageBroker = async (conversationHistory, provider, model) => {
+const messageBroker = async (conversationHistory, userId, provider, model) => {
   try {
     console.log('Fetching API key for provider:', provider);
-    const apiKey = getApiKey(provider);
+    const apiKey = getUserApiKey(userId, provider);
     if (!apiKey) {
-      throw new Error(`${provider} API key not found`);
+      throw new Error(`${provider} API key not found for user ${userId}`);
     }
     console.log(`API key retrieved for ${provider}`);
 
-    let url, requestBody, headers;
+    const providerDetails = getProviderDetails(provider);
+    if (!providerDetails) {
+      throw new Error(`Provider details not found for ${provider}`);
+    }
 
-    if (provider === 'openai') {
-      url = 'https://api.openai.com/v1/chat/completions';
-      requestBody = {
-        model,
-        messages: conversationHistory,
-        max_tokens: 150,
-        temperature: 0.7,
-      };
-      headers = {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
-      };
-    } else if (provider === 'anthropic') {
-      url = 'https://api.anthropic.com/v1/messages';
-      const messages = conversationHistory.map(msg => ({
+    let url = providerDetails.messageUrl;
+    let requestBody = {
+      model,
+      messages: conversationHistory,
+      ...providerDetails.requiredParams,
+    };
+    let headers = {
+      'Content-Type': 'application/json',
+      ...providerDetails.headers,
+      'Authorization': `Bearer ${apiKey}`,
+    };
+
+    if (provider === 'anthropic') {
+      requestBody.messages = conversationHistory.map(msg => ({
         role: msg.role,
         content: [
           {
@@ -36,19 +39,7 @@ const messageBroker = async (conversationHistory, provider, model) => {
           }
         ]
       }));
-      requestBody = {
-        model: model,
-        max_tokens: 1000,
-        temperature: 0,
-        messages: messages
-      };
-      headers = {
-        'Content-Type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-      };
-    } else {
-      throw new Error('Unsupported provider');
+      headers['x-api-key'] = apiKey;
     }
 
     console.log('Sending request to external API:', {

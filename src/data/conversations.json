@@ -1,0 +1,116 @@
+[
+  {
+    "id": "a785adfc-d753-48ec-a66b-d7e9e8cc5dc9",
+    "messages": [
+      {
+        "content": "YOUR_MESSAGE",
+        "role": "user"
+      },
+      {
+        "content": "TEST_MESSAGE",
+        "role": "assistant"
+      }
+    ]
+  },
+  {
+    "title": "conversation to be deleted",
+    "id": "6bf9ef43-63bf-4b4d-b854-8d894b26e518",
+    "messages": [
+      {
+        "id": "0673b5b9-ea54-49b4-a66b-5f2b2b342bd0",
+        "conversationId": "6bf9ef43-63bf-4b4d-b854-8d894b26e518",
+        "content": "TEST_MESSAGE",
+        "role": "assistant"
+      }
+    ]
+  },
+  {
+    "title": "New conversation with Assistant",
+    "id": "b2ee5b4b-8992-4956-b830-36df03dddd09"
+  },
+  {
+    "title": "New conversation with Assistant",
+    "messages": [],
+    "id": "358d5ec1-8562-4bda-832a-1bbb9ced9e20"
+  },
+  {
+    "title": "New conversation with Assistant 2",
+    "messages": [],
+    "id": "fb5a13cc-266a-4073-94b9-0b44ff7579fb"
+  },
+  {
+    "title": "New conversation with Assistant 2",
+    "messages": [],
+    "id": "105bfe36-995e-422d-9cdf-be9efcc7e735"
+  },
+  {
+    "title": "New conversation with Assistant 3",
+    "messages": [],
+    "id": "df411470-67cd-41bf-9a75-3993a573ab1b"
+  },
+  {
+    "title": "New conversation with Assistant 4",
+    "messages": [],
+    "id": "08209f73-cc4f-4d2a-b6cc-e655c70354c2"
+  },
+  {
+    "title": "New conversation with Assistant 5",
+    "messages": [],
+    "id": "642d3b8d-9520-45b4-ae73-cb366460cd63"
+  },
+  {
+    "title": "New conversation with Assistant 6",
+    "messages": [],
+    "id": "75b4e095-f405-4e34-9f19-f15a7a84679a"
+  },
+  {
+    "title": "New conversation with Assistant 6",
+    "userId": "4e11fd4b-e506-457c-bf96-cba560b72b48",
+    "messages": [],
+    "id": "0f200198-00a3-4f5e-b69b-83a40527769c"
+  },
+  {
+    "title": "New conversation with Assistant 7",
+    "userId": "4e11fd4b-e506-457c-bf96-cba560b72b48",
+    "messages": [
+      {
+        "id": "7f488e8d-e2b7-4c3a-b09c-de21fdee871e",
+        "conversationId": "b896db8b-d9ed-4769-ad4d-51a47e3c9b28",
+        "content": "TEST_MESSAGE",
+        "role": "assistant"
+      }
+    ],
+    "id": "b896db8b-d9ed-4769-ad4d-51a47e3c9b28"
+  },
+  {
+    "title": "New conversation with Assistant 8",
+    "userId": "4e11fd4b-e506-457c-bf96-cba560b72b48",
+    "messages": [],
+    "id": "fbcd1e1b-2787-49f0-aba9-aad13c3cd67b"
+  },
+  {
+    "title": "New conversation with Assistant 9",
+    "userId": "4e11fd4b-e506-457c-bf96-cba560b72b48",
+    "messages": [],
+    "id": "bf326a78-3e30-4329-8753-536b21047a5c"
+  },
+  {
+    "title": "New conversation with Assistant 9",
+    "userId": "4e11fd4b-e506-457c-bf96-cba560b72b48",
+    "messages": [],
+    "id": "ddc44890-d604-4ddb-aa5d-9b1357952f09"
+  },
+  {
+    "title": "New conversation with Assistant 9",
+    "userId": "4e11fd4b-e506-457c-bf96-cba560b72b48",
+    "messages": [],
+    "id": "837380d9-506e-4063-93a7-942b8c891b3a",
+    "timestamp": 1722915617317
+  },
+  {
+    "title": "New conversation with Assistant 9",
+    "userId": "4e11fd4b-e506-457c-bf96-cba560b72b48",
+    "id": "66e17a04-66ed-4014-8d7d-dc3e762c6259",
+    "timestamp": 1722915802238
+  }
+]

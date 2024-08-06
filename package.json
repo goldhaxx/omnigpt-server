@@ -1,21 +1,30 @@
 {
   "name": "omnigpt-server",
   "version": "0.1.0",
+  "description": "back-end server for omnigpt",
+  "main": "server.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "uuid": "^10.0.0",
+    "web-vitals": "^2.1.4",
+    "winston": "^3.13.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start2": "node src/server/server.js"
   },
   "eslintConfig": {
     "extends": [
