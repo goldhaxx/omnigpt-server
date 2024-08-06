@@ -6,7 +6,6 @@ const logger = require('../utils/logger');
 
 const conversationsPath = path.resolve(__dirname, '../data/conversations.json');
 
-// Function to read conversations from file
 const readConversationsFromFile = () => {
   try {
     if (!fs.existsSync(conversationsPath)) {
@@ -23,7 +22,6 @@ const readConversationsFromFile = () => {
   }
 };
 
-// Function to write conversations to file
 const writeConversationsToFile = (conversations) => {
   try {
     fs.writeFileSync(conversationsPath, JSON.stringify(conversations, null, 2));
@@ -34,7 +32,6 @@ const writeConversationsToFile = (conversations) => {
   }
 };
 
-// Function to get all conversations
 const getAllConversations = () => {
   try {
     return readConversationsFromFile();
@@ -44,7 +41,16 @@ const getAllConversations = () => {
   }
 };
 
-// Function to add a conversation
+const getConversationsByUserId = (userId) => {
+  try {
+    const conversations = readConversationsFromFile();
+    return conversations.filter(conversation => conversation.userId === userId);
+  } catch (error) {
+    logger.error(`Failed to fetch conversations by user ID: ${error.message}`);
+    throw new Error('Failed to fetch conversations by user ID');
+  }
+};
+
 const addConversation = (conversation) => {
   try {
     const conversations = readConversationsFromFile();
@@ -59,7 +65,6 @@ const addConversation = (conversation) => {
   }
 };
 
-// Function to find a conversation by ID
 const findConversationById = (id) => {
   try {
     const conversations = readConversationsFromFile();
@@ -70,7 +75,6 @@ const findConversationById = (id) => {
   }
 };
 
-// Function to modify a conversation
 const modifyConversation = (id, updates) => {
   try {
     const conversations = readConversationsFromFile();
@@ -88,7 +92,6 @@ const modifyConversation = (id, updates) => {
   }
 };
 
-// Function to remove a conversation
 const removeConversation = (id) => {
   try {
     let conversations = readConversationsFromFile();
@@ -106,6 +109,7 @@ const removeConversation = (id) => {
 
 module.exports = {
   getAllConversations,
+  getConversationsByUserId,
   addConversation,
   findConversationById,
   modifyConversation,

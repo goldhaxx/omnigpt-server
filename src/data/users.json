@@ -28,5 +28,19 @@
     "username": "to be deleted",
     "id": "4c2bba28-040c-410c-ae6c-1dacaf67b6b6",
     "created": 1722922840441
+  },
+  {
+    "username": "test",
+    "email": "test",
+    "password": "test",
+    "id": "2203f6e6-73db-43e8-b58c-119b014b1639",
+    "created": 1722923891145
+  },
+  {
+    "username": "",
+    "email": "",
+    "password": "",
+    "id": "50984257-c57b-444f-8dca-77a73375f985",
+    "created": 1722960426354
   }
 ]
