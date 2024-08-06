@@ -29,6 +29,10 @@ const writeUsersToFile = (users) => {
 
 const addUser = async (user) => {
   const users = readUsersFromFile();
+  const existingUser = users.find(u => u.username === user.username);
+  if (existingUser) {
+    throw new Error('Username already exists');
+  }
   const hashedPassword = await bcrypt.hash(user.password, 10);
   const newUser = { ...user, id: uuidv4(), created: new Date().toISOString(), password: hashedPassword };
   users.push(newUser);

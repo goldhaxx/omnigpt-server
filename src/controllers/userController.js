@@ -1,11 +1,28 @@
 // src/controllers/userController.js
 
-const { addUser, findUserById, modifyUser, removeUser, readUsersFromFile } = require('../services/userService');
+const { addUser, findUserById, modifyUser, removeUser, readUsersFromFile, writeUsersToFile } = require('../services/userService');
+const logger = require('../utils/logger'); // Import the logger module
 
-const createUser = (req, res) => {
-  const user = req.body;
-  const newUser = addUser(user);
-  res.status(201).json(newUser);
+
+const createUser = async (req, res) => {
+  const { username, email, password } = req.body;
+  if (!username || !email || !password) {
+    logger.warn('Username, email, and password are required to create a user');
+    return res.status(400).json({ error: 'Username, email, and password are required' });
+  }
+  try {
+    const newUser = await addUser({ username, email, password });
+    logger.info('User created successfully', { username, email });
+    res.status(201).json(newUser);
+  } catch (error) {
+    if (error.message === 'Username already exists') {
+      logger.warn('Attempted to create a user with an existing username', { username });
+      res.status(409).json({ error: 'Username already exists' });
+    } else {
+      logger.error(`Error creating user: ${error.message}`);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  }
 };
 
 const getUsers = (req, res) => {
@@ -50,4 +67,5 @@ module.exports = {
   getUserById,
   updateUser,
   deleteUser,
+  createUser
 };
