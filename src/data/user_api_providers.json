@@ -1,0 +1,14 @@
+[
+  {
+    "userId": "97be7a7c-7b1d-404e-b213-09cbb753e359",
+    "providerId": "cee616e0-3b1b-477f-8187-04ded66127ea",
+    "apiKey": "key",
+    "id": "319fba90-cc86-4e4d-9bb5-7dd8c22514fa"
+  },
+  {
+    "userId": "97be7a7c-7b1d-404e-b213-09cbb753e359",
+    "providerId": "cf75a5f9-ee78-442c-8545-135b85400f5e",
+    "apiKey": "anotherkey",
+    "id": "8b616a5b-7b1a-41fc-bcd7-ae8ff96a3c02"
+  }
+]

@@ -4,12 +4,34 @@ const { addUser, findUserById, modifyUser, removeUser, readUsersFromFile, writeU
 const logger = require('../utils/logger'); // Import the logger module
 
 
+const validateEmail = (email) => {
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  return emailRegex.test(email);
+};
+
+const validatePassword = (password) => {
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{12,}$/;
+  return passwordRegex.test(password);
+};
+
 const createUser = async (req, res) => {
   const { username, email, password } = req.body;
+  
   if (!username || !email || !password) {
     logger.warn('Username, email, and password are required to create a user');
     return res.status(400).json({ error: 'Username, email, and password are required' });
   }
+  
+  if (!validateEmail(email)) {
+    logger.warn('Invalid email format', { email });
+    return res.status(400).json({ error: 'Invalid email format' });
+  }
+  
+  if (!validatePassword(password)) {
+    logger.warn('Invalid password format', { password });
+    return res.status(400).json({ error: 'Invalid password format. Password must be at least 12 characters long and include uppercase letters, lowercase letters, numbers, and special characters.' });
+  }
+  
   try {
     const newUser = await addUser({ username, email, password });
     logger.info('User created successfully', { username, email });

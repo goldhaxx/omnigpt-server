@@ -1,0 +1,18 @@
+[
+  {
+    "name": "openai",
+    "models": [
+      "gpt-4o",
+      "gpt-4-1106-preview",
+      "gpt-4o-mini"
+    ],
+    "id": "cee616e0-3b1b-477f-8187-04ded66127ea"
+  },
+  {
+    "name": "anthropic",
+    "models": [
+      "claude-3-5-sonnet-20240620"
+    ],
+    "id": "cf75a5f9-ee78-442c-8545-135b85400f5e"
+  }
+]

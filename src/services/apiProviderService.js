@@ -2,19 +2,21 @@
 const fs = require('fs');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
+const logger = require('../utils/logger');
 
 const providersPath = path.resolve(__dirname, '../data/api_providers.json');
 
+// Function to read API providers from file
 const readApiProvidersFromFile = () => {
   if (!fs.existsSync(providersPath)) {
     fs.writeFileSync(providersPath, JSON.stringify([]));
   }
-  const data = fs.readFileSync(providersPath, 'utf-8');
   try {
-    return data ? JSON.parse(data) : [];
+    const data = fs.readFileSync(providersPath, 'utf-8');
+    return JSON.parse(data || '[]');
   } catch (error) {
-    console.error('Error parsing JSON data:', error.message);
-    return [];
+    logger.error('Error reading API providers file:', error.message);
+    throw error;
   }
 };
 
@@ -24,6 +26,11 @@ const writeApiProvidersToFile = (providers) => {
 
 const addApiProvider = (provider) => {
   const providers = readApiProvidersFromFile();
+  
+  if (providers.some(p => p.name === provider.name)) {
+    throw new Error('Provider name already exists');
+  }
+  
   const newProvider = { ...provider, id: uuidv4() };
   providers.push(newProvider);
   writeApiProvidersToFile(providers);
@@ -39,7 +46,10 @@ const modifyApiProvider = (id, updates) => {
   const providers = readApiProvidersFromFile();
   const index = providers.findIndex(provider => provider.id === id);
   if (index !== -1) {
-    providers[index] = { ...providers[index], ...updates };
+    if (updates.name && updates.name !== providers[index].name) {
+      throw new Error('Provider name cannot be modified');
+    }
+    providers[index] = { ...providers[index], models: updates.models };
     writeApiProvidersToFile(providers);
     return providers[index];
   }

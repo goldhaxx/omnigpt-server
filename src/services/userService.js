@@ -83,5 +83,6 @@ module.exports = {
   findUserByUsername,
   modifyUser,
   removeUser,
-  validateUserCredentials
+  validateUserCredentials,
+  readUsersFromFile
 };

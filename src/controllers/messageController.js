@@ -48,20 +48,21 @@ const handleGetConversations = (req, res) => {
 
 const addMessageToConversation = (req, res) => {
   try {
-    const { conversationId, message, role } = req.body;
-    if (!conversationId || !message || !role) {
-      logger.warn('conversationId, message, and role are required in addMessageToConversation');
-      return res.status(400).json({ error: 'conversationId, message, and role are required' });
+    const { conversationId, message, role, provider, model } = req.body;
+    if (!conversationId || !message || !role || !provider || !model) {
+      logger.warn('conversationId, message, role, provider, and model are required in addMessageToConversation');
+      return res.status(400).json({ error: 'conversationId, message, role, provider, and model are required' });
     }
 
-    const updatedConversation = addMessageToConversationService(conversationId, { content: message, role });
-    logger.info('Message added to conversation successfully', { conversationId, message, role });
-    res.status(201).json(updatedConversation);
+    const newMessage = addMessageToConversationService(conversationId, { content: message, role, provider, model });
+    logger.info('Message added to conversation successfully', { conversationId, message, role, provider, model });
+    res.status(201).json(newMessage);
   } catch (error) {
     logger.error(`Failed to add message to conversation: ${error.message}`);
-    res.status(500).json({ error: 'Failed to add message to conversation' });
+    res.status(500).json({ error: `Failed to add message to conversation: ${error.message}` });
   }
 };
+
 
 const getMessagesByConversationId = (req, res) => {
   try {
