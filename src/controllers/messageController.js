@@ -1,20 +1,32 @@
 // src/controllers/messageController.js
-
 const { sendMessage, saveConversationService, getAllConversations, addMessageToConversationService, getMessagesByConversationIdService } = require('../services/messageService');
 const logger = require('../utils/logger');
 
 const handleSendMessage = async (req, res) => {
-  const { conversationId, userInput, provider, model } = req.body;
-  if (!conversationId || !userInput || !provider || !model) {
+  logger.info('handleSendMessage invoked', { body: req.body });
+
+  const { conversationId, userInput, provider, model, userId } = req.body;
+  if (!conversationId || !userInput || !provider || !model || !userId) {
     logger.warn('Missing required fields in handleSendMessage');
     return res.status(400).json({ error: 'Missing required fields' });
   }
+  
   try {
-    const response = await sendMessage(conversationId, userInput, provider, model);
-    logger.info('Message sent successfully', { conversationId, userInput, provider, model });
-    res.json(response);
+    logger.info('Sending message to LLM API', { conversationId, userInput, provider, model, userId });
+    
+    // Send message to the selected LLM API and get the response
+    const response = await sendMessage(conversationId, userInput, provider, model, userId);
+
+    logger.info('LLM API response received', { conversationId, provider, model, response });
+
+    // Log the sent message and the received response
+    await addMessageToConversationService(conversationId, { content: userInput, role: 'user', provider, model });
+    await addMessageToConversationService(conversationId, { content: response, role: 'assistant', provider, model });
+
+    logger.info('Message processing completed successfully', { conversationId, userInput, provider, model, userId });
+    res.json({ message: response });
   } catch (error) {
-    logger.error(`Error in handleSendMessage: ${error.message}`);
+    logger.error(`Error in handleSendMessage: ${error.message}`, { conversationId, provider, model, userId });
     res.status(500).json({ error: error.message });
   }
 };
@@ -62,7 +74,6 @@ const addMessageToConversation = (req, res) => {
     res.status(500).json({ error: `Failed to add message to conversation: ${error.message}` });
   }
 };
-
 
 const getMessagesByConversationId = (req, res) => {
   try {

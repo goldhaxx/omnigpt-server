@@ -6,13 +6,63 @@
       "gpt-4-1106-preview",
       "gpt-4o-mini"
     ],
-    "id": "cee616e0-3b1b-477f-8187-04ded66127ea"
+    "id": "cee616e0-3b1b-477f-8187-04ded66127ea",
+    "url": "https://api.openai.com/v1/chat/completions",
+    "requestBody": {
+      "model": "{{model}}",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{{userInput}}"
+            }
+          ]
+        }
+      ],
+      "temperature": 1,
+      "max_tokens": 256,
+      "top_p": 1,
+      "frequency_penalty": 0,
+      "presence_penalty": 0,
+      "response_format": {
+        "type": "text"
+      }
+    },
+    "headers": {
+      "Authorization": "Bearer {{apiKey}}",
+      "Content-Type": "application/json",
+      "Cookie": "__cf_bm=D3tSYz3gVeg5jGCmzxRXaqtStmIbF_Qs0b2GiLcFUQc-1723247759-1.0.1.1-e5gcGtcNfNB6N.vFvGdhiW5WlAsNhPHrVHtrBzbHV4LtNiB8_FOLfmgkmNO3l9gDxLZmONZhjK81q96HwdYnKQ; _cfuvid=cN5GJTQt2rANpuZXiV0Vk71XYoSVkxEkzal6ihmqBZU-1723247759106-0.0.1.1-604800000"
+    }
   },
   {
     "name": "anthropic",
     "models": [
       "claude-3-5-sonnet-20240620"
     ],
-    "id": "cf75a5f9-ee78-442c-8545-135b85400f5e"
+    "id": "cf75a5f9-ee78-442c-8545-135b85400f5e",
+    "url": "https://api.anthropic.com/v1/messages",
+    "requestBody": {
+      "model": "{{model}}",
+      "max_tokens": 1000,
+      "temperature": 0,
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{{userInput}}"
+            }
+          ]
+        }
+      ]
+    },
+    "headers": {
+      "x-api-key": "{{apiKey}}",
+      "Content-Type": "application/json",
+      "anthropic-version": "2023-06-01"
+    }
   }
 ]

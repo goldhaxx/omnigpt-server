@@ -1,543 +1,5 @@
 [
   {
-    "id": "a2c43bfc-cf43-44c2-af3c-381862a029e2",
-    "conversationId": "4c481ed7-fd5d-47ae-abfa-e1bb2425cf36",
-    "content": "SUP",
-    "role": "user",
-    "timestamp": 1722965888236
-  },
-  {
-    "id": "f721f3da-b06a-4d11-a7bd-964edc8fb1ff",
-    "conversationId": "199eb235-a84a-4ef1-96fb-cc882a5cfca4",
-    "content": "HI",
-    "role": "user",
-    "timestamp": 1722966076388
-  },
-  {
-    "id": "93f4a4e7-5a07-46e7-82b8-1030b7486340",
-    "conversationId": "199eb235-a84a-4ef1-96fb-cc882a5cfca4",
-    "content": "HELLO AGAIN",
-    "role": "user",
-    "timestamp": 1722966123921
-  },
-  {
-    "id": "6c9f84a3-ac4a-4dfa-95f1-1669a41b50e3",
-    "conversationId": "199eb235-a84a-4ef1-96fb-cc882a5cfca4",
-    "content": "How U",
-    "role": "user",
-    "timestamp": 1722966437642
-  },
-  {
-    "id": "0fb356cb-1bd0-463f-a256-094c8c9875c8",
-    "conversationId": "199eb235-a84a-4ef1-96fb-cc882a5cfca4",
-    "content": "do",
-    "role": "user",
-    "timestamp": 1722966438944
-  },
-  {
-    "id": "952ecc29-dd33-4d20-8c4e-2a56532970c3",
-    "conversationId": "c44a19ff-a088-473f-b3ad-499e59c8dfd8",
-    "content": "Helo",
-    "role": "user",
-    "timestamp": 1722967767168
-  },
-  {
-    "id": "f937e381-7ae7-4405-8fe4-19df8e200226",
-    "conversationId": "c44a19ff-a088-473f-b3ad-499e59c8dfd8",
-    "content": "Henlo",
-    "role": "user",
-    "timestamp": 1722967768522
-  },
-  {
-    "id": "f1219aec-fb0d-4e2f-a7a2-ee49c81c1e69",
-    "conversationId": "c44a19ff-a088-473f-b3ad-499e59c8dfd8",
-    "content": "It's working!",
-    "role": "user",
-    "timestamp": 1722967782793
-  },
-  {
-    "id": "4a653f86-dfd6-43d5-8f1c-d469b7ba9ff0",
-    "conversationId": "c44a19ff-a088-473f-b3ad-499e59c8dfd8",
-    "content": "u there?",
-    "role": "user",
-    "timestamp": 1722968273586
-  },
-  {
-    "id": "3d9037a2-d2c0-4a74-ae5d-ca313a06a332",
-    "conversationId": "c44a19ff-a088-473f-b3ad-499e59c8dfd8",
-    "content": "sup",
-    "role": "user",
-    "timestamp": 1722969564925
-  },
-  {
-    "id": "80017384-41a7-46c5-b12b-a480695a7d3c",
-    "conversationId": "26b9cbf3-dd03-45c0-a721-a795ee082236",
-    "content": "tesst",
-    "role": "user",
-    "timestamp": 1722969679782
-  },
-  {
-    "id": "58fb4b6b-6a69-46dd-bfce-e9d83c8e24fc",
-    "conversationId": "26b9cbf3-dd03-45c0-a721-a795ee082236",
-    "content": "oka",
-    "role": "user",
-    "timestamp": 1722969681926
-  },
-  {
-    "id": "7bf14f73-89a6-4aa2-a805-f78ff5b05521",
-    "conversationId": "26b9cbf3-dd03-45c0-a721-a795ee082236",
-    "content": "sup!",
-    "role": "user",
-    "timestamp": 1722970188597
-  },
-  {
-    "id": "2182e36b-c735-41c8-870b-1cd42a543873",
-    "conversationId": "cc44458a-fa73-438a-a12c-efe9c66c0634",
-    "content": "henlo",
-    "role": "user",
-    "timestamp": 1722970365748
-  },
-  {
-    "id": "9fc306e9-69ec-45d2-92d7-394564991a7f",
-    "conversationId": "cc44458a-fa73-438a-a12c-efe9c66c0634",
-    "content": ":)",
-    "role": "user",
-    "timestamp": 1722970367667
-  },
-  {
-    "id": "fd4a5538-29a0-464a-aaf2-34538969e8c8",
-    "conversationId": "e1f7e676-5842-4fa8-9fcb-30db2b364a86",
-    "content": "text",
-    "role": "user",
-    "timestamp": 1722970929632
-  },
-  {
-    "id": "a81eb39e-9da4-4992-aed4-3bbe11dde6a2",
-    "conversationId": "6941b0c2-7910-464f-af9a-e1bd876b703b",
-    "content": "do u even lift",
-    "role": "user",
-    "timestamp": 1722971155880
-  },
-  {
-    "id": "9f094378-3087-4a29-bf3c-73649b040432",
-    "conversationId": "6941b0c2-7910-464f-af9a-e1bd876b703b",
-    "content": "bro",
-    "role": "user",
-    "timestamp": 1722971157015
-  },
-  {
-    "id": "bd4ea03e-f0c4-45a8-ac39-75ba1bfb6c0f",
-    "conversationId": "3e64da3f-29f1-4f89-90fe-72a66c323bb1",
-    "content": "This is a test conversation.",
-    "role": "user",
-    "timestamp": 1722971205488
-  },
-  {
-    "id": "ff81a8b5-4bd7-476c-88b4-c38b538b171c",
-    "conversationId": "cc44458a-fa73-438a-a12c-efe9c66c0634",
-    "content": "TEST_MESSAGE",
-    "role": "assistant",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1722972316686
-  },
-  {
-    "id": "a462e793-28a9-449a-a804-eb2c5f1cc7a2",
-    "conversationId": "c6ed44d3-5d74-460f-94ac-2bab773e1e03",
-    "content": "how r u",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722972494908
-  },
-  {
-    "id": "8c072de3-49d0-4faf-bc88-c8f3d587d049",
-    "conversationId": "92970d49-73df-46b4-9cb0-0a35051921e3",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722972955732
-  },
-  {
-    "id": "8d99a423-f331-4bbe-8b8e-90bf258a4ed2",
-    "conversationId": "b0ffbe41-f28a-4f48-8a90-c2b1384f18ed",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722979025224
-  },
-  {
-    "id": "acf02657-36a6-4c74-b5f2-4ae1fb56ac6f",
-    "conversationId": "b0ffbe41-f28a-4f48-8a90-c2b1384f18ed",
-    "content": "it do be like that",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722979030661
-  },
-  {
-    "id": "ba65cebd-789d-44d2-9c34-bd333a79a6c0",
-    "conversationId": "12b63498-b9ff-41ea-9fa9-9f29619edf36",
-    "content": "do u know the muffin man",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722988961139
-  },
-  {
-    "id": "8429aa61-d2ae-41e4-a139-bde3f9beaded",
-    "conversationId": "12b63498-b9ff-41ea-9fa9-9f29619edf36",
-    "content": "who lives on drury lane",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722988974146
-  },
-  {
-    "id": "1ea861b5-bff0-4c82-8313-69903e087cb0",
-    "conversationId": "c30d3cfe-39d4-4655-82e9-3d9d11322228",
-    "content": "test",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722998731203
-  },
-  {
-    "id": "4a7b5052-a865-42cc-b5c6-f90a9f3d65ae",
-    "conversationId": "5ffe3dff-3ef5-497f-934a-abbeb2a7c39e",
-    "content": "test2",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722998739694
-  },
-  {
-    "id": "5e175235-564b-4a65-acd7-0d28abf4fe3d",
-    "conversationId": "ce104bdf-f7e1-4c3c-85be-c57f52bcd59e",
-    "content": "are",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722999108038
-  },
-  {
-    "id": "064a4c9f-fb37-4a03-afa8-31092b45b7e1",
-    "conversationId": "587f683c-14cd-4d04-a22f-8e3709d2b001",
-    "content": "u",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722999111848
-  },
-  {
-    "id": "60a93038-2fc1-4db1-976a-429b3bc7ecb4",
-    "conversationId": "4bfeb30e-ffc0-47af-9acc-85f168ba978b",
-    "content": "ok?",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1722999512855
-  },
-  {
-    "id": "df4713ee-3b42-4a5e-a5c7-48c37778e422",
-    "conversationId": "c30d3cfe-39d4-4655-82e9-3d9d11322228",
-    "content": "test",
-    "role": "assistant",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723002193716
-  },
-  {
-    "id": "b789a97f-475f-45e9-b40d-2f81e384bf3c",
-    "conversationId": "ce104bdf-f7e1-4c3c-85be-c57f52bcd59e",
-    "content": "test",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723003803786
-  },
-  {
-    "id": "d133a59c-e00c-465e-81d2-9cc55918817e",
-    "conversationId": "c30d3cfe-39d4-4655-82e9-3d9d11322228",
-    "content": "hiya",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723004402417
-  },
-  {
-    "id": "82f0994c-f7b7-475f-bd8a-79a6892cdc89",
-    "conversationId": "c30d3cfe-39d4-4655-82e9-3d9d11322228",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723004424304
-  },
-  {
-    "id": "2c607398-ea38-41d1-9a9a-19562bc40a78",
-    "conversationId": "5dd65968-83dc-4fff-bf68-34b9949d6920",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723004822639
-  },
-  {
-    "id": "ddc845b4-1f81-439c-8fdf-8e5edc9b85fc",
-    "conversationId": "5dd65968-83dc-4fff-bf68-34b9949d6920",
-    "content": "hohoho",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723004832377
-  },
-  {
-    "id": "298cedc0-7613-402f-90a9-d6c236f705ff",
-    "conversationId": "c30d3cfe-39d4-4655-82e9-3d9d11322228",
-    "content": "Test",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723065618381
-  },
-  {
-    "id": "ce479ffd-aa68-4a39-a208-a459aa52bdd0",
-    "conversationId": "e5699bd4-dcf0-4239-a778-43b85f06545b",
-    "content": "Test",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723065642666
-  },
-  {
-    "id": "77025d11-14cc-401d-b643-429a8a3eae76",
-    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
-    "content": "Test",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723066705184
-  },
-  {
-    "id": "4255eb89-03da-4481-be67-0f03aaf1e5a8",
-    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
-    "content": "Again",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723066850540
-  },
-  {
-    "id": "e6f63e97-4efa-401b-ae6d-702574abdc74",
-    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723068773111
-  },
-  {
-    "id": "f6bcdee7-d904-4702-b1f1-1f8730766b16",
-    "conversationId": "4af7d388-dfe3-4157-aca0-641e627d8690",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723152850413
-  },
-  {
-    "id": "134d0d32-cefe-422b-aeca-0e7e814cdabb",
-    "conversationId": "4af7d388-dfe3-4157-aca0-641e627d8690",
-    "content": "are",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723152851321
-  },
-  {
-    "id": "3a910e82-71b7-437c-821e-7f384e2dba34",
-    "conversationId": "4af7d388-dfe3-4157-aca0-641e627d8690",
-    "content": "you",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723152851832
-  },
-  {
-    "id": "b597bd64-506d-4ab2-aaa7-c04c82ae2209",
-    "conversationId": "4af7d388-dfe3-4157-aca0-641e627d8690",
-    "content": "working",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723152852762
-  },
-  {
-    "id": "dfd454ff-5025-468b-af36-863398b08c7b",
-    "conversationId": "983a6e1f-e332-4fa6-bc05-1cfd8500a3a9",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723155175357
-  },
-  {
-    "id": "644b039b-8d1d-41dc-9595-f99a981f9964",
-    "conversationId": "983a6e1f-e332-4fa6-bc05-1cfd8500a3a9",
-    "content": "sup",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723155179318
-  },
-  {
-    "id": "d5512de2-aeca-418a-ab03-cb93b4100176",
-    "conversationId": "983a6e1f-e332-4fa6-bc05-1cfd8500a3a9",
-    "content": "yo",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723155181091
-  },
-  {
-    "id": "f0cc32b8-e6f4-4b58-8f4b-7a4531b58f35",
-    "conversationId": "983a6e1f-e332-4fa6-bc05-1cfd8500a3a9",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723156619945
-  },
-  {
-    "id": "5ae8b92d-a013-4b3e-bf15-4951beca9a4b",
-    "conversationId": "a69686b7-43de-4c5c-9192-46f7bbc84e79",
-    "content": "Hello!",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723236722807
-  },
-  {
-    "id": "1c937569-f4db-454f-a3a9-c8dd627f3785",
-    "conversationId": "983a6e1f-e332-4fa6-bc05-1cfd8500a3a9",
-    "content": "Hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "OpenAI GPT-4o",
-    "timestamp": 1723237298164
-  },
-  {
-    "id": "8fcdb871-5ed1-4c65-b8ec-4e8794de44b7",
-    "conversationId": "6d2a5a76-3e12-43f6-8f9e-0f8d448795b2",
-    "content": "hello?",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723240321550
-  },
-  {
-    "id": "0b14a0b9-4dc4-416b-a293-a65a2e0e3b35",
-    "conversationId": "6d2a5a76-3e12-43f6-8f9e-0f8d448795b2",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723240483426
-  },
-  {
-    "id": "cf9b036d-976e-4272-9a69-4789d436b962",
-    "conversationId": "6d2a5a76-3e12-43f6-8f9e-0f8d448795b2",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723240484591
-  },
-  {
-    "id": "07141df2-7e31-4bf0-bf54-0ac70cc4b543",
-    "conversationId": "6d2a5a76-3e12-43f6-8f9e-0f8d448795b2",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723240486438
-  },
-  {
-    "id": "ae0886bf-0967-408c-97b0-8303bca247a2",
-    "conversationId": "6d2a5a76-3e12-43f6-8f9e-0f8d448795b2",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723240517006
-  },
-  {
-    "id": "ab4b0b32-b59f-449e-b9f1-2ceb83f9b82f",
-    "conversationId": "6d2a5a76-3e12-43f6-8f9e-0f8d448795b2",
-    "content": "hi",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723240726683
-  },
-  {
-    "id": "7ad783a5-5107-4666-ae16-bf578d82d5f9",
-    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
-    "content": "harry potta",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723240838329
-  },
-  {
-    "id": "7ad783a5-5107-4666-ae16-bf578d82d5f9",
-    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
-    "content": "harry potta",
-    "role": "assistant",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723241838329
-  },
-  {
-    "id": "9dea7790-04e4-43a5-8672-467c0b33b786",
-    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
-    "content": "parry hotta",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723242597268
-  },
-  {
-    "id": "0d1a47e8-477f-4011-9fc0-07e19375211f",
-    "conversationId": "0f9651cb-e910-483b-98db-558b0eeb9690",
-    "content": "anything here?",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723242624803
-  },
-  {
-    "id": "04f9dc04-e96a-4676-bb75-e9c0785d9eef",
-    "conversationId": "0f9651cb-e910-483b-98db-558b0eeb9690",
-    "content": "no",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723244286256
-  },
-  {
-    "id": "41fbc72e-9020-4e07-9b82-7821b63f462e",
-    "conversationId": "646bfa1a-1569-4772-9954-283b1f7dda72",
-    "content": "wen moon",
-    "role": "user",
-    "provider": "openai",
-    "model": "gpt-4o",
-    "timestamp": 1723244388644
-  },
-  {
     "id": "aa26fc4a-2b46-4c95-8366-f2d8310686b1",
     "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
     "content": "wen moon",
@@ -545,5 +7,482 @@
     "provider": "openai",
     "model": "gpt-4o",
     "timestamp": 1723244393898
+  },
+  {
+    "id": "0a5da11b-ab60-45e1-a773-255faba639c9",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "hi",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723246672429
+  },
+  {
+    "id": "78739cdc-d27d-4aef-a9ad-c9c5eaf67441",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "bulbous",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723246735070
+  },
+  {
+    "id": "d35affc6-d543-45b2-b9de-8d57b7b96cf8",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723246931814
+  },
+  {
+    "id": "80f3afdb-f33e-4410-ace6-bcc9699ab1a4",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723248808034
+  },
+  {
+    "id": "29906b98-60da-4e8c-88ce-fdf5a8542730",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723248830852
+  },
+  {
+    "id": "ebe3259d-abbf-42e1-9d88-ae7046dd9301",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723248863360
+  },
+  {
+    "id": "ab2500bc-6762-4343-bf40-1634c9e29e31",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723248877759
+  },
+  {
+    "id": "3027eca7-ff36-44d8-b984-4e2292a9b9bc",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723248966694
+  },
+  {
+    "id": "31605dd1-b3aa-4ba3-a9b2-ff6b9b155262",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723249157139
+  },
+  {
+    "id": "2f495737-83f8-4964-b843-bce63d2b279a",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723249171784
+  },
+  {
+    "id": "87fa9065-0f24-4b83-aeec-388a1251b59f",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723249315544
+  },
+  {
+    "id": "5b6f1edd-56af-4cfc-9b10-2f2796924f36",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723249520080
+  },
+  {
+    "id": "a4804747-f24b-4376-8a75-f755dcc1bfad",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723326149736
+  },
+  {
+    "id": "614f26cc-0cdb-460b-a8c4-d5ec5cdbf9ba",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "TEST_MESSAGE",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723327586236
+  },
+  {
+    "id": "b0eb29d9-71d5-4d31-86ac-4c4526606fe4",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Hello! It looks like you've sent a test message. How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723327586237
+  },
+  {
+    "id": "109d56d6-fa88-4055-bb03-71b7cd78b8fa",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "What did I say right before this?",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723327649124
+  },
+  {
+    "id": "c0c4a224-c5ae-4e05-9329-25ff180cd37a",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "I'm sorry, but I can't recall previous messages in our conversation as this is a single instance interaction. How can I assist you right now?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723327649125
+  },
+  {
+    "id": "dbb1e84f-206d-4f43-b567-c6484217151d",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "U sure about that?",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723327680358
+  },
+  {
+    "id": "0ba9bff5-caac-4507-bd9b-673ccabf94ce",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "hi",
+    "role": "user",
+    "provider": "provider",
+    "model": "gpt-4o",
+    "timestamp": 1723349949747
+  },
+  {
+    "id": "6d4e7878-528e-451a-8885-8798ddc39b4b",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "What did I say right before this?",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723349973131
+  },
+  {
+    "id": "dc477f7f-7907-40a2-b35b-1b063aff66ef",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "I'm sorry, but I don't have the ability to recall previous interactions. How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723349973132
+  },
+  {
+    "id": "f07b4d75-c4d7-4a4c-a4ac-1f1b103dfb88",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "test",
+    "role": "user",
+    "provider": "provider",
+    "model": "gpt-4o",
+    "timestamp": 1723354250155
+  },
+  {
+    "id": "6e8a66e5-4437-4f0f-94dc-1f0c01319c0e",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "test",
+    "role": "user",
+    "provider": "provider",
+    "model": "gpt-4o",
+    "timestamp": 1723354272152
+  },
+  {
+    "id": "50a2c651-78d5-497a-b6fc-3988b049c4b8",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "This thing on?",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355227791
+  },
+  {
+    "id": "ca41292c-170a-4762-bfea-b60f8f9d8ef9",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Yes, I'm here! How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355227792
+  },
+  {
+    "id": "5966d459-c094-45b0-a68b-880b22462649",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "this thing on?",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355272784
+  },
+  {
+    "id": "986e98ed-f8f6-4ee0-b889-d95a274964f5",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Yes, I'm here! How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355272786
+  },
+  {
+    "id": "2595aa5a-6d59-4ba5-abf7-603031bb31ce",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "testing again",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355541573
+  },
+  {
+    "id": "55b177e4-bd7e-4452-8af0-6736fa1e26bb",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Sure, I'm here to help! What would you like to test or need assistance with?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355541575
+  },
+  {
+    "id": "b494f483-c1c2-4905-9f13-0984b8cd192e",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "and again",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355564682
+  },
+  {
+    "id": "ad132503-514a-4b19-9e2c-16f1a9642f4b",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Certainly! How can I assist you further?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355564682
+  },
+  {
+    "id": "a4b0e118-2d93-45bb-b979-de0f1d60cf15",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Great!",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355743818
+  },
+  {
+    "id": "09dd5d93-e5ee-4c7d-9bd7-5ea137ee9001",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Hi there! How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355743820
+  },
+  {
+    "id": "f6188f3c-17ac-48e1-92e9-a77aeccfd13b",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Count to 10",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355760675
+  },
+  {
+    "id": "d8c38c31-05b9-4fbd-9f86-939a415f818b",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Sure, here you go:\n\n1. One\n2. Two\n3. Three\n4. Four\n5. Five\n6. Six\n7. Seven\n8. Eight\n9. Nine\n10. Ten",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723355760675
+  },
+  {
+    "id": "bd3177d5-0c2d-46d7-b819-60b00e056670",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "heyo",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723358146812
+  },
+  {
+    "id": "1405ac65-48c0-41e9-a9bb-cbf7cf6f84bf",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Hey! How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723358146814
+  },
+  {
+    "id": "414eaa87-9fd6-4d41-8e1d-25499c095af5",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "What is your favorite accent?",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723359214500
+  },
+  {
+    "id": "216b0d20-de53-48e4-8463-2bb17d196404",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "As an AI, I don't have personal preferences or experiences, so I don't have a favorite accent. However, I can tell you that many people find certain accents appealing or intriguing, depending on cultural influences, personal experiences, or media exposure. For instance, British, Australian, and French accents often receive positive attention. What about you? Do you have a favorite accent?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723359214502
+  },
+  {
+    "id": "aa0333b5-b934-4da2-9a4c-29a931512348",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Respond with a random uuid.",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723362622436
+  },
+  {
+    "id": "b155b2aa-0bd8-4ac1-937e-32de4274c2f1",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Sure, here is a randomly generated UUID:\n\n`4a1b2c3d-7e8f-9a0b-1c2d-3e4f5a6b7c8d`",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723362622437
+  },
+  {
+    "id": "e17c3b24-724c-47cc-ae45-bd654052a54a",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "testing",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723362986741
+  },
+  {
+    "id": "844096c1-1f5e-4aa9-b382-917b0f8cffe6",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "It looks like you're testing the system. How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723362986742
+  },
+  {
+    "id": "cd896902-e9b9-4d42-906b-164ca41d077d",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "hi",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723366296593
+  },
+  {
+    "id": "5a19670a-e6e1-41a1-b36d-9760b1076ac9",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Hello! How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723366296594
+  },
+  {
+    "id": "b429d27d-a952-4857-a205-34f3641e1d68",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "hello",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723366544593
+  },
+  {
+    "id": "1a0fbe47-8600-41a5-beb5-a20579004666",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Hello! How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723366544594
+  },
+  {
+    "id": "68ac4416-4f10-4e65-b523-e29a7375e33e",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "testing",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723366599093
+  },
+  {
+    "id": "09098b0d-13a5-4c8a-bf39-875d142145d5",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "It looks like you're testing the system. How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723366599093
+  },
+  {
+    "id": "231a363f-8176-4099-ad22-5d63de3b65ad",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "What did I say right before this?",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723410168011
+  },
+  {
+    "id": "402de437-aa18-4e07-a231-5a8167152cc2",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "You asked, \"What did I say right before this?\"",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723410168012
+  },
+  {
+    "id": "9431a8f1-0f28-4ef6-9e96-a1490534866d",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "How many questions have I asked?",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723410207189
+  },
+  {
+    "id": "d3803ea5-d45c-4115-8c65-662a727db1aa",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "You've asked one question so far. How can I help you further?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723410207189
   }
 ]

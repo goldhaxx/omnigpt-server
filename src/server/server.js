@@ -29,6 +29,28 @@ app.use((req, res, next) => {
 });
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
+
+const http = require('http');
+const WebSocket = require('ws');
+
+const server = http.createServer(app);
+const wss = new WebSocket.Server({ server });
+
+wss.on('connection', (ws) => {
+  logger.info('New WebSocket connection established');
+
+  ws.on('message', (message) => {
+    logger.info(`Received message via WebSocket: ${message}`);
+  });
+
+  ws.on('close', () => {
+    logger.info('WebSocket connection closed');
+  });
+});
+
+// Instead of exporting wss, we will handle WebSocket communication inside the route handler directly
+server.listen(PORT, () => {
   logger.info(`Server is running on port ${PORT}`);
 });
+
+module.exports = { app };  // No longer exporting wss

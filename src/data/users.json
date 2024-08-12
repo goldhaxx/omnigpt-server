@@ -55,5 +55,19 @@
     "id": "97be7a7c-7b1d-404e-b213-09cbb753e359",
     "created": "2024-08-06T16:55:48.914Z",
     "role": "admin"
+  },
+  {
+    "username": "username",
+    "email": "email@google.com",
+    "password": "$2b$10$e6Dz.Wh51VOI5iQfUP59w.WuEByxUui5.92sGkM6qlRc5Bktrs/ky",
+    "id": "8adb20b5-05d2-4118-8954-efdbbbb07867",
+    "created": "2024-08-11T06:23:31.521Z"
+  },
+  {
+    "username": "sup",
+    "email": "sup@sup.sup",
+    "password": "$2b$10$rzuBcBWxqQ0upol6m4WeqepapeGpN9qdEMwVcnykQrOsAIM3Zr.fu",
+    "id": "e2a0a730-978f-4e95-b1a2-29f231370139",
+    "created": "2024-08-11T08:15:43.275Z"
   }
 ]
