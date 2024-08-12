@@ -25,6 +25,8 @@ OmniGPT Server is a robust backend service designed to facilitate interactions w
 
 ## Project Structure
 
+![image](https://github.com/user-attachments/assets/fd164404-bdff-4734-9062-5fd9c07fe4b2)
+
 ├── README.md
 ├── package.json
 ├── server
@@ -61,6 +63,7 @@ OmniGPT Server is a robust backend service designed to facilitate interactions w
 │   ├── api_providers.json
 │   ├── user_api_providers.json
 │   ├── apiKeys.json
+
 
 
 ## Installation
