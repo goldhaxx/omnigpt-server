@@ -1,143 +1,115 @@
-// src/services/userApiProviderService.js
-const fs = require('fs');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const logger = require('../utils/logger');
-const { readApiProvidersFromFile } = require('./apiProviderService');
+const { readJsonFromFile, writeJsonToFile } = require('../utils/fileUtils');
 
 const userApiProvidersPath = path.resolve(__dirname, '../data/user_api_providers.json');
 
-// Function to read user API providers from file
 const readUserApiProvidersFromFile = () => {
-  if (!fs.existsSync(userApiProvidersPath)) {
-    fs.writeFileSync(userApiProvidersPath, JSON.stringify([]));
-  }
-
-  try {
-    const data = fs.readFileSync(userApiProvidersPath, 'utf-8');
-    return JSON.parse(data);
-  } catch (error) {
-    if (error instanceof SyntaxError) {
-      logger.error('Syntax error while parsing JSON data:', error.message);
-    } else {
-      logger.error('Error reading JSON data:', error.message);
+    try {
+        logger.info('Reading user API providers from file');
+        return readJsonFromFile(userApiProvidersPath);
+    } catch (error) {
+        logger.error(`Error reading user API providers from file: ${error.message}`);
+        throw new Error('Failed to read user API providers');
     }
-    return [];
-  }
 };
 
-// Function to write user API providers to file
-const writeUserApiProvidersToFile = (userApiProviders) => {
-  try {
-    fs.writeFileSync(userApiProvidersPath, JSON.stringify(userApiProviders, null, 2));
-    logger.info('User API providers written to file successfully.');
-  } catch (error) {
-    logger.error(`Error writing user API providers to file: ${error.message}`);
-    throw error;
-  }
-};
-
-// Function to add a user API provider
 const addUserApiProvider = (userApiProvider) => {
-  try {
-    const userApiProviders = readUserApiProvidersFromFile();
+    try {
+        logger.info('Attempting to add a new user API provider', { userApiProvider });
+        
+        const userApiProviders = readUserApiProvidersFromFile();
+        logger.info('Existing user API providers loaded', { userApiProviders });
 
-    // Check if providerId is unique for the given userId
-    const existingProvider = userApiProviders.find(provider =>
-      provider.userId === userApiProvider.userId && provider.providerId === userApiProvider.providerId
-    );
+        const existingProvider = userApiProviders.find(provider =>
+            provider.userId === userApiProvider.userId && provider.providerId === userApiProvider.providerId
+        );
 
-    if (existingProvider) {
-      const errorMsg = 'ProviderId already exists for this userId';
-      logger.warn(errorMsg);
-      throw new Error(errorMsg);
+        if (existingProvider) {
+            const errorMsg = 'ProviderId already exists for this userId';
+            logger.warn(errorMsg, { userId: userApiProvider.userId, providerId: userApiProvider.providerId });
+            throw new Error(errorMsg);
+        }
+
+        const newUserApiProvider = { ...userApiProvider, id: uuidv4() };
+        userApiProviders.push(newUserApiProvider);
+        writeJsonToFile(userApiProvidersPath, userApiProviders);
+        logger.info('User API provider added successfully', { newUserApiProvider });
+
+        return newUserApiProvider;
+    } catch (error) {
+        logger.error(`Failed to add user API provider: ${error.message}`, { userApiProvider });
+        throw new Error('Failed to add user API provider');
     }
-
-    const newUserApiProvider = { ...userApiProvider, id: uuidv4() };
-    userApiProviders.push(newUserApiProvider);
-    writeUserApiProvidersToFile(userApiProviders);
-    logger.info('User API provider added successfully:', newUserApiProvider);
-    return newUserApiProvider;
-  } catch (error) {
-    logger.error(`Error adding user API provider: ${error.message}`);
-    throw error;
-  }
 };
 
-// Function to find a user API provider by ID
-const findUserApiProviderById = (id) => {
-  try {
-    const userApiProviders = readUserApiProvidersFromFile();
-    return userApiProviders.find(provider => provider.id === id);
-  } catch (error) {
-    logger.error(`Error finding user API provider by ID: ${error.message}`);
-    throw error;
-  }
-};
-
-// Function to find user API providers by user ID
 const findUserApiProvidersByUserId = (userId) => {
-  try {
+    logger.info('Fetching user API providers by userId', { userId });
     const userApiProviders = readUserApiProvidersFromFile();
-    const apiProviders = readApiProvidersFromFile();
-
-    return userApiProviders
-      .filter(provider => provider.userId === userId)
-      .map(provider => {
-        const apiProviderDetails = apiProviders.find(apiProvider => apiProvider.id === provider.providerId);
-        return {
-          userApiProviderId: provider.id,
-          apiProviderId: provider.providerId,
-          providerApiKey: provider.apiKey,
-          providerName: apiProviderDetails?.name || 'Unknown Provider',
-          providerModels: apiProviderDetails?.models || []
-        };
-      });
-  } catch (error) {
-    logger.error(`Error finding user API providers by user ID: ${error.message}`);
-    throw error;
-  }
+    const providers = userApiProviders.filter(provider => provider.userId === userId);
+    logger.info('User API providers fetched', { userId, count: providers.length });
+    return providers;
 };
 
-// Function to modify a user API provider
-const modifyUserApiProvider = (id, updates) => {
-  try {
+const findUserApiProviderById = (id) => {
+    logger.info('Fetching user API provider by id', { id });
     const userApiProviders = readUserApiProvidersFromFile();
-    const index = userApiProviders.findIndex(provider => provider.id === id);
-    if (index !== -1) {
-      userApiProviders[index] = { ...userApiProviders[index], ...updates };
-      writeUserApiProvidersToFile(userApiProviders);
-      logger.info('User API provider updated successfully:', userApiProviders[index]);
-      return userApiProviders[index];
+    const provider = userApiProviders.find(provider => provider.id === id);
+    if (provider) {
+        logger.info('User API provider found', { provider });
+    } else {
+        logger.warn('No provider found for id', { id });
     }
-    return null;
-  } catch (error) {
-    logger.error(`Error modifying user API provider: ${error.message}`);
-    throw error;
-  }
+    return provider;
 };
 
-// Function to remove a user API provider
+const modifyUserApiProvider = (id, updates) => {
+    try {
+        logger.info('Attempting to modify user API provider by id', { id, updates });
+        const userApiProviders = readUserApiProvidersFromFile();
+        const index = userApiProviders.findIndex(provider => provider.id === id);
+
+        if (index === -1) {
+            logger.warn('No provider found to update for id', { id });
+            return null;
+        }
+
+        userApiProviders[index] = { ...userApiProviders[index], ...updates };
+        writeJsonToFile(userApiProvidersPath, userApiProviders);
+        logger.info('User API provider modified successfully', { updatedProvider: userApiProviders[index] });
+        return userApiProviders[index];
+    } catch (error) {
+        logger.error(`Failed to modify user API provider: ${error.message}`, { id, updates });
+        throw new Error('Failed to modify user API provider');
+    }
+};
+
 const removeUserApiProvider = (id) => {
-  try {
-    let userApiProviders = readUserApiProvidersFromFile();
-    const initialLength = userApiProviders.length;
-    userApiProviders = userApiProviders.filter(provider => provider.id !== id);
-    writeUserApiProvidersToFile(userApiProviders);
-    const success = userApiProviders.length < initialLength;
-    logger.info(`User API provider removal status: ${success}`);
-    return success;
-  } catch (error) {
-    logger.error(`Error removing user API provider: ${error.message}`);
-    throw error;
-  }
+    try {
+        logger.info('Attempting to remove user API provider by id', { id });
+        let userApiProviders = readUserApiProvidersFromFile();
+        const initialLength = userApiProviders.length;
+        userApiProviders = userApiProviders.filter(provider => provider.id !== id);
+        writeJsonToFile(userApiProvidersPath, userApiProviders);
+        const success = userApiProviders.length < initialLength;
+        if (success) {
+            logger.info('User API provider removed successfully', { id });
+        } else {
+            logger.warn('No provider removed, ID not found', { id });
+        }
+        return success;
+    } catch (error) {
+        logger.error(`Failed to remove user API provider: ${error.message}`, { id });
+        throw new Error('Failed to remove user API provider');
+    }
 };
 
 module.exports = {
-  readUserApiProvidersFromFile,
-  addUserApiProvider,
-  findUserApiProviderById,
-  findUserApiProvidersByUserId,
-  modifyUserApiProvider,
-  removeUserApiProvider,
+    addUserApiProvider,
+    findUserApiProvidersByUserId,
+    findUserApiProviderById,
+    modifyUserApiProvider,
+    removeUserApiProvider,
+    readUserApiProvidersFromFile,
 };

@@ -1,26 +1,39 @@
-// src/routes/messageRoutes.js
 const express = require('express');
-const { handleSendMessage, handleSaveConversation, handleGetConversations, addMessageToConversation, getMessagesByConversationId } = require('../controllers/messageController');
+const {
+  handleSendMessage,
+  handleSaveConversation,
+  handleGetConversations,
+  addMessageToConversation,
+  getMessagesByConversationId,
+} = require('../controllers/messageController');
+const logger = require('../utils/logger');
+
 const router = express.Router();
 
-//router.post('/send-message', handleSendMessage, addMessageToConversation);
-// Combine functionality of /send-message and /messages
-router.post('/send-message', async (req, res, next) => {
-    try {
-      // First, handle the sending of the message
-      const response = await handleSendMessage(req, res, next);
-      
-      // Then, add the message to the conversation if sending was successful
-      if (response && res.statusCode === 200) {
-        await addMessageToConversation(req, res, next);
-      }
-    } catch (error) {
-      next(error);
-    }
-  });
-router.post('/save-conversation', handleSaveConversation);
-router.get('/conversations', handleGetConversations);
-router.post('/messages', addMessageToConversation);
-router.get('/messages/:conversationId', getMessagesByConversationId);
+// Directly use the middleware arrays in the routes
+router.post('/send-message', (req, res, next) => {
+  logger.info('POST /send-message route hit');
+  next();
+}, handleSendMessage);
+
+router.post('/save-conversation', (req, res, next) => {
+  logger.info('POST /save-conversation route hit');
+  next();
+}, handleSaveConversation);
+
+router.get('/conversations', (req, res, next) => {
+  logger.info('GET /conversations route hit');
+  next();
+}, handleGetConversations);
+
+router.post('/messages', (req, res, next) => {
+  logger.info('POST /messages route hit');
+  next();
+}, addMessageToConversation);
+
+router.get('/messages/:conversationId', (req, res, next) => {
+  logger.info(`GET /messages/:conversationId route hit with conversationId: ${req.params.conversationId}`);
+  next();
+}, getMessagesByConversationId);
 
 module.exports = router;

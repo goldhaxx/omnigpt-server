@@ -1,16 +1,16 @@
-// messageBroker.js
 const axios = require('axios');
 const { getUserApiKey } = require('../services/userApiProviderService');
 const { getProviderDetails } = require('../services/apiProviderService');
+const logger = require('../utils/logger');
 
 const messageBroker = async (conversationHistory, userId, provider, model) => {
   try {
-    console.log('Fetching API key for provider:', provider);
+    logger.info(`Fetching API key for provider: ${provider}`);
     const apiKey = getUserApiKey(userId, provider);
     if (!apiKey) {
       throw new Error(`${provider} API key not found for user ${userId}`);
     }
-    console.log(`API key retrieved for ${provider}`);
+    logger.info(`API key retrieved for ${provider}`);
 
     const providerDetails = getProviderDetails(provider);
     if (!providerDetails) {
@@ -42,18 +42,18 @@ const messageBroker = async (conversationHistory, userId, provider, model) => {
       headers['x-api-key'] = apiKey;
     }
 
-    console.log('Sending request to external API:', {
+    logger.info('Sending request to external API', {
       url,
       requestBody: JSON.stringify(requestBody, null, 2),
       headers,
     });
 
     const response = await axios.post(url, requestBody, { headers });
-    console.log('Received response from external API:', response.data);
+    logger.info('Received response from external API', response.data);
     return response.data;
   } catch (error) {
     if (error.response) {
-      console.error('API response error:', error.response.data);
+      logger.error('API response error:', error.response.data);
       return {
         error: {
           type: error.response.data.type,
@@ -61,8 +61,8 @@ const messageBroker = async (conversationHistory, userId, provider, model) => {
         }
       };
     } else {
-      console.error('Error communicating with external API:', error.message);
-      console.error('Stack trace:', error.stack);
+      logger.error('Error communicating with external API:', error.message);
+      logger.error('Stack trace:', error.stack);
       return {
         error: {
           type: 'internal_error',

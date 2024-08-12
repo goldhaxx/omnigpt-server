@@ -484,5 +484,41 @@
     "provider": "openai",
     "model": "gpt-4o",
     "timestamp": 1723410207189
+  },
+  {
+    "id": "bae597ae-5f74-465f-9903-7b80c3f53bf5",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "What did I say right before this?",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723498142071
+  },
+  {
+    "id": "fbad1578-eab0-4398-b05e-1c4f0c358d27",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723498142072
+  },
+  {
+    "id": "1d1243ce-da77-4295-b447-f6b11db83610",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Tell me something interesting!",
+    "role": "user",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723498158248
+  },
+  {
+    "id": "e8ed5b5d-ea9e-49f9-acb4-d8b5bddce336",
+    "conversationId": "41b1b441-f0a8-4953-858e-d9474a1d0bd5",
+    "content": "Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive.",
+    "role": "assistant",
+    "provider": "openai",
+    "model": "gpt-4o",
+    "timestamp": 1723498158249
   }
 ]

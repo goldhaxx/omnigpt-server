@@ -16,7 +16,7 @@ const readJsonFromFile = (filePath) => {
         const data = fs.readFileSync(filePath, 'utf-8');
         return JSON.parse(data || '[]');
     } catch (error) {
-        logger.error(`Error reading JSON from file: ${filePath}`, error.message);
+        logger.error(`Error reading JSON from file: ${filePath}`, { message: error.message });
         throw new Error('Failed to read from file');
     }
 };
@@ -31,7 +31,7 @@ const writeJsonToFile = (filePath, data) => {
         fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
         logger.info(`Data successfully written to file: ${filePath}`);
     } catch (error) {
-        logger.error(`Error writing JSON to file: ${filePath}`, error.message);
+        logger.error(`Error writing JSON to file: ${filePath}`, { message: error.message });
         throw new Error('Failed to write to file');
     }
 };

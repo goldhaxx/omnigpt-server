@@ -10,5 +10,17 @@
     "providerId": "cf75a5f9-ee78-442c-8545-135b85400f5e",
     "apiKey": "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",
     "id": "7cd5edf1-8b27-4173-92ca-abf4b281502a"
+  },
+  {
+    "userId": "97be7a7c-7b1d-404e-b213-09cbb753e359",
+    "providerId": "b0246a19-a0b4-458e-9eea-d9701e1857a6",
+    "apiKey": "new-api-key",
+    "id": "24eb152f-08cd-46bc-a8d6-24798d830500"
+  },
+  {
+    "userId": "97be7a7c-7b1d-404e-b213-09cbb753e359",
+    "providerId": "your-provider-id3",
+    "apiKey": "your-api-key",
+    "id": "4c2e87a3-206c-4b26-a60b-398f2fdcf9cb"
   }
 ]

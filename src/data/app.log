@@ -1,0 +1,3844 @@
+2024-08-12 13:38:25 info: Server is running on port 3001
+2024-08-12 13:40:34 warn: Attempted to create a user with an existing username {
+  username: [32m'6'[39m,
+  [[32mSymbol(level)[39m]: [32m'warn'[39m,
+  [[32mSymbol(splat)[39m]: [ { username: [32m'6'[39m } ]
+}
+2024-08-12 13:40:44 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/users.json
+2024-08-12 13:40:44 info: User created successfully {
+  username: [32m'7'[39m,
+  email: [32m'7@g.goo'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { username: [32m'7'[39m, email: [32m'7@g.goo'[39m } ]
+}
+2024-08-12 13:42:26 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/users.json
+2024-08-12 13:42:36 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/users.json
+2024-08-12 13:43:08 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/users.json
+2024-08-12 13:43:08 info: User created successfully {
+  username: [32m'8'[39m,
+  email: [32m'7@g.goo'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { username: [32m'8'[39m, email: [32m'7@g.goo'[39m } ]
+}
+2024-08-12 13:43:41 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/users.json
+2024-08-12 13:44:50 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/conversations.json
+2024-08-12 13:44:50 info: Conversation added successfully.
+2024-08-12 13:45:06 info: Fetching all conversations...
+2024-08-12 13:45:06 info: Conversations fetched successfully: {
+  [32m'0'[39m: {
+    title: [32m'Notice Me Senpai'[39m,
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    id: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+    timestamp: [33m1723066696491[39m
+  },
+  [32m'1'[39m: {
+    title: [32m'New Conversation'[39m,
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    id: [32m'a0e16d55-d9f9-4353-9545-67f2389c62bd'[39m,
+    timestamp: [33m1723363060678[39m
+  },
+  [32m'2'[39m: {
+    title: [32m'New conversation with Assistant 10'[39m,
+    userId: [32m'4e11fd4b-e506-457c-bf96-cba560b72b48'[39m,
+    id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+    timestamp: [33m1723491890032[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    [
+      {
+        title: [32m'Notice Me Senpai'[39m,
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        id: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+        timestamp: [33m1723066696491[39m
+      },
+      {
+        title: [32m'New Conversation'[39m,
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        id: [32m'a0e16d55-d9f9-4353-9545-67f2389c62bd'[39m,
+        timestamp: [33m1723363060678[39m
+      },
+      {
+        title: [32m'New conversation with Assistant 10'[39m,
+        userId: [32m'4e11fd4b-e506-457c-bf96-cba560b72b48'[39m,
+        id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+        timestamp: [33m1723491890032[39m
+      }
+    ]
+  ]
+}
+2024-08-12 13:46:16 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/conversations.json
+2024-08-12 13:46:59 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/api_providers.json
+2024-08-12 13:47:01 error: Error creating provider: Provider name already exists
+2024-08-12 14:05:58 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/api_providers.json
+2024-08-12 14:06:27 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/api_providers.json
+2024-08-12 14:06:39 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/api_providers.json
+2024-08-12 14:07:19 error: Error creating new user API provider: readUsersFromFile is not a function
+2024-08-12 14:07:50 error: Error creating new user API provider: readUsersFromFile is not a function
+2024-08-12 14:09:51 info: Request: GET /api/user-providers
+2024-08-12 14:11:42 error: Error creating new user API provider: readUsersFromFile is not a function
+2024-08-12 14:12:10 error: Error creating new user API provider: readUsersFromFile is not a function
+2024-08-12 14:14:17 info: Server is running on port 3001
+2024-08-12 14:14:19 error: Error creating new user API provider: readUsersFromFile is not a function
+2024-08-12 14:17:37 error: Error creating new user API provider: readUsersFromFile is not a function
+2024-08-12 14:17:41 info: Server is running on port 3001
+2024-08-12 14:17:43 error: Error creating new user API provider: readApiProvidersFromFile is not a function
+2024-08-12 14:20:49 info: Server is running on port 3001
+2024-08-12 14:20:52 warn: ProviderName or ProviderId does not match
+2024-08-12 14:22:22 error: Error creating new user API provider: readUserApiProvidersFromFile is not a function
+2024-08-12 14:24:29 info: Server is running on port 3001
+2024-08-12 14:24:32 info: Attempting to add a new user API provider. {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+  apiKey: [32m'test'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+      apiKey: [32m'test'[39m
+    }
+  ]
+}
+2024-08-12 14:24:32 info: Existing user API providers loaded. {
+  [32m'0'[39m: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+    apiKey: [32m'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'[39m,
+    id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+  },
+  [32m'1'[39m: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+    apiKey: [32m'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'[39m,
+    id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    [
+      {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+        apiKey: [32m'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'[39m,
+        id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+      },
+      {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+        apiKey: [32m'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'[39m,
+        id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+      }
+    ]
+  ]
+}
+2024-08-12 14:24:32 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/user_api_providers.json
+2024-08-12 14:24:32 info: User API provider added successfully. {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+  apiKey: [32m'test'[39m,
+  id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+      apiKey: [32m'test'[39m,
+      id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+    }
+  ]
+}
+2024-08-12 14:25:03 error: Error fetching user API providers by userId: findUserApiProvidersByUserId is not a function
+2024-08-12 14:28:04 error: Error fetching user API providers by userId: findUserApiProvidersByUserId is not a function
+2024-08-12 14:28:07 info: Server is running on port 3001
+2024-08-12 14:28:09 info: Fetching user API providers for userId: 97be7a7c-7b1d-404e-b213-09cbb753e359
+2024-08-12 14:28:09 info: Found 3 providers for userId: 97be7a7c-7b1d-404e-b213-09cbb753e359
+2024-08-12 14:28:20 info: Fetching user API provider by id: 407bfce2-ea52-4198-a4d8-faf748d38b63
+2024-08-12 14:28:20 warn: No provider found for id: 407bfce2-ea52-4198-a4d8-faf748d38b63
+2024-08-12 14:28:54 info: Fetching user API provider by id: 24eb152f-08cd-46bc-a8d6-24798d830500
+2024-08-12 14:28:54 info: User API provider found. {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+  apiKey: [32m'test'[39m,
+  id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+      apiKey: [32m'test'[39m,
+      id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+    }
+  ]
+}
+2024-08-12 14:29:11 info: Attempting to modify user API provider by id: test
+2024-08-12 14:29:11 warn: No provider found to update for id: test
+2024-08-12 14:29:17 info: Attempting to modify user API provider by id: 24eb152f-08cd-46bc-a8d6-24798d830500
+2024-08-12 14:29:17 info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/user_api_providers.json
+2024-08-12 14:29:17 info: User API provider modified successfully. {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+  apiKey: [32m'new-api-key'[39m,
+  id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+      apiKey: [32m'new-api-key'[39m,
+      id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+    }
+  ]
+}
+2024-08-12 14:29:34 warn: ProviderId already exists for this userId
+2024-08-12 14:35:48 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 14:35:52 [_stream_writable.js] warn: ProviderId already exists for this userId
+2024-08-12 14:44:43 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 14:45:41 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 14:49:21 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 14:53:46 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 14:55:40 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 14:57:28 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:02:02 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:05:35 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:06:41 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:11:40 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:15:10 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:15:34 [_stream_writable.js] info: GET /users route hit
+2024-08-12 15:15:34 [_stream_writable.js] info: Fetching all users
+2024-08-12 15:15:34 [_stream_writable.js] info: Reading users from file
+2024-08-12 15:15:42 [_stream_writable.js] info: GET /users/:id route hit with ID: 40f4ad25-fbfc-4023-8b29-19e62bfd0d0e
+2024-08-12 15:15:42 [_stream_writable.js] info: Fetching user by ID: 40f4ad25-fbfc-4023-8b29-19e62bfd0d0e
+2024-08-12 15:15:42 [_stream_writable.js] info: Finding user by ID {
+  userId: [32m'40f4ad25-fbfc-4023-8b29-19e62bfd0d0e'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'40f4ad25-fbfc-4023-8b29-19e62bfd0d0e'[39m } ]
+}
+2024-08-12 15:15:42 [_stream_writable.js] info: Reading users from file
+2024-08-12 15:15:58 [_stream_writable.js] info: POST /users route hit
+2024-08-12 15:15:58 [_stream_writable.js] info: Adding a new user {
+  username: [32m'9'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { username: [32m'9'[39m } ]
+}
+2024-08-12 15:15:58 [_stream_writable.js] info: Reading users from file
+2024-08-12 15:15:58 [_stream_writable.js] info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/users.json
+2024-08-12 15:15:58 [_stream_writable.js] info: User added successfully {
+  username: [32m'9'[39m,
+  userId: [32m'ec993722-590e-41c7-b167-962d32342edb'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { username: [32m'9'[39m, userId: [32m'ec993722-590e-41c7-b167-962d32342edb'[39m } ]
+}
+2024-08-12 15:15:58 [_stream_writable.js] info: User created successfully {
+  username: [32m'9'[39m,
+  email: [32m'7@g.goo'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { username: [32m'9'[39m, email: [32m'7@g.goo'[39m } ]
+}
+2024-08-12 15:17:17 [_stream_writable.js] info: GET /user-api-providers route hit
+2024-08-12 15:17:17 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:17:17 [_stream_writable.js] info: All user API providers fetched successfully
+2024-08-12 15:17:21 [_stream_writable.js] info: GET /user-api-providers route hit
+2024-08-12 15:17:21 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:17:21 [_stream_writable.js] info: All user API providers fetched successfully
+2024-08-12 15:17:25 [_stream_writable.js] info: GET /user-api-providers/user/:userId route hit with UserID: 97be7a7c-7b1d-404e-b213-09cbb753e359
+2024-08-12 15:17:25 [_stream_writable.js] info: Fetching user API providers by userId {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m } ]
+}
+2024-08-12 15:17:25 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:17:25 [_stream_writable.js] info: User API providers fetched {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  count: [33m3[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m, count: [33m3[39m } ]
+}
+2024-08-12 15:17:25 [_stream_writable.js] info: User API providers fetched successfully for user {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m } ]
+}
+2024-08-12 15:17:27 [_stream_writable.js] info: GET /user-api-providers/user/:userId route hit with UserID: 97be7a7c-7b1d-404e-b213-09cbb753e359
+2024-08-12 15:17:27 [_stream_writable.js] info: Fetching user API providers by userId {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m } ]
+}
+2024-08-12 15:17:27 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:17:27 [_stream_writable.js] info: User API providers fetched {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  count: [33m3[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m, count: [33m3[39m } ]
+}
+2024-08-12 15:17:27 [_stream_writable.js] info: User API providers fetched successfully for user {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m } ]
+}
+2024-08-12 15:17:34 [_stream_writable.js] info: POST /user-api-providers route hit
+2024-08-12 15:17:34 [_stream_writable.js] info: Attempting to add a new user API provider {
+  userApiProvider: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'your-provider-id3'[39m,
+    apiKey: [32m'your-api-key'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProvider: {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'your-provider-id3'[39m,
+        apiKey: [32m'your-api-key'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:17:34 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:17:34 [_stream_writable.js] info: Existing user API providers loaded {
+  userApiProviders: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+      apiKey: [32m'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'[39m,
+      id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+      apiKey: [32m'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'[39m,
+      id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+      apiKey: [32m'new-api-key'[39m,
+      id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+    }
+  ],
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProviders: [
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+          apiKey: [32m'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'[39m,
+          id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+          apiKey: [32m'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'[39m,
+          id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+          apiKey: [32m'new-api-key'[39m,
+          id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+        }
+      ]
+    }
+  ]
+}
+2024-08-12 15:17:34 [_stream_writable.js] info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/user_api_providers.json
+2024-08-12 15:17:34 [_stream_writable.js] info: User API provider added successfully {
+  newUserApiProvider: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'your-provider-id3'[39m,
+    apiKey: [32m'your-api-key'[39m,
+    id: [32m'4c2e87a3-206c-4b26-a60b-398f2fdcf9cb'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      newUserApiProvider: {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'your-provider-id3'[39m,
+        apiKey: [32m'your-api-key'[39m,
+        id: [32m'4c2e87a3-206c-4b26-a60b-398f2fdcf9cb'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:17:34 [_stream_writable.js] info: User API provider created successfully {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'your-provider-id3'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'your-provider-id3'[39m
+    }
+  ]
+}
+2024-08-12 15:17:37 [_stream_writable.js] info: POST /user-api-providers route hit
+2024-08-12 15:17:37 [_stream_writable.js] info: Attempting to add a new user API provider {
+  userApiProvider: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'your-provider-id3'[39m,
+    apiKey: [32m'your-api-key'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProvider: {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'your-provider-id3'[39m,
+        apiKey: [32m'your-api-key'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:17:37 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:17:37 [_stream_writable.js] info: Existing user API providers loaded {
+  userApiProviders: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+      apiKey: [32m'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'[39m,
+      id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+      apiKey: [32m'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'[39m,
+      id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+      apiKey: [32m'new-api-key'[39m,
+      id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'your-provider-id3'[39m,
+      apiKey: [32m'your-api-key'[39m,
+      id: [32m'4c2e87a3-206c-4b26-a60b-398f2fdcf9cb'[39m
+    }
+  ],
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProviders: [
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+          apiKey: [32m'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'[39m,
+          id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+          apiKey: [32m'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'[39m,
+          id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+          apiKey: [32m'new-api-key'[39m,
+          id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'your-provider-id3'[39m,
+          apiKey: [32m'your-api-key'[39m,
+          id: [32m'4c2e87a3-206c-4b26-a60b-398f2fdcf9cb'[39m
+        }
+      ]
+    }
+  ]
+}
+2024-08-12 15:17:37 [_stream_writable.js] warn: ProviderId already exists for this userId {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'your-provider-id3'[39m,
+  [[32mSymbol(level)[39m]: [32m'warn'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'your-provider-id3'[39m
+    }
+  ]
+}
+2024-08-12 15:17:37 [_stream_writable.js] error: Failed to add user API provider: ProviderId already exists for this userId {
+  userApiProvider: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'your-provider-id3'[39m,
+    apiKey: [32m'your-api-key'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'error'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProvider: {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'your-provider-id3'[39m,
+        apiKey: [32m'your-api-key'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:17:37 [_stream_writable.js] error: Error creating user API provider: Failed to add user API provider
+2024-08-12 15:17:48 [_stream_writable.js] info: POST /user-api-providers/provider/new route hit
+2024-08-12 15:17:48 [_stream_writable.js] info: Reading users from file
+2024-08-12 15:17:48 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:17:48 [_stream_writable.js] warn: ProviderId already exists for this userId
+2024-08-12 15:18:02 [_stream_writable.js] info: POST /user-api-providers route hit
+2024-08-12 15:18:02 [_stream_writable.js] info: Attempting to add a new user API provider {
+  userApiProvider: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'your-provider-id3'[39m,
+    apiKey: [32m'your-api-key'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProvider: {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'your-provider-id3'[39m,
+        apiKey: [32m'your-api-key'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:18:02 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:18:02 [_stream_writable.js] info: Existing user API providers loaded {
+  userApiProviders: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+      apiKey: [32m'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'[39m,
+      id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+      apiKey: [32m'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'[39m,
+      id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+      apiKey: [32m'new-api-key'[39m,
+      id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'your-provider-id3'[39m,
+      apiKey: [32m'your-api-key'[39m,
+      id: [32m'4c2e87a3-206c-4b26-a60b-398f2fdcf9cb'[39m
+    }
+  ],
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProviders: [
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+          apiKey: [32m'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'[39m,
+          id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+          apiKey: [32m'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'[39m,
+          id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+          apiKey: [32m'new-api-key'[39m,
+          id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'your-provider-id3'[39m,
+          apiKey: [32m'your-api-key'[39m,
+          id: [32m'4c2e87a3-206c-4b26-a60b-398f2fdcf9cb'[39m
+        }
+      ]
+    }
+  ]
+}
+2024-08-12 15:18:02 [_stream_writable.js] warn: ProviderId already exists for this userId {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'your-provider-id3'[39m,
+  [[32mSymbol(level)[39m]: [32m'warn'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'your-provider-id3'[39m
+    }
+  ]
+}
+2024-08-12 15:18:02 [_stream_writable.js] error: Failed to add user API provider: ProviderId already exists for this userId {
+  userApiProvider: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'your-provider-id3'[39m,
+    apiKey: [32m'your-api-key'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'error'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProvider: {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'your-provider-id3'[39m,
+        apiKey: [32m'your-api-key'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:18:02 [_stream_writable.js] error: Error creating user API provider: Failed to add user API provider
+2024-08-12 15:18:19 [_stream_writable.js] info: GET /providers route hit
+2024-08-12 15:18:19 [_stream_writable.js] info: Fetching all API providers
+2024-08-12 15:18:29 [_stream_writable.js] info: POST /user-api-providers route hit
+2024-08-12 15:18:29 [_stream_writable.js] info: Attempting to add a new user API provider {
+  userApiProvider: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+    apiKey: [32m'your-api-key'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProvider: {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+        apiKey: [32m'your-api-key'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:18:29 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:18:29 [_stream_writable.js] info: Existing user API providers loaded {
+  userApiProviders: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+      apiKey: [32m'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'[39m,
+      id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+      apiKey: [32m'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'[39m,
+      id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+      apiKey: [32m'new-api-key'[39m,
+      id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+    },
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'your-provider-id3'[39m,
+      apiKey: [32m'your-api-key'[39m,
+      id: [32m'4c2e87a3-206c-4b26-a60b-398f2fdcf9cb'[39m
+    }
+  ],
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProviders: [
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+          apiKey: [32m'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'[39m,
+          id: [32m'319fba90-cc86-4e4d-9bb5-7dd8c22514fa'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'cf75a5f9-ee78-442c-8545-135b85400f5e'[39m,
+          apiKey: [32m'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'[39m,
+          id: [32m'7cd5edf1-8b27-4173-92ca-abf4b281502a'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+          apiKey: [32m'new-api-key'[39m,
+          id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+        },
+        {
+          userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+          providerId: [32m'your-provider-id3'[39m,
+          apiKey: [32m'your-api-key'[39m,
+          id: [32m'4c2e87a3-206c-4b26-a60b-398f2fdcf9cb'[39m
+        }
+      ]
+    }
+  ]
+}
+2024-08-12 15:18:29 [_stream_writable.js] warn: ProviderId already exists for this userId {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+  [[32mSymbol(level)[39m]: [32m'warn'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m
+    }
+  ]
+}
+2024-08-12 15:18:29 [_stream_writable.js] error: Failed to add user API provider: ProviderId already exists for this userId {
+  userApiProvider: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+    apiKey: [32m'your-api-key'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'error'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userApiProvider: {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+        apiKey: [32m'your-api-key'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:18:29 [_stream_writable.js] error: Error creating user API provider: Failed to add user API provider
+2024-08-12 15:20:09 [_stream_writable.js] info: POST /login route hit
+2024-08-12 15:20:09 [_stream_writable.js] error: Error in login: validateUserCredentials is not a function
+2024-08-12 15:22:25 [_stream_writable.js] info: POST /login route hit
+2024-08-12 15:22:25 [_stream_writable.js] error: Error in login: validateUserCredentials is not a function
+2024-08-12 15:22:28 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:22:31 [_stream_writable.js] info: POST /login route hit
+2024-08-12 15:22:31 [_stream_writable.js] info: Validating user credentials {
+  username: [32m'goldhaxx'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { username: [32m'goldhaxx'[39m } ]
+}
+2024-08-12 15:22:31 [_stream_writable.js] info: Finding user by username {
+  username: [32m'goldhaxx'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { username: [32m'goldhaxx'[39m } ]
+}
+2024-08-12 15:22:31 [_stream_writable.js] info: Reading users from file
+2024-08-12 15:22:31 [_stream_writable.js] info: User credentials validated successfully {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m } ]
+}
+2024-08-12 15:22:31 [_stream_writable.js] info: User logged in successfully {
+  username: [32m'goldhaxx'[39m,
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      username: [32m'goldhaxx'[39m,
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+    }
+  ]
+}
+2024-08-12 15:23:56 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:24:02 [_stream_writable.js] info: GET /conversations route hit
+2024-08-12 15:24:02 [_stream_writable.js] info: Fetching all conversations...
+2024-08-12 15:24:02 [_stream_writable.js] info: Fetching all conversations
+2024-08-12 15:24:02 [_stream_writable.js] info: Conversations fetched successfully {
+  count: [33m3[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { count: [33m3[39m } ]
+}
+2024-08-12 15:24:02 [_stream_writable.js] info: Conversations fetched successfully.
+2024-08-12 15:24:18 [_stream_writable.js] info: GET /conversations/:id route hit with ID: 503b1c66-737b-4f20-acfd-f6eef3c7a475
+2024-08-12 15:24:18 [_stream_writable.js] info: Fetching conversation with ID: 503b1c66-737b-4f20-acfd-f6eef3c7a475
+2024-08-12 15:24:18 [_stream_writable.js] info: Finding conversation by ID {
+  id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m } ]
+}
+2024-08-12 15:24:18 [_stream_writable.js] info: Conversation found {
+  conversation: {
+    title: [32m'Updated Conversation Title'[39m,
+    userId: [32m'4e11fd4b-e506-457c-bf96-cba560b72b48'[39m,
+    id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+    timestamp: [33m1723491890032[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversation: {
+        title: [32m'Updated Conversation Title'[39m,
+        userId: [32m'4e11fd4b-e506-457c-bf96-cba560b72b48'[39m,
+        id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+        timestamp: [33m1723491890032[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:24:18 [_stream_writable.js] info: Conversation fetched successfully.
+2024-08-12 15:24:26 [_stream_writable.js] info: GET /conversations/:id route hit with ID: 503b1c66-737b-4f20-acfd-f6eef3c7a4751
+2024-08-12 15:24:26 [_stream_writable.js] info: Fetching conversation with ID: 503b1c66-737b-4f20-acfd-f6eef3c7a4751
+2024-08-12 15:24:26 [_stream_writable.js] info: Finding conversation by ID {
+  id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a4751'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a4751'[39m } ]
+}
+2024-08-12 15:24:26 [_stream_writable.js] warn: No conversation found for ID {
+  id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a4751'[39m,
+  [[32mSymbol(level)[39m]: [32m'warn'[39m,
+  [[32mSymbol(splat)[39m]: [ { id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a4751'[39m } ]
+}
+2024-08-12 15:24:26 [_stream_writable.js] warn: Conversation not found for ID: 503b1c66-737b-4f20-acfd-f6eef3c7a4751
+2024-08-12 15:24:30 [_stream_writable.js] info: GET /conversations/:id route hit with ID: 503b1c66-737b-4f20-acfd-f6eef3c7a475
+2024-08-12 15:24:30 [_stream_writable.js] info: Fetching conversation with ID: 503b1c66-737b-4f20-acfd-f6eef3c7a475
+2024-08-12 15:24:30 [_stream_writable.js] info: Finding conversation by ID {
+  id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m } ]
+}
+2024-08-12 15:24:30 [_stream_writable.js] info: Conversation found {
+  conversation: {
+    title: [32m'Updated Conversation Title'[39m,
+    userId: [32m'4e11fd4b-e506-457c-bf96-cba560b72b48'[39m,
+    id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+    timestamp: [33m1723491890032[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversation: {
+        title: [32m'Updated Conversation Title'[39m,
+        userId: [32m'4e11fd4b-e506-457c-bf96-cba560b72b48'[39m,
+        id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+        timestamp: [33m1723491890032[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:24:30 [_stream_writable.js] info: Conversation fetched successfully.
+2024-08-12 15:24:39 [_stream_writable.js] info: PUT /conversations/:id route hit with ID: 503b1c66-737b-4f20-acfd-f6eef3c7a475
+2024-08-12 15:24:39 [_stream_writable.js] info: Updating conversation with ID: 503b1c66-737b-4f20-acfd-f6eef3c7a475
+2024-08-12 15:24:39 [_stream_writable.js] info: Modifying conversation {
+  id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+  updates: { title: [32m'Updated Conversation Title'[39m },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+      updates: { title: [32m'Updated Conversation Title'[39m }
+    }
+  ]
+}
+2024-08-12 15:24:39 [_stream_writable.js] info: Data successfully written to file: /Users/zacharywright/Nextcloud2/vscode/repos/omnigpt-server/src/data/conversations.json
+2024-08-12 15:24:39 [_stream_writable.js] info: Conversation modified successfully {
+  updatedConversation: {
+    title: [32m'Updated Conversation Title'[39m,
+    userId: [32m'4e11fd4b-e506-457c-bf96-cba560b72b48'[39m,
+    id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+    timestamp: [33m1723491890032[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      updatedConversation: {
+        title: [32m'Updated Conversation Title'[39m,
+        userId: [32m'4e11fd4b-e506-457c-bf96-cba560b72b48'[39m,
+        id: [32m'503b1c66-737b-4f20-acfd-f6eef3c7a475'[39m,
+        timestamp: [33m1723491890032[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:24:39 [_stream_writable.js] info: Conversation updated successfully.
+2024-08-12 15:25:58 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:26:05 [_stream_writable.js] info: POST /send-message route hit
+2024-08-12 15:26:05 [_stream_writable.js] error: Error in POST /send-message route handleSendMessage is not a function
+2024-08-12 15:28:58 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:29:00 [_stream_writable.js] info: POST /send-message route hit
+2024-08-12 15:29:00 [_stream_writable.js] info: handleSendMessage invoked {
+  body: {
+    conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+    userInput: [32m'What did I say right before this?'[39m,
+    role: [32m'user'[39m,
+    provider: [32m'openai'[39m,
+    model: [32m'gpt-4o'[39m,
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      body: {
+        conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+        userInput: [32m'What did I say right before this?'[39m,
+        role: [32m'user'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m,
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:00 [_stream_writable.js] info: Sending message to LLM API {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  userInput: [32m'What did I say right before this?'[39m,
+  provider: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      userInput: [32m'What did I say right before this?'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+    }
+  ]
+}
+2024-08-12 15:29:00 [_stream_writable.js] info: Sending message to LLM API provider {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  providerName: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      providerName: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+    }
+  ]
+}
+2024-08-12 15:29:00 [_stream_writable.js] info: Finding API provider configuration {
+  providerName: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { providerName: [32m'openai'[39m, model: [32m'gpt-4o'[39m } ]
+}
+2024-08-12 15:29:00 [_stream_writable.js] info: Retrieving user API key {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m
+    }
+  ]
+}
+2024-08-12 15:29:00 [_stream_writable.js] info: Sending request to openai API {
+  url: [32m'https://api.openai.com/v1/chat/completions'[39m,
+  headers: {
+    Authorization: [32m'Bearer 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'[39m,
+    [32m'Content-Type'[39m: [32m'application/json'[39m,
+    Cookie: [32m'__cf_bm=D3tSYz3gVeg5jGCmzxRXaqtStmIbF_Qs0b2GiLcFUQc-1723247759-1.0.1.1-e5gcGtcNfNB6N.vFvGdhiW5WlAsNhPHrVHtrBzbHV4LtNiB8_FOLfmgkmNO3l9gDxLZmONZhjK81q96HwdYnKQ; _cfuvid=cN5GJTQt2rANpuZXiV0Vk71XYoSVkxEkzal6ihmqBZU-1723247759106-0.0.1.1-604800000'[39m
+  },
+  body: {
+    model: [32m'gpt-4o'[39m,
+    messages: [
+      {
+        role: [32m'user'[39m,
+        content: [ { type: [32m'text'[39m, text: [32m'What did I say right before this?'[39m } ]
+      }
+    ],
+    temperature: [33m1[39m,
+    max_tokens: [33m256[39m,
+    top_p: [33m1[39m,
+    frequency_penalty: [33m0[39m,
+    presence_penalty: [33m0[39m,
+    response_format: { type: [32m'text'[39m }
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      url: [32m'https://api.openai.com/v1/chat/completions'[39m,
+      headers: {
+        Authorization: [32m'Bearer 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'[39m,
+        [32m'Content-Type'[39m: [32m'application/json'[39m,
+        Cookie: [32m'__cf_bm=D3tSYz3gVeg5jGCmzxRXaqtStmIbF_Qs0b2GiLcFUQc-1723247759-1.0.1.1-e5gcGtcNfNB6N.vFvGdhiW5WlAsNhPHrVHtrBzbHV4LtNiB8_FOLfmgkmNO3l9gDxLZmONZhjK81q96HwdYnKQ; _cfuvid=cN5GJTQt2rANpuZXiV0Vk71XYoSVkxEkzal6ihmqBZU-1723247759106-0.0.1.1-604800000'[39m
+      },
+      body: {
+        model: [32m'gpt-4o'[39m,
+        messages: [
+          {
+            role: [32m'user'[39m,
+            content: [
+              {
+                type: [32m'text'[39m,
+                text: [32m'What did I say right before this?'[39m
+              }
+            ]
+          }
+        ],
+        temperature: [33m1[39m,
+        max_tokens: [33m256[39m,
+        top_p: [33m1[39m,
+        frequency_penalty: [33m0[39m,
+        presence_penalty: [33m0[39m,
+        response_format: { type: [32m'text'[39m }
+      }
+    }
+  ]
+}
+2024-08-12 15:29:02 [_stream_writable.js] info: Received response from openai API {
+  status: [33m200[39m,
+  headers: Object [AxiosHeaders] {
+    date: [32m'Mon, 12 Aug 2024 21:29:01 GMT'[39m,
+    [32m'content-type'[39m: [32m'application/json'[39m,
+    [32m'transfer-encoding'[39m: [32m'chunked'[39m,
+    connection: [32m'keep-alive'[39m,
+    [32m'openai-organization'[39m: [32m'user-ncjhfo1mi1z9bstwjxfsuorg'[39m,
+    [32m'openai-processing-ms'[39m: [32m'633'[39m,
+    [32m'openai-version'[39m: [32m'2020-10-01'[39m,
+    [32m'strict-transport-security'[39m: [32m'max-age=15552000; includeSubDomains; preload'[39m,
+    [32m'x-ratelimit-limit-requests'[39m: [32m'500'[39m,
+    [32m'x-ratelimit-limit-tokens'[39m: [32m'30000'[39m,
+    [32m'x-ratelimit-remaining-requests'[39m: [32m'499'[39m,
+    [32m'x-ratelimit-remaining-tokens'[39m: [32m'29734'[39m,
+    [32m'x-ratelimit-reset-requests'[39m: [32m'120ms'[39m,
+    [32m'x-ratelimit-reset-tokens'[39m: [32m'532ms'[39m,
+    [32m'x-request-id'[39m: [32m'req_e5c0d8e71fa38cd504b514955342959a'[39m,
+    [32m'cf-cache-status'[39m: [32m'DYNAMIC'[39m,
+    [32m'set-cookie'[39m: [
+      [32m'__cf_bm=Dcv2pYVlf31Kr9l_2G9BpqTMtBRdH.9.kp0QLjqq07Y-1723498141-1.0.1.1-R9JEJ9L.83M8paaIXZeHGCgFa08svqKV90Pld5pfZx2NVNkxkVZx2ovlihl1FYsQP7jVVvPSJecdT.o32dLIMw; path=/; expires=Mon, 12-Aug-24 21:59:01 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'[39m,
+      [32m'_cfuvid=wgdvmWh.s2iPgFp0GGojJ3kROiO.cixIJJ8P7qcjnLI-1723498141954-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'[39m
+    ],
+    [32m'x-content-type-options'[39m: [32m'nosniff'[39m,
+    server: [32m'cloudflare'[39m,
+    [32m'cf-ray'[39m: [32m'8b238ef4bc2a2b0a-SLC'[39m,
+    [32m'alt-svc'[39m: [32m'h3=":443"; ma=86400'[39m
+  },
+  body: {
+    id: [32m'chatcmpl-9vWt3HV4hBbkEEv9heMuybUUZjVIA'[39m,
+    object: [32m'chat.completion'[39m,
+    created: [33m1723498141[39m,
+    model: [32m'gpt-4o-2024-05-13'[39m,
+    choices: [
+      {
+        index: [33m0[39m,
+        message: {
+          role: [32m'assistant'[39m,
+          content: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+          refusal: [1mnull[22m
+        },
+        logprobs: [1mnull[22m,
+        finish_reason: [32m'stop'[39m
+      }
+    ],
+    usage: { prompt_tokens: [33m15[39m, completion_tokens: [33m23[39m, total_tokens: [33m38[39m },
+    system_fingerprint: [32m'fp_c9aa9c0491'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      status: [33m200[39m,
+      headers: Object [AxiosHeaders] {
+        date: [32m'Mon, 12 Aug 2024 21:29:01 GMT'[39m,
+        [32m'content-type'[39m: [32m'application/json'[39m,
+        [32m'transfer-encoding'[39m: [32m'chunked'[39m,
+        connection: [32m'keep-alive'[39m,
+        [32m'openai-organization'[39m: [32m'user-ncjhfo1mi1z9bstwjxfsuorg'[39m,
+        [32m'openai-processing-ms'[39m: [32m'633'[39m,
+        [32m'openai-version'[39m: [32m'2020-10-01'[39m,
+        [32m'strict-transport-security'[39m: [32m'max-age=15552000; includeSubDomains; preload'[39m,
+        [32m'x-ratelimit-limit-requests'[39m: [32m'500'[39m,
+        [32m'x-ratelimit-limit-tokens'[39m: [32m'30000'[39m,
+        [32m'x-ratelimit-remaining-requests'[39m: [32m'499'[39m,
+        [32m'x-ratelimit-remaining-tokens'[39m: [32m'29734'[39m,
+        [32m'x-ratelimit-reset-requests'[39m: [32m'120ms'[39m,
+        [32m'x-ratelimit-reset-tokens'[39m: [32m'532ms'[39m,
+        [32m'x-request-id'[39m: [32m'req_e5c0d8e71fa38cd504b514955342959a'[39m,
+        [32m'cf-cache-status'[39m: [32m'DYNAMIC'[39m,
+        [32m'set-cookie'[39m: [
+          [32m'__cf_bm=Dcv2pYVlf31Kr9l_2G9BpqTMtBRdH.9.kp0QLjqq07Y-1723498141-1.0.1.1-R9JEJ9L.83M8paaIXZeHGCgFa08svqKV90Pld5pfZx2NVNkxkVZx2ovlihl1FYsQP7jVVvPSJecdT.o32dLIMw; path=/; expires=Mon, 12-Aug-24 21:59:01 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'[39m,
+          [32m'_cfuvid=wgdvmWh.s2iPgFp0GGojJ3kROiO.cixIJJ8P7qcjnLI-1723498141954-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'[39m
+        ],
+        [32m'x-content-type-options'[39m: [32m'nosniff'[39m,
+        server: [32m'cloudflare'[39m,
+        [32m'cf-ray'[39m: [32m'8b238ef4bc2a2b0a-SLC'[39m,
+        [32m'alt-svc'[39m: [32m'h3=":443"; ma=86400'[39m
+      },
+      body: {
+        id: [32m'chatcmpl-9vWt3HV4hBbkEEv9heMuybUUZjVIA'[39m,
+        object: [32m'chat.completion'[39m,
+        created: [33m1723498141[39m,
+        model: [32m'gpt-4o-2024-05-13'[39m,
+        choices: [
+          {
+            index: [33m0[39m,
+            message: {
+              role: [32m'assistant'[39m,
+              content: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+              refusal: [1mnull[22m
+            },
+            logprobs: [1mnull[22m,
+            finish_reason: [32m'stop'[39m
+          }
+        ],
+        usage: { prompt_tokens: [33m15[39m, completion_tokens: [33m23[39m, total_tokens: [33m38[39m },
+        system_fingerprint: [32m'fp_c9aa9c0491'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:02 [_stream_writable.js] info: LLM API response received {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  provider: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  response: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      response: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m
+    }
+  ]
+}
+2024-08-12 15:29:02 [_stream_writable.js] info: Adding message to conversation [object Object] {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      message: {
+        content: [32m'What did I say right before this?'[39m,
+        role: [32m'user'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:02 [_stream_writable.js] info: messages.json written to file successfully.
+2024-08-12 15:29:02 [_stream_writable.js] info: Message added to messages file successfully {
+  newMessage: {
+    id: [32m'bae597ae-5f74-465f-9903-7b80c3f53bf5'[39m,
+    conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+    content: [32m'What did I say right before this?'[39m,
+    role: [32m'user'[39m,
+    provider: [32m'openai'[39m,
+    model: [32m'gpt-4o'[39m,
+    timestamp: [33m1723498142071[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      newMessage: {
+        id: [32m'bae597ae-5f74-465f-9903-7b80c3f53bf5'[39m,
+        conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+        content: [32m'What did I say right before this?'[39m,
+        role: [32m'user'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m,
+        timestamp: [33m1723498142071[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:02 [_stream_writable.js] info: Adding message to conversation [object Object] {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      message: {
+        content: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+        role: [32m'assistant'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:02 [_stream_writable.js] info: messages.json written to file successfully.
+2024-08-12 15:29:02 [_stream_writable.js] info: Message added to messages file successfully {
+  newMessage: {
+    id: [32m'fbad1578-eab0-4398-b05e-1c4f0c358d27'[39m,
+    conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+    content: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+    role: [32m'assistant'[39m,
+    provider: [32m'openai'[39m,
+    model: [32m'gpt-4o'[39m,
+    timestamp: [33m1723498142072[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      newMessage: {
+        id: [32m'fbad1578-eab0-4398-b05e-1c4f0c358d27'[39m,
+        conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+        content: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+        role: [32m'assistant'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m,
+        timestamp: [33m1723498142072[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:02 [_stream_writable.js] info: Message processing completed successfully {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  userInput: [32m'What did I say right before this?'[39m,
+  provider: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      userInput: [32m'What did I say right before this?'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+    }
+  ]
+}
+2024-08-12 15:29:15 [_stream_writable.js] info: POST /send-message route hit
+2024-08-12 15:29:15 [_stream_writable.js] info: handleSendMessage invoked {
+  body: {
+    conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+    userInput: [32m'Tell me something interesting!'[39m,
+    role: [32m'user'[39m,
+    provider: [32m'openai'[39m,
+    model: [32m'gpt-4o'[39m,
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      body: {
+        conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+        userInput: [32m'Tell me something interesting!'[39m,
+        role: [32m'user'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m,
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:15 [_stream_writable.js] info: Sending message to LLM API {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  userInput: [32m'Tell me something interesting!'[39m,
+  provider: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      userInput: [32m'Tell me something interesting!'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+    }
+  ]
+}
+2024-08-12 15:29:15 [_stream_writable.js] info: Sending message to LLM API provider {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  providerName: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      providerName: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+    }
+  ]
+}
+2024-08-12 15:29:15 [_stream_writable.js] info: Finding API provider configuration {
+  providerName: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { providerName: [32m'openai'[39m, model: [32m'gpt-4o'[39m } ]
+}
+2024-08-12 15:29:15 [_stream_writable.js] info: Retrieving user API key {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+      providerId: [32m'cee616e0-3b1b-477f-8187-04ded66127ea'[39m
+    }
+  ]
+}
+2024-08-12 15:29:15 [_stream_writable.js] info: Sending request to openai API {
+  url: [32m'https://api.openai.com/v1/chat/completions'[39m,
+  headers: {
+    Authorization: [32m'Bearer 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'[39m,
+    [32m'Content-Type'[39m: [32m'application/json'[39m,
+    Cookie: [32m'__cf_bm=D3tSYz3gVeg5jGCmzxRXaqtStmIbF_Qs0b2GiLcFUQc-1723247759-1.0.1.1-e5gcGtcNfNB6N.vFvGdhiW5WlAsNhPHrVHtrBzbHV4LtNiB8_FOLfmgkmNO3l9gDxLZmONZhjK81q96HwdYnKQ; _cfuvid=cN5GJTQt2rANpuZXiV0Vk71XYoSVkxEkzal6ihmqBZU-1723247759106-0.0.1.1-604800000'[39m
+  },
+  body: {
+    model: [32m'gpt-4o'[39m,
+    messages: [
+      {
+        role: [32m'user'[39m,
+        content: [ { type: [32m'text'[39m, text: [32m'Tell me something interesting!'[39m } ]
+      }
+    ],
+    temperature: [33m1[39m,
+    max_tokens: [33m256[39m,
+    top_p: [33m1[39m,
+    frequency_penalty: [33m0[39m,
+    presence_penalty: [33m0[39m,
+    response_format: { type: [32m'text'[39m }
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      url: [32m'https://api.openai.com/v1/chat/completions'[39m,
+      headers: {
+        Authorization: [32m'Bearer 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'[39m,
+        [32m'Content-Type'[39m: [32m'application/json'[39m,
+        Cookie: [32m'__cf_bm=D3tSYz3gVeg5jGCmzxRXaqtStmIbF_Qs0b2GiLcFUQc-1723247759-1.0.1.1-e5gcGtcNfNB6N.vFvGdhiW5WlAsNhPHrVHtrBzbHV4LtNiB8_FOLfmgkmNO3l9gDxLZmONZhjK81q96HwdYnKQ; _cfuvid=cN5GJTQt2rANpuZXiV0Vk71XYoSVkxEkzal6ihmqBZU-1723247759106-0.0.1.1-604800000'[39m
+      },
+      body: {
+        model: [32m'gpt-4o'[39m,
+        messages: [
+          {
+            role: [32m'user'[39m,
+            content: [
+              { type: [32m'text'[39m, text: [32m'Tell me something interesting!'[39m }
+            ]
+          }
+        ],
+        temperature: [33m1[39m,
+        max_tokens: [33m256[39m,
+        top_p: [33m1[39m,
+        frequency_penalty: [33m0[39m,
+        presence_penalty: [33m0[39m,
+        response_format: { type: [32m'text'[39m }
+      }
+    }
+  ]
+}
+2024-08-12 15:29:18 [_stream_writable.js] info: Received response from openai API {
+  status: [33m200[39m,
+  headers: Object [AxiosHeaders] {
+    date: [32m'Mon, 12 Aug 2024 21:29:18 GMT'[39m,
+    [32m'content-type'[39m: [32m'application/json'[39m,
+    [32m'transfer-encoding'[39m: [32m'chunked'[39m,
+    connection: [32m'keep-alive'[39m,
+    [32m'openai-organization'[39m: [32m'user-ncjhfo1mi1z9bstwjxfsuorg'[39m,
+    [32m'openai-processing-ms'[39m: [32m'2175'[39m,
+    [32m'openai-version'[39m: [32m'2020-10-01'[39m,
+    [32m'strict-transport-security'[39m: [32m'max-age=15552000; includeSubDomains; preload'[39m,
+    [32m'x-ratelimit-limit-requests'[39m: [32m'500'[39m,
+    [32m'x-ratelimit-limit-tokens'[39m: [32m'30000'[39m,
+    [32m'x-ratelimit-remaining-requests'[39m: [32m'499'[39m,
+    [32m'x-ratelimit-remaining-tokens'[39m: [32m'29735'[39m,
+    [32m'x-ratelimit-reset-requests'[39m: [32m'120ms'[39m,
+    [32m'x-ratelimit-reset-tokens'[39m: [32m'530ms'[39m,
+    [32m'x-request-id'[39m: [32m'req_88425280d82e2025afe50d3f156d01b5'[39m,
+    [32m'cf-cache-status'[39m: [32m'DYNAMIC'[39m,
+    [32m'set-cookie'[39m: [
+      [32m'__cf_bm=R35QRJ_IuI6prdmbDI5FPt8XJGaBJKVb826CMjGfXu8-1723498158-1.0.1.1-iQPO1VBu_ofIg6fKXE_Zc2j90HlJaJptG944Abki7zbQNEL5vdajfDsJoGsI.5WMiZBwNlxACJnXD4rJoSRoBw; path=/; expires=Mon, 12-Aug-24 21:59:18 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'[39m,
+      [32m'_cfuvid=35dwxzt7iFopmhrVSQ9B6EkMVGqBQTnuhLC0ywbFeo0-1723498158129-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'[39m
+    ],
+    [32m'x-content-type-options'[39m: [32m'nosniff'[39m,
+    server: [32m'cloudflare'[39m,
+    [32m'cf-ray'[39m: [32m'8b238f5179f05308-SLC'[39m,
+    [32m'alt-svc'[39m: [32m'h3=":443"; ma=86400'[39m
+  },
+  body: {
+    id: [32m'chatcmpl-9vWtIhNLDffAgzZV7f6wUUZrDbkxx'[39m,
+    object: [32m'chat.completion'[39m,
+    created: [33m1723498156[39m,
+    model: [32m'gpt-4o-2024-05-13'[39m,
+    choices: [
+      {
+        index: [33m0[39m,
+        message: {
+          role: [32m'assistant'[39m,
+          content: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+          refusal: [1mnull[22m
+        },
+        logprobs: [1mnull[22m,
+        finish_reason: [32m'stop'[39m
+      }
+    ],
+    usage: { prompt_tokens: [33m12[39m, completion_tokens: [33m147[39m, total_tokens: [33m159[39m },
+    system_fingerprint: [32m'fp_3aa7262c27'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      status: [33m200[39m,
+      headers: Object [AxiosHeaders] {
+        date: [32m'Mon, 12 Aug 2024 21:29:18 GMT'[39m,
+        [32m'content-type'[39m: [32m'application/json'[39m,
+        [32m'transfer-encoding'[39m: [32m'chunked'[39m,
+        connection: [32m'keep-alive'[39m,
+        [32m'openai-organization'[39m: [32m'user-ncjhfo1mi1z9bstwjxfsuorg'[39m,
+        [32m'openai-processing-ms'[39m: [32m'2175'[39m,
+        [32m'openai-version'[39m: [32m'2020-10-01'[39m,
+        [32m'strict-transport-security'[39m: [32m'max-age=15552000; includeSubDomains; preload'[39m,
+        [32m'x-ratelimit-limit-requests'[39m: [32m'500'[39m,
+        [32m'x-ratelimit-limit-tokens'[39m: [32m'30000'[39m,
+        [32m'x-ratelimit-remaining-requests'[39m: [32m'499'[39m,
+        [32m'x-ratelimit-remaining-tokens'[39m: [32m'29735'[39m,
+        [32m'x-ratelimit-reset-requests'[39m: [32m'120ms'[39m,
+        [32m'x-ratelimit-reset-tokens'[39m: [32m'530ms'[39m,
+        [32m'x-request-id'[39m: [32m'req_88425280d82e2025afe50d3f156d01b5'[39m,
+        [32m'cf-cache-status'[39m: [32m'DYNAMIC'[39m,
+        [32m'set-cookie'[39m: [
+          [32m'__cf_bm=R35QRJ_IuI6prdmbDI5FPt8XJGaBJKVb826CMjGfXu8-1723498158-1.0.1.1-iQPO1VBu_ofIg6fKXE_Zc2j90HlJaJptG944Abki7zbQNEL5vdajfDsJoGsI.5WMiZBwNlxACJnXD4rJoSRoBw; path=/; expires=Mon, 12-Aug-24 21:59:18 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'[39m,
+          [32m'_cfuvid=35dwxzt7iFopmhrVSQ9B6EkMVGqBQTnuhLC0ywbFeo0-1723498158129-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'[39m
+        ],
+        [32m'x-content-type-options'[39m: [32m'nosniff'[39m,
+        server: [32m'cloudflare'[39m,
+        [32m'cf-ray'[39m: [32m'8b238f5179f05308-SLC'[39m,
+        [32m'alt-svc'[39m: [32m'h3=":443"; ma=86400'[39m
+      },
+      body: {
+        id: [32m'chatcmpl-9vWtIhNLDffAgzZV7f6wUUZrDbkxx'[39m,
+        object: [32m'chat.completion'[39m,
+        created: [33m1723498156[39m,
+        model: [32m'gpt-4o-2024-05-13'[39m,
+        choices: [
+          {
+            index: [33m0[39m,
+            message: {
+              role: [32m'assistant'[39m,
+              content: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+              refusal: [1mnull[22m
+            },
+            logprobs: [1mnull[22m,
+            finish_reason: [32m'stop'[39m
+          }
+        ],
+        usage: {
+          prompt_tokens: [33m12[39m,
+          completion_tokens: [33m147[39m,
+          total_tokens: [33m159[39m
+        },
+        system_fingerprint: [32m'fp_3aa7262c27'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:18 [_stream_writable.js] info: LLM API response received {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  provider: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  response: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      response: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m
+    }
+  ]
+}
+2024-08-12 15:29:18 [_stream_writable.js] info: Adding message to conversation [object Object] {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      message: {
+        content: [32m'Tell me something interesting!'[39m,
+        role: [32m'user'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:18 [_stream_writable.js] info: messages.json written to file successfully.
+2024-08-12 15:29:18 [_stream_writable.js] info: Message added to messages file successfully {
+  newMessage: {
+    id: [32m'1d1243ce-da77-4295-b447-f6b11db83610'[39m,
+    conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+    content: [32m'Tell me something interesting!'[39m,
+    role: [32m'user'[39m,
+    provider: [32m'openai'[39m,
+    model: [32m'gpt-4o'[39m,
+    timestamp: [33m1723498158248[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      newMessage: {
+        id: [32m'1d1243ce-da77-4295-b447-f6b11db83610'[39m,
+        conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+        content: [32m'Tell me something interesting!'[39m,
+        role: [32m'user'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m,
+        timestamp: [33m1723498158248[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:18 [_stream_writable.js] info: Adding message to conversation [object Object] {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      message: {
+        content: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+        role: [32m'assistant'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:18 [_stream_writable.js] info: messages.json written to file successfully.
+2024-08-12 15:29:18 [_stream_writable.js] info: Message added to messages file successfully {
+  newMessage: {
+    id: [32m'e8ed5b5d-ea9e-49f9-acb4-d8b5bddce336'[39m,
+    conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+    content: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+    role: [32m'assistant'[39m,
+    provider: [32m'openai'[39m,
+    model: [32m'gpt-4o'[39m,
+    timestamp: [33m1723498158249[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      newMessage: {
+        id: [32m'e8ed5b5d-ea9e-49f9-acb4-d8b5bddce336'[39m,
+        conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+        content: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+        role: [32m'assistant'[39m,
+        provider: [32m'openai'[39m,
+        model: [32m'gpt-4o'[39m,
+        timestamp: [33m1723498158249[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:29:18 [_stream_writable.js] info: Message processing completed successfully {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  userInput: [32m'Tell me something interesting!'[39m,
+  provider: [32m'openai'[39m,
+  model: [32m'gpt-4o'[39m,
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      userInput: [32m'Tell me something interesting!'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m
+    }
+  ]
+}
+2024-08-12 15:30:00 [_stream_writable.js] info: GET /messages/:conversationId route hit with conversationId: 41b1b441-f0a8-4953-858e-d9474a1d0bd5
+2024-08-12 15:30:00 [_stream_writable.js] info: Fetching messages by conversation ID {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m } ]
+}
+2024-08-12 15:30:01 [_stream_writable.js] info: Messages fetched successfully {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  count: [33m58[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      count: [33m58[39m
+    }
+  ]
+}
+2024-08-12 15:30:01 [_stream_writable.js] info: Messages fetched successfully for conversation {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  messages: [
+    {
+      id: [32m'aa26fc4a-2b46-4c95-8366-f2d8310686b1'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'wen moon'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723244393898[39m
+    },
+    {
+      id: [32m'0a5da11b-ab60-45e1-a773-255faba639c9'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'hi'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723246672429[39m
+    },
+    {
+      id: [32m'78739cdc-d27d-4aef-a9ad-c9c5eaf67441'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'bulbous'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723246735070[39m
+    },
+    {
+      id: [32m'd35affc6-d543-45b2-b9de-8d57b7b96cf8'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723246931814[39m
+    },
+    {
+      id: [32m'80f3afdb-f33e-4410-ace6-bcc9699ab1a4'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248808034[39m
+    },
+    {
+      id: [32m'29906b98-60da-4e8c-88ce-fdf5a8542730'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248830852[39m
+    },
+    {
+      id: [32m'ebe3259d-abbf-42e1-9d88-ae7046dd9301'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248863360[39m
+    },
+    {
+      id: [32m'ab2500bc-6762-4343-bf40-1634c9e29e31'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248877759[39m
+    },
+    {
+      id: [32m'3027eca7-ff36-44d8-b984-4e2292a9b9bc'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248966694[39m
+    },
+    {
+      id: [32m'31605dd1-b3aa-4ba3-a9b2-ff6b9b155262'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723249157139[39m
+    },
+    {
+      id: [32m'2f495737-83f8-4964-b843-bce63d2b279a'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723249171784[39m
+    },
+    {
+      id: [32m'87fa9065-0f24-4b83-aeec-388a1251b59f'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723249315544[39m
+    },
+    {
+      id: [32m'5b6f1edd-56af-4cfc-9b10-2f2796924f36'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723249520080[39m
+    },
+    {
+      id: [32m'a4804747-f24b-4376-8a75-f755dcc1bfad'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723326149736[39m
+    },
+    {
+      id: [32m'614f26cc-0cdb-460b-a8c4-d5ec5cdbf9ba'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327586236[39m
+    },
+    {
+      id: [32m'b0eb29d9-71d5-4d31-86ac-4c4526606fe4'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Hello! It looks like you've sent a test message. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327586237[39m
+    },
+    {
+      id: [32m'109d56d6-fa88-4055-bb03-71b7cd78b8fa'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What did I say right before this?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327649124[39m
+    },
+    {
+      id: [32m'c0c4a224-c5ae-4e05-9329-25ff180cd37a'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"I'm sorry, but I can't recall previous messages in our conversation as this is a single instance interaction. How can I assist you right now?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327649125[39m
+    },
+    {
+      id: [32m'dbb1e84f-206d-4f43-b567-c6484217151d'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'U sure about that?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327680358[39m
+    },
+    {
+      id: [32m'0ba9bff5-caac-4507-bd9b-673ccabf94ce'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'hi'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'provider'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723349949747[39m
+    },
+    {
+      id: [32m'6d4e7878-528e-451a-8885-8798ddc39b4b'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What did I say right before this?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723349973131[39m
+    },
+    {
+      id: [32m'dc477f7f-7907-40a2-b35b-1b063aff66ef'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"I'm sorry, but I don't have the ability to recall previous interactions. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723349973132[39m
+    },
+    {
+      id: [32m'f07b4d75-c4d7-4a4c-a4ac-1f1b103dfb88'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'test'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'provider'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723354250155[39m
+    },
+    {
+      id: [32m'6e8a66e5-4437-4f0f-94dc-1f0c01319c0e'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'test'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'provider'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723354272152[39m
+    },
+    {
+      id: [32m'50a2c651-78d5-497a-b6fc-3988b049c4b8'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'This thing on?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355227791[39m
+    },
+    {
+      id: [32m'ca41292c-170a-4762-bfea-b60f8f9d8ef9'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Yes, I'm here! How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355227792[39m
+    },
+    {
+      id: [32m'5966d459-c094-45b0-a68b-880b22462649'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'this thing on?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355272784[39m
+    },
+    {
+      id: [32m'986e98ed-f8f6-4ee0-b889-d95a274964f5'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Yes, I'm here! How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355272786[39m
+    },
+    {
+      id: [32m'2595aa5a-6d59-4ba5-abf7-603031bb31ce'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'testing again'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355541573[39m
+    },
+    {
+      id: [32m'55b177e4-bd7e-4452-8af0-6736fa1e26bb'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Sure, I'm here to help! What would you like to test or need assistance with?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355541575[39m
+    },
+    {
+      id: [32m'b494f483-c1c2-4905-9f13-0984b8cd192e'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'and again'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355564682[39m
+    },
+    {
+      id: [32m'ad132503-514a-4b19-9e2c-16f1a9642f4b'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Certainly! How can I assist you further?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355564682[39m
+    },
+    {
+      id: [32m'a4b0e118-2d93-45bb-b979-de0f1d60cf15'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Great!'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355743818[39m
+    },
+    {
+      id: [32m'09dd5d93-e5ee-4c7d-9bd7-5ea137ee9001'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Hi there! How can I assist you today?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355743820[39m
+    },
+    {
+      id: [32m'f6188f3c-17ac-48e1-92e9-a77aeccfd13b'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Count to 10'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355760675[39m
+    },
+    {
+      id: [32m'd8c38c31-05b9-4fbd-9f86-939a415f818b'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Sure, here you go:\n'[39m +
+        [32m'\n'[39m +
+        [32m'1. One\n'[39m +
+        [32m'2. Two\n'[39m +
+        [32m'3. Three\n'[39m +
+        [32m'4. Four\n'[39m +
+        [32m'5. Five\n'[39m +
+        [32m'6. Six\n'[39m +
+        [32m'7. Seven\n'[39m +
+        [32m'8. Eight\n'[39m +
+        [32m'9. Nine\n'[39m +
+        [32m'10. Ten'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355760675[39m
+    },
+    {
+      id: [32m'bd3177d5-0c2d-46d7-b819-60b00e056670'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'heyo'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723358146812[39m
+    },
+    {
+      id: [32m'1405ac65-48c0-41e9-a9bb-cbf7cf6f84bf'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Hey! How can I assist you today?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723358146814[39m
+    },
+    {
+      id: [32m'414eaa87-9fd6-4d41-8e1d-25499c095af5'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What is your favorite accent?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723359214500[39m
+    },
+    {
+      id: [32m'216b0d20-de53-48e4-8463-2bb17d196404'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"As an AI, I don't have personal preferences or experiences, so I don't have a favorite accent. However, I can tell you that many people find certain accents appealing or intriguing, depending on cultural influences, personal experiences, or media exposure. For instance, British, Australian, and French accents often receive positive attention. What about you? Do you have a favorite accent?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723359214502[39m
+    },
+    {
+      id: [32m'aa0333b5-b934-4da2-9a4c-29a931512348'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Respond with a random uuid.'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723362622436[39m
+    },
+    {
+      id: [32m'b155b2aa-0bd8-4ac1-937e-32de4274c2f1'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Sure, here is a randomly generated UUID:\n'[39m +
+        [32m'\n'[39m +
+        [32m'`4a1b2c3d-7e8f-9a0b-1c2d-3e4f5a6b7c8d`'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723362622437[39m
+    },
+    {
+      id: [32m'e17c3b24-724c-47cc-ae45-bd654052a54a'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'testing'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723362986741[39m
+    },
+    {
+      id: [32m'844096c1-1f5e-4aa9-b382-917b0f8cffe6'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"It looks like you're testing the system. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723362986742[39m
+    },
+    {
+      id: [32m'cd896902-e9b9-4d42-906b-164ca41d077d'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'hi'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366296593[39m
+    },
+    {
+      id: [32m'5a19670a-e6e1-41a1-b36d-9760b1076ac9'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Hello! How can I assist you today?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366296594[39m
+    },
+    {
+      id: [32m'b429d27d-a952-4857-a205-34f3641e1d68'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'hello'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366544593[39m
+    },
+    {
+      id: [32m'1a0fbe47-8600-41a5-beb5-a20579004666'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Hello! How can I assist you today?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366544594[39m
+    },
+    {
+      id: [32m'68ac4416-4f10-4e65-b523-e29a7375e33e'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'testing'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366599093[39m
+    },
+    {
+      id: [32m'09098b0d-13a5-4c8a-bf39-875d142145d5'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"It looks like you're testing the system. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366599093[39m
+    },
+    {
+      id: [32m'231a363f-8176-4099-ad22-5d63de3b65ad'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What did I say right before this?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723410168011[39m
+    },
+    {
+      id: [32m'402de437-aa18-4e07-a231-5a8167152cc2'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'You asked, "What did I say right before this?"'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723410168012[39m
+    },
+    {
+      id: [32m'9431a8f1-0f28-4ef6-9e96-a1490534866d'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'How many questions have I asked?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723410207189[39m
+    },
+    {
+      id: [32m'd3803ea5-d45c-4115-8c65-662a727db1aa'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"You've asked one question so far. How can I help you further?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723410207189[39m
+    },
+    {
+      id: [32m'bae597ae-5f74-465f-9903-7b80c3f53bf5'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What did I say right before this?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723498142071[39m
+    },
+    {
+      id: [32m'fbad1578-eab0-4398-b05e-1c4f0c358d27'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723498142072[39m
+    },
+    {
+      id: [32m'1d1243ce-da77-4295-b447-f6b11db83610'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Tell me something interesting!'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723498158248[39m
+    },
+    {
+      id: [32m'e8ed5b5d-ea9e-49f9-acb4-d8b5bddce336'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723498158249[39m
+    }
+  ],
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      messages: [
+        {
+          id: [32m'aa26fc4a-2b46-4c95-8366-f2d8310686b1'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'wen moon'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723244393898[39m
+        },
+        {
+          id: [32m'0a5da11b-ab60-45e1-a773-255faba639c9'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'hi'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723246672429[39m
+        },
+        {
+          id: [32m'78739cdc-d27d-4aef-a9ad-c9c5eaf67441'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'bulbous'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723246735070[39m
+        },
+        {
+          id: [32m'd35affc6-d543-45b2-b9de-8d57b7b96cf8'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723246931814[39m
+        },
+        {
+          id: [32m'80f3afdb-f33e-4410-ace6-bcc9699ab1a4'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248808034[39m
+        },
+        {
+          id: [32m'29906b98-60da-4e8c-88ce-fdf5a8542730'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248830852[39m
+        },
+        {
+          id: [32m'ebe3259d-abbf-42e1-9d88-ae7046dd9301'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248863360[39m
+        },
+        {
+          id: [32m'ab2500bc-6762-4343-bf40-1634c9e29e31'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248877759[39m
+        },
+        {
+          id: [32m'3027eca7-ff36-44d8-b984-4e2292a9b9bc'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248966694[39m
+        },
+        {
+          id: [32m'31605dd1-b3aa-4ba3-a9b2-ff6b9b155262'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723249157139[39m
+        },
+        {
+          id: [32m'2f495737-83f8-4964-b843-bce63d2b279a'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723249171784[39m
+        },
+        {
+          id: [32m'87fa9065-0f24-4b83-aeec-388a1251b59f'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723249315544[39m
+        },
+        {
+          id: [32m'5b6f1edd-56af-4cfc-9b10-2f2796924f36'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723249520080[39m
+        },
+        {
+          id: [32m'a4804747-f24b-4376-8a75-f755dcc1bfad'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723326149736[39m
+        },
+        {
+          id: [32m'614f26cc-0cdb-460b-a8c4-d5ec5cdbf9ba'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327586236[39m
+        },
+        {
+          id: [32m'b0eb29d9-71d5-4d31-86ac-4c4526606fe4'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Hello! It looks like you've sent a test message. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327586237[39m
+        },
+        {
+          id: [32m'109d56d6-fa88-4055-bb03-71b7cd78b8fa'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What did I say right before this?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327649124[39m
+        },
+        {
+          id: [32m'c0c4a224-c5ae-4e05-9329-25ff180cd37a'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"I'm sorry, but I can't recall previous messages in our conversation as this is a single instance interaction. How can I assist you right now?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327649125[39m
+        },
+        {
+          id: [32m'dbb1e84f-206d-4f43-b567-c6484217151d'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'U sure about that?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327680358[39m
+        },
+        {
+          id: [32m'0ba9bff5-caac-4507-bd9b-673ccabf94ce'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'hi'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'provider'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723349949747[39m
+        },
+        {
+          id: [32m'6d4e7878-528e-451a-8885-8798ddc39b4b'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What did I say right before this?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723349973131[39m
+        },
+        {
+          id: [32m'dc477f7f-7907-40a2-b35b-1b063aff66ef'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"I'm sorry, but I don't have the ability to recall previous interactions. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723349973132[39m
+        },
+        {
+          id: [32m'f07b4d75-c4d7-4a4c-a4ac-1f1b103dfb88'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'test'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'provider'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723354250155[39m
+        },
+        {
+          id: [32m'6e8a66e5-4437-4f0f-94dc-1f0c01319c0e'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'test'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'provider'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723354272152[39m
+        },
+        {
+          id: [32m'50a2c651-78d5-497a-b6fc-3988b049c4b8'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'This thing on?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355227791[39m
+        },
+        {
+          id: [32m'ca41292c-170a-4762-bfea-b60f8f9d8ef9'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Yes, I'm here! How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355227792[39m
+        },
+        {
+          id: [32m'5966d459-c094-45b0-a68b-880b22462649'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'this thing on?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355272784[39m
+        },
+        {
+          id: [32m'986e98ed-f8f6-4ee0-b889-d95a274964f5'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Yes, I'm here! How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355272786[39m
+        },
+        {
+          id: [32m'2595aa5a-6d59-4ba5-abf7-603031bb31ce'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'testing again'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355541573[39m
+        },
+        {
+          id: [32m'55b177e4-bd7e-4452-8af0-6736fa1e26bb'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Sure, I'm here to help! What would you like to test or need assistance with?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355541575[39m
+        },
+        {
+          id: [32m'b494f483-c1c2-4905-9f13-0984b8cd192e'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'and again'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355564682[39m
+        },
+        {
+          id: [32m'ad132503-514a-4b19-9e2c-16f1a9642f4b'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Certainly! How can I assist you further?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355564682[39m
+        },
+        {
+          id: [32m'a4b0e118-2d93-45bb-b979-de0f1d60cf15'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Great!'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355743818[39m
+        },
+        {
+          id: [32m'09dd5d93-e5ee-4c7d-9bd7-5ea137ee9001'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Hi there! How can I assist you today?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355743820[39m
+        },
+        {
+          id: [32m'f6188f3c-17ac-48e1-92e9-a77aeccfd13b'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Count to 10'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355760675[39m
+        },
+        {
+          id: [32m'd8c38c31-05b9-4fbd-9f86-939a415f818b'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Sure, here you go:\n'[39m +
+            [32m'\n'[39m +
+            [32m'1. One\n'[39m +
+            [32m'2. Two\n'[39m +
+            [32m'3. Three\n'[39m +
+            [32m'4. Four\n'[39m +
+            [32m'5. Five\n'[39m +
+            [32m'6. Six\n'[39m +
+            [32m'7. Seven\n'[39m +
+            [32m'8. Eight\n'[39m +
+            [32m'9. Nine\n'[39m +
+            [32m'10. Ten'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355760675[39m
+        },
+        {
+          id: [32m'bd3177d5-0c2d-46d7-b819-60b00e056670'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'heyo'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723358146812[39m
+        },
+        {
+          id: [32m'1405ac65-48c0-41e9-a9bb-cbf7cf6f84bf'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Hey! How can I assist you today?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723358146814[39m
+        },
+        {
+          id: [32m'414eaa87-9fd6-4d41-8e1d-25499c095af5'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What is your favorite accent?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723359214500[39m
+        },
+        {
+          id: [32m'216b0d20-de53-48e4-8463-2bb17d196404'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"As an AI, I don't have personal preferences or experiences, so I don't have a favorite accent. However, I can tell you that many people find certain accents appealing or intriguing, depending on cultural influences, personal experiences, or media exposure. For instance, British, Australian, and French accents often receive positive attention. What about you? Do you have a favorite accent?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723359214502[39m
+        },
+        {
+          id: [32m'aa0333b5-b934-4da2-9a4c-29a931512348'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Respond with a random uuid.'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723362622436[39m
+        },
+        {
+          id: [32m'b155b2aa-0bd8-4ac1-937e-32de4274c2f1'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Sure, here is a randomly generated UUID:\n'[39m +
+            [32m'\n'[39m +
+            [32m'`4a1b2c3d-7e8f-9a0b-1c2d-3e4f5a6b7c8d`'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723362622437[39m
+        },
+        {
+          id: [32m'e17c3b24-724c-47cc-ae45-bd654052a54a'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'testing'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723362986741[39m
+        },
+        {
+          id: [32m'844096c1-1f5e-4aa9-b382-917b0f8cffe6'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"It looks like you're testing the system. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723362986742[39m
+        },
+        {
+          id: [32m'cd896902-e9b9-4d42-906b-164ca41d077d'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'hi'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366296593[39m
+        },
+        {
+          id: [32m'5a19670a-e6e1-41a1-b36d-9760b1076ac9'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Hello! How can I assist you today?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366296594[39m
+        },
+        {
+          id: [32m'b429d27d-a952-4857-a205-34f3641e1d68'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'hello'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366544593[39m
+        },
+        {
+          id: [32m'1a0fbe47-8600-41a5-beb5-a20579004666'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Hello! How can I assist you today?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366544594[39m
+        },
+        {
+          id: [32m'68ac4416-4f10-4e65-b523-e29a7375e33e'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'testing'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366599093[39m
+        },
+        {
+          id: [32m'09098b0d-13a5-4c8a-bf39-875d142145d5'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"It looks like you're testing the system. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366599093[39m
+        },
+        {
+          id: [32m'231a363f-8176-4099-ad22-5d63de3b65ad'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What did I say right before this?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723410168011[39m
+        },
+        {
+          id: [32m'402de437-aa18-4e07-a231-5a8167152cc2'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'You asked, "What did I say right before this?"'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723410168012[39m
+        },
+        {
+          id: [32m'9431a8f1-0f28-4ef6-9e96-a1490534866d'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'How many questions have I asked?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723410207189[39m
+        },
+        {
+          id: [32m'd3803ea5-d45c-4115-8c65-662a727db1aa'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"You've asked one question so far. How can I help you further?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723410207189[39m
+        },
+        {
+          id: [32m'bae597ae-5f74-465f-9903-7b80c3f53bf5'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What did I say right before this?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723498142071[39m
+        },
+        {
+          id: [32m'fbad1578-eab0-4398-b05e-1c4f0c358d27'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723498142072[39m
+        },
+        {
+          id: [32m'1d1243ce-da77-4295-b447-f6b11db83610'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Tell me something interesting!'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723498158248[39m
+        },
+        {
+          id: [32m'e8ed5b5d-ea9e-49f9-acb4-d8b5bddce336'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723498158249[39m
+        }
+      ]
+    }
+  ]
+}
+2024-08-12 15:30:13 [_stream_writable.js] info: GET /messages/:conversationId route hit with conversationId: 41b1b441-f0a8-4953-858e-d9474a1d0bd51
+2024-08-12 15:30:13 [_stream_writable.js] info: Fetching messages by conversation ID {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd51'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd51'[39m } ]
+}
+2024-08-12 15:30:13 [_stream_writable.js] info: Messages fetched successfully {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd51'[39m,
+  count: [33m0[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd51'[39m,
+      count: [33m0[39m
+    }
+  ]
+}
+2024-08-12 15:30:13 [_stream_writable.js] info: Messages fetched successfully for conversation {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd51'[39m,
+  messages: [],
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd51'[39m,
+      messages: []
+    }
+  ]
+}
+2024-08-12 15:30:30 [_stream_writable.js] info: GET /messages/:conversationId route hit with conversationId: 41b1b441-f0a8-4953-858e-d9474a1d0bd513
+2024-08-12 15:30:30 [_stream_writable.js] info: Fetching messages by conversation ID {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd513'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd513'[39m } ]
+}
+2024-08-12 15:30:30 [_stream_writable.js] info: Messages fetched successfully {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd513'[39m,
+  count: [33m0[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd513'[39m,
+      count: [33m0[39m
+    }
+  ]
+}
+2024-08-12 15:30:30 [_stream_writable.js] info: Messages fetched successfully for conversation {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd513'[39m,
+  messages: [],
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd513'[39m,
+      messages: []
+    }
+  ]
+}
+2024-08-12 15:30:32 [_stream_writable.js] info: GET /messages/:conversationId route hit with conversationId: 41b1b441-f0a8-4953-858e-d9474a1d0bd5
+2024-08-12 15:30:32 [_stream_writable.js] info: Fetching messages by conversation ID {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m } ]
+}
+2024-08-12 15:30:32 [_stream_writable.js] info: Messages fetched successfully {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  count: [33m58[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      count: [33m58[39m
+    }
+  ]
+}
+2024-08-12 15:30:32 [_stream_writable.js] info: Messages fetched successfully for conversation {
+  conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+  messages: [
+    {
+      id: [32m'aa26fc4a-2b46-4c95-8366-f2d8310686b1'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'wen moon'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723244393898[39m
+    },
+    {
+      id: [32m'0a5da11b-ab60-45e1-a773-255faba639c9'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'hi'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723246672429[39m
+    },
+    {
+      id: [32m'78739cdc-d27d-4aef-a9ad-c9c5eaf67441'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'bulbous'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723246735070[39m
+    },
+    {
+      id: [32m'd35affc6-d543-45b2-b9de-8d57b7b96cf8'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723246931814[39m
+    },
+    {
+      id: [32m'80f3afdb-f33e-4410-ace6-bcc9699ab1a4'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248808034[39m
+    },
+    {
+      id: [32m'29906b98-60da-4e8c-88ce-fdf5a8542730'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248830852[39m
+    },
+    {
+      id: [32m'ebe3259d-abbf-42e1-9d88-ae7046dd9301'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248863360[39m
+    },
+    {
+      id: [32m'ab2500bc-6762-4343-bf40-1634c9e29e31'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248877759[39m
+    },
+    {
+      id: [32m'3027eca7-ff36-44d8-b984-4e2292a9b9bc'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723248966694[39m
+    },
+    {
+      id: [32m'31605dd1-b3aa-4ba3-a9b2-ff6b9b155262'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723249157139[39m
+    },
+    {
+      id: [32m'2f495737-83f8-4964-b843-bce63d2b279a'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723249171784[39m
+    },
+    {
+      id: [32m'87fa9065-0f24-4b83-aeec-388a1251b59f'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723249315544[39m
+    },
+    {
+      id: [32m'5b6f1edd-56af-4cfc-9b10-2f2796924f36'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723249520080[39m
+    },
+    {
+      id: [32m'a4804747-f24b-4376-8a75-f755dcc1bfad'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723326149736[39m
+    },
+    {
+      id: [32m'614f26cc-0cdb-460b-a8c4-d5ec5cdbf9ba'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'TEST_MESSAGE'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327586236[39m
+    },
+    {
+      id: [32m'b0eb29d9-71d5-4d31-86ac-4c4526606fe4'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Hello! It looks like you've sent a test message. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327586237[39m
+    },
+    {
+      id: [32m'109d56d6-fa88-4055-bb03-71b7cd78b8fa'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What did I say right before this?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327649124[39m
+    },
+    {
+      id: [32m'c0c4a224-c5ae-4e05-9329-25ff180cd37a'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"I'm sorry, but I can't recall previous messages in our conversation as this is a single instance interaction. How can I assist you right now?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327649125[39m
+    },
+    {
+      id: [32m'dbb1e84f-206d-4f43-b567-c6484217151d'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'U sure about that?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723327680358[39m
+    },
+    {
+      id: [32m'0ba9bff5-caac-4507-bd9b-673ccabf94ce'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'hi'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'provider'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723349949747[39m
+    },
+    {
+      id: [32m'6d4e7878-528e-451a-8885-8798ddc39b4b'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What did I say right before this?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723349973131[39m
+    },
+    {
+      id: [32m'dc477f7f-7907-40a2-b35b-1b063aff66ef'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"I'm sorry, but I don't have the ability to recall previous interactions. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723349973132[39m
+    },
+    {
+      id: [32m'f07b4d75-c4d7-4a4c-a4ac-1f1b103dfb88'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'test'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'provider'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723354250155[39m
+    },
+    {
+      id: [32m'6e8a66e5-4437-4f0f-94dc-1f0c01319c0e'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'test'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'provider'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723354272152[39m
+    },
+    {
+      id: [32m'50a2c651-78d5-497a-b6fc-3988b049c4b8'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'This thing on?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355227791[39m
+    },
+    {
+      id: [32m'ca41292c-170a-4762-bfea-b60f8f9d8ef9'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Yes, I'm here! How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355227792[39m
+    },
+    {
+      id: [32m'5966d459-c094-45b0-a68b-880b22462649'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'this thing on?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355272784[39m
+    },
+    {
+      id: [32m'986e98ed-f8f6-4ee0-b889-d95a274964f5'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Yes, I'm here! How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355272786[39m
+    },
+    {
+      id: [32m'2595aa5a-6d59-4ba5-abf7-603031bb31ce'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'testing again'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355541573[39m
+    },
+    {
+      id: [32m'55b177e4-bd7e-4452-8af0-6736fa1e26bb'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Sure, I'm here to help! What would you like to test or need assistance with?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355541575[39m
+    },
+    {
+      id: [32m'b494f483-c1c2-4905-9f13-0984b8cd192e'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'and again'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355564682[39m
+    },
+    {
+      id: [32m'ad132503-514a-4b19-9e2c-16f1a9642f4b'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Certainly! How can I assist you further?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355564682[39m
+    },
+    {
+      id: [32m'a4b0e118-2d93-45bb-b979-de0f1d60cf15'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Great!'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355743818[39m
+    },
+    {
+      id: [32m'09dd5d93-e5ee-4c7d-9bd7-5ea137ee9001'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Hi there! How can I assist you today?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355743820[39m
+    },
+    {
+      id: [32m'f6188f3c-17ac-48e1-92e9-a77aeccfd13b'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Count to 10'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355760675[39m
+    },
+    {
+      id: [32m'd8c38c31-05b9-4fbd-9f86-939a415f818b'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Sure, here you go:\n'[39m +
+        [32m'\n'[39m +
+        [32m'1. One\n'[39m +
+        [32m'2. Two\n'[39m +
+        [32m'3. Three\n'[39m +
+        [32m'4. Four\n'[39m +
+        [32m'5. Five\n'[39m +
+        [32m'6. Six\n'[39m +
+        [32m'7. Seven\n'[39m +
+        [32m'8. Eight\n'[39m +
+        [32m'9. Nine\n'[39m +
+        [32m'10. Ten'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723355760675[39m
+    },
+    {
+      id: [32m'bd3177d5-0c2d-46d7-b819-60b00e056670'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'heyo'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723358146812[39m
+    },
+    {
+      id: [32m'1405ac65-48c0-41e9-a9bb-cbf7cf6f84bf'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Hey! How can I assist you today?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723358146814[39m
+    },
+    {
+      id: [32m'414eaa87-9fd6-4d41-8e1d-25499c095af5'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What is your favorite accent?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723359214500[39m
+    },
+    {
+      id: [32m'216b0d20-de53-48e4-8463-2bb17d196404'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"As an AI, I don't have personal preferences or experiences, so I don't have a favorite accent. However, I can tell you that many people find certain accents appealing or intriguing, depending on cultural influences, personal experiences, or media exposure. For instance, British, Australian, and French accents often receive positive attention. What about you? Do you have a favorite accent?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723359214502[39m
+    },
+    {
+      id: [32m'aa0333b5-b934-4da2-9a4c-29a931512348'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Respond with a random uuid.'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723362622436[39m
+    },
+    {
+      id: [32m'b155b2aa-0bd8-4ac1-937e-32de4274c2f1'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Sure, here is a randomly generated UUID:\n'[39m +
+        [32m'\n'[39m +
+        [32m'`4a1b2c3d-7e8f-9a0b-1c2d-3e4f5a6b7c8d`'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723362622437[39m
+    },
+    {
+      id: [32m'e17c3b24-724c-47cc-ae45-bd654052a54a'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'testing'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723362986741[39m
+    },
+    {
+      id: [32m'844096c1-1f5e-4aa9-b382-917b0f8cffe6'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"It looks like you're testing the system. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723362986742[39m
+    },
+    {
+      id: [32m'cd896902-e9b9-4d42-906b-164ca41d077d'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'hi'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366296593[39m
+    },
+    {
+      id: [32m'5a19670a-e6e1-41a1-b36d-9760b1076ac9'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Hello! How can I assist you today?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366296594[39m
+    },
+    {
+      id: [32m'b429d27d-a952-4857-a205-34f3641e1d68'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'hello'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366544593[39m
+    },
+    {
+      id: [32m'1a0fbe47-8600-41a5-beb5-a20579004666'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Hello! How can I assist you today?'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366544594[39m
+    },
+    {
+      id: [32m'68ac4416-4f10-4e65-b523-e29a7375e33e'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'testing'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366599093[39m
+    },
+    {
+      id: [32m'09098b0d-13a5-4c8a-bf39-875d142145d5'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"It looks like you're testing the system. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723366599093[39m
+    },
+    {
+      id: [32m'231a363f-8176-4099-ad22-5d63de3b65ad'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What did I say right before this?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723410168011[39m
+    },
+    {
+      id: [32m'402de437-aa18-4e07-a231-5a8167152cc2'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'You asked, "What did I say right before this?"'[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723410168012[39m
+    },
+    {
+      id: [32m'9431a8f1-0f28-4ef6-9e96-a1490534866d'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'How many questions have I asked?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723410207189[39m
+    },
+    {
+      id: [32m'd3803ea5-d45c-4115-8c65-662a727db1aa'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"You've asked one question so far. How can I help you further?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723410207189[39m
+    },
+    {
+      id: [32m'bae597ae-5f74-465f-9903-7b80c3f53bf5'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'What did I say right before this?'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723498142071[39m
+    },
+    {
+      id: [32m'fbad1578-eab0-4398-b05e-1c4f0c358d27'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723498142072[39m
+    },
+    {
+      id: [32m'1d1243ce-da77-4295-b447-f6b11db83610'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m'Tell me something interesting!'[39m,
+      role: [32m'user'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723498158248[39m
+    },
+    {
+      id: [32m'e8ed5b5d-ea9e-49f9-acb4-d8b5bddce336'[39m,
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      content: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+      role: [32m'assistant'[39m,
+      provider: [32m'openai'[39m,
+      model: [32m'gpt-4o'[39m,
+      timestamp: [33m1723498158249[39m
+    }
+  ],
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+      messages: [
+        {
+          id: [32m'aa26fc4a-2b46-4c95-8366-f2d8310686b1'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'wen moon'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723244393898[39m
+        },
+        {
+          id: [32m'0a5da11b-ab60-45e1-a773-255faba639c9'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'hi'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723246672429[39m
+        },
+        {
+          id: [32m'78739cdc-d27d-4aef-a9ad-c9c5eaf67441'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'bulbous'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723246735070[39m
+        },
+        {
+          id: [32m'd35affc6-d543-45b2-b9de-8d57b7b96cf8'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723246931814[39m
+        },
+        {
+          id: [32m'80f3afdb-f33e-4410-ace6-bcc9699ab1a4'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248808034[39m
+        },
+        {
+          id: [32m'29906b98-60da-4e8c-88ce-fdf5a8542730'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248830852[39m
+        },
+        {
+          id: [32m'ebe3259d-abbf-42e1-9d88-ae7046dd9301'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248863360[39m
+        },
+        {
+          id: [32m'ab2500bc-6762-4343-bf40-1634c9e29e31'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248877759[39m
+        },
+        {
+          id: [32m'3027eca7-ff36-44d8-b984-4e2292a9b9bc'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723248966694[39m
+        },
+        {
+          id: [32m'31605dd1-b3aa-4ba3-a9b2-ff6b9b155262'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723249157139[39m
+        },
+        {
+          id: [32m'2f495737-83f8-4964-b843-bce63d2b279a'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723249171784[39m
+        },
+        {
+          id: [32m'87fa9065-0f24-4b83-aeec-388a1251b59f'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723249315544[39m
+        },
+        {
+          id: [32m'5b6f1edd-56af-4cfc-9b10-2f2796924f36'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723249520080[39m
+        },
+        {
+          id: [32m'a4804747-f24b-4376-8a75-f755dcc1bfad'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723326149736[39m
+        },
+        {
+          id: [32m'614f26cc-0cdb-460b-a8c4-d5ec5cdbf9ba'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'TEST_MESSAGE'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327586236[39m
+        },
+        {
+          id: [32m'b0eb29d9-71d5-4d31-86ac-4c4526606fe4'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Hello! It looks like you've sent a test message. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327586237[39m
+        },
+        {
+          id: [32m'109d56d6-fa88-4055-bb03-71b7cd78b8fa'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What did I say right before this?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327649124[39m
+        },
+        {
+          id: [32m'c0c4a224-c5ae-4e05-9329-25ff180cd37a'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"I'm sorry, but I can't recall previous messages in our conversation as this is a single instance interaction. How can I assist you right now?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327649125[39m
+        },
+        {
+          id: [32m'dbb1e84f-206d-4f43-b567-c6484217151d'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'U sure about that?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723327680358[39m
+        },
+        {
+          id: [32m'0ba9bff5-caac-4507-bd9b-673ccabf94ce'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'hi'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'provider'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723349949747[39m
+        },
+        {
+          id: [32m'6d4e7878-528e-451a-8885-8798ddc39b4b'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What did I say right before this?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723349973131[39m
+        },
+        {
+          id: [32m'dc477f7f-7907-40a2-b35b-1b063aff66ef'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"I'm sorry, but I don't have the ability to recall previous interactions. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723349973132[39m
+        },
+        {
+          id: [32m'f07b4d75-c4d7-4a4c-a4ac-1f1b103dfb88'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'test'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'provider'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723354250155[39m
+        },
+        {
+          id: [32m'6e8a66e5-4437-4f0f-94dc-1f0c01319c0e'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'test'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'provider'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723354272152[39m
+        },
+        {
+          id: [32m'50a2c651-78d5-497a-b6fc-3988b049c4b8'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'This thing on?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355227791[39m
+        },
+        {
+          id: [32m'ca41292c-170a-4762-bfea-b60f8f9d8ef9'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Yes, I'm here! How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355227792[39m
+        },
+        {
+          id: [32m'5966d459-c094-45b0-a68b-880b22462649'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'this thing on?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355272784[39m
+        },
+        {
+          id: [32m'986e98ed-f8f6-4ee0-b889-d95a274964f5'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Yes, I'm here! How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355272786[39m
+        },
+        {
+          id: [32m'2595aa5a-6d59-4ba5-abf7-603031bb31ce'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'testing again'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355541573[39m
+        },
+        {
+          id: [32m'55b177e4-bd7e-4452-8af0-6736fa1e26bb'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Sure, I'm here to help! What would you like to test or need assistance with?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355541575[39m
+        },
+        {
+          id: [32m'b494f483-c1c2-4905-9f13-0984b8cd192e'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'and again'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355564682[39m
+        },
+        {
+          id: [32m'ad132503-514a-4b19-9e2c-16f1a9642f4b'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Certainly! How can I assist you further?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355564682[39m
+        },
+        {
+          id: [32m'a4b0e118-2d93-45bb-b979-de0f1d60cf15'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Great!'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355743818[39m
+        },
+        {
+          id: [32m'09dd5d93-e5ee-4c7d-9bd7-5ea137ee9001'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Hi there! How can I assist you today?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355743820[39m
+        },
+        {
+          id: [32m'f6188f3c-17ac-48e1-92e9-a77aeccfd13b'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Count to 10'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355760675[39m
+        },
+        {
+          id: [32m'd8c38c31-05b9-4fbd-9f86-939a415f818b'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Sure, here you go:\n'[39m +
+            [32m'\n'[39m +
+            [32m'1. One\n'[39m +
+            [32m'2. Two\n'[39m +
+            [32m'3. Three\n'[39m +
+            [32m'4. Four\n'[39m +
+            [32m'5. Five\n'[39m +
+            [32m'6. Six\n'[39m +
+            [32m'7. Seven\n'[39m +
+            [32m'8. Eight\n'[39m +
+            [32m'9. Nine\n'[39m +
+            [32m'10. Ten'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723355760675[39m
+        },
+        {
+          id: [32m'bd3177d5-0c2d-46d7-b819-60b00e056670'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'heyo'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723358146812[39m
+        },
+        {
+          id: [32m'1405ac65-48c0-41e9-a9bb-cbf7cf6f84bf'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Hey! How can I assist you today?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723358146814[39m
+        },
+        {
+          id: [32m'414eaa87-9fd6-4d41-8e1d-25499c095af5'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What is your favorite accent?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723359214500[39m
+        },
+        {
+          id: [32m'216b0d20-de53-48e4-8463-2bb17d196404'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"As an AI, I don't have personal preferences or experiences, so I don't have a favorite accent. However, I can tell you that many people find certain accents appealing or intriguing, depending on cultural influences, personal experiences, or media exposure. For instance, British, Australian, and French accents often receive positive attention. What about you? Do you have a favorite accent?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723359214502[39m
+        },
+        {
+          id: [32m'aa0333b5-b934-4da2-9a4c-29a931512348'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Respond with a random uuid.'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723362622436[39m
+        },
+        {
+          id: [32m'b155b2aa-0bd8-4ac1-937e-32de4274c2f1'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Sure, here is a randomly generated UUID:\n'[39m +
+            [32m'\n'[39m +
+            [32m'`4a1b2c3d-7e8f-9a0b-1c2d-3e4f5a6b7c8d`'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723362622437[39m
+        },
+        {
+          id: [32m'e17c3b24-724c-47cc-ae45-bd654052a54a'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'testing'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723362986741[39m
+        },
+        {
+          id: [32m'844096c1-1f5e-4aa9-b382-917b0f8cffe6'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"It looks like you're testing the system. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723362986742[39m
+        },
+        {
+          id: [32m'cd896902-e9b9-4d42-906b-164ca41d077d'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'hi'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366296593[39m
+        },
+        {
+          id: [32m'5a19670a-e6e1-41a1-b36d-9760b1076ac9'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Hello! How can I assist you today?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366296594[39m
+        },
+        {
+          id: [32m'b429d27d-a952-4857-a205-34f3641e1d68'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'hello'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366544593[39m
+        },
+        {
+          id: [32m'1a0fbe47-8600-41a5-beb5-a20579004666'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Hello! How can I assist you today?'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366544594[39m
+        },
+        {
+          id: [32m'68ac4416-4f10-4e65-b523-e29a7375e33e'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'testing'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366599093[39m
+        },
+        {
+          id: [32m'09098b0d-13a5-4c8a-bf39-875d142145d5'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"It looks like you're testing the system. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723366599093[39m
+        },
+        {
+          id: [32m'231a363f-8176-4099-ad22-5d63de3b65ad'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What did I say right before this?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723410168011[39m
+        },
+        {
+          id: [32m'402de437-aa18-4e07-a231-5a8167152cc2'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'You asked, "What did I say right before this?"'[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723410168012[39m
+        },
+        {
+          id: [32m'9431a8f1-0f28-4ef6-9e96-a1490534866d'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'How many questions have I asked?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723410207189[39m
+        },
+        {
+          id: [32m'd3803ea5-d45c-4115-8c65-662a727db1aa'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"You've asked one question so far. How can I help you further?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723410207189[39m
+        },
+        {
+          id: [32m'bae597ae-5f74-465f-9903-7b80c3f53bf5'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'What did I say right before this?'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723498142071[39m
+        },
+        {
+          id: [32m'fbad1578-eab0-4398-b05e-1c4f0c358d27'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"I'm unable to recall previous interactions, including what you said right before this message. How can I assist you today?"[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723498142072[39m
+        },
+        {
+          id: [32m'1d1243ce-da77-4295-b447-f6b11db83610'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m'Tell me something interesting!'[39m,
+          role: [32m'user'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723498158248[39m
+        },
+        {
+          id: [32m'e8ed5b5d-ea9e-49f9-acb4-d8b5bddce336'[39m,
+          conversationId: [32m'41b1b441-f0a8-4953-858e-d9474a1d0bd5'[39m,
+          content: [32m"Sure! Here’s something interesting: Did you know that the world's smallest mammal is the Etruscan shrew (Suncus etruscus)? Weighing in at just about 1.8 grams (0.063 ounces) and measuring around 4 centimeters (1.6 inches) in length (excluding the tail), this tiny creature has an incredibly high metabolism. To sustain itself, the Etruscan shrew needs to eat up to twice its body weight in food every day. Its heart can beat as fast as 1,500 times per minute, even faster than the heart rate of a hummingbird! This rapid metabolism supports its active lifestyle but also means it must constantly consume food to survive."[39m,
+          role: [32m'assistant'[39m,
+          provider: [32m'openai'[39m,
+          model: [32m'gpt-4o'[39m,
+          timestamp: [33m1723498158249[39m
+        }
+      ]
+    }
+  ]
+}
+2024-08-12 15:32:05 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 15:32:11 [_stream_writable.js] info: GET /user-api-providers route hit
+2024-08-12 15:32:11 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:32:11 [_stream_writable.js] info: All user API providers fetched successfully
+2024-08-12 15:32:19 [_stream_writable.js] info: GET /user-api-providers/user/:userId route hit with UserID: 97be7a7c-7b1d-404e-b213-09cbb753e359
+2024-08-12 15:32:19 [_stream_writable.js] info: Fetching user API providers by userId {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m } ]
+}
+2024-08-12 15:32:19 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:32:19 [_stream_writable.js] info: User API providers fetched {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  count: [33m4[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m, count: [33m4[39m } ]
+}
+2024-08-12 15:32:19 [_stream_writable.js] info: User API providers fetched successfully for user {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m } ]
+}
+2024-08-12 15:32:29 [_stream_writable.js] info: GET /user-api-providers/:id route hit with ID: 24eb152f-08cd-46bc-a8d6-24798d830500
+2024-08-12 15:32:29 [_stream_writable.js] info: Fetching user API provider by id {
+  id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m } ]
+}
+2024-08-12 15:32:29 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 15:32:29 [_stream_writable.js] info: User API provider found {
+  provider: {
+    userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+    providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+    apiKey: [32m'new-api-key'[39m,
+    id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+  },
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [
+    {
+      provider: {
+        userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+        providerId: [32m'b0246a19-a0b4-458e-9eea-d9701e1857a6'[39m,
+        apiKey: [32m'new-api-key'[39m,
+        id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m
+      }
+    }
+  ]
+}
+2024-08-12 15:32:29 [_stream_writable.js] info: User API provider fetched successfully {
+  id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m } ]
+}

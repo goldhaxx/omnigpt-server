@@ -1,51 +1,54 @@
-// serverApiKeyService.js
 const fs = require('fs');
 const path = require('path');
+const logger = require('../utils/logger');
 
 const apiKeyPath = path.resolve(__dirname, '../data/apiKeys.json');
 
 module.exports = {
   getApiKey(provider) {
-    console.log('apiKeyPath:', apiKeyPath);
+    logger.info('Fetching API key', { provider });
 
     if (!fs.existsSync(apiKeyPath)) {
-      console.log('apiKeys.json does not exist');
+      logger.warn('apiKeys.json does not exist', { path: apiKeyPath });
       return null;
     }
 
     try {
       const fileContent = fs.readFileSync(apiKeyPath, 'utf-8');
-      console.log('apiKeys.json content:', fileContent);
+      logger.info('apiKeys.json content read successfully', { fileContent });
       const apiKeys = JSON.parse(fileContent);
-      console.log('Retrieved API Keys:', apiKeys);
+      logger.info('Parsed API Keys', { apiKeys });
       const apiKey = apiKeys[provider] || null;
       if (!apiKey) {
-        console.log(`API key for provider ${provider} not found`);
+        logger.warn(`API key for provider ${provider} not found`);
       }
       return apiKey;
     } catch (error) {
-      console.error('Error reading or parsing apiKeys.json:', error);
+      logger.error('Error reading or parsing apiKeys.json', { message: error.message });
       return null;
     }
   },
 
   setApiKey(provider, key) {
+    logger.info('Setting API key', { provider });
+
     let apiKeys = {};
     if (fs.existsSync(apiKeyPath)) {
       try {
         const fileContent = fs.readFileSync(apiKeyPath, 'utf-8');
-        console.log('apiKeys.json content before update:', fileContent);
+        logger.info('apiKeys.json content before update', { fileContent });
         apiKeys = JSON.parse(fileContent);
       } catch (error) {
-        console.error('Error reading or parsing apiKeys.json:', error);
+        logger.error('Error reading or parsing apiKeys.json', { message: error.message });
       }
     }
+
     apiKeys[provider] = key;
     try {
       fs.writeFileSync(apiKeyPath, JSON.stringify(apiKeys, null, 2));
-      console.log('Saved API Key:', apiKeys);
+      logger.info('API Key saved successfully', { apiKeys });
     } catch (error) {
-      console.error('Error writing to apiKeys.json:', error);
+      logger.error('Error writing to apiKeys.json', { message: error.message });
     }
   }
 };

@@ -1,4 +1,3 @@
-// src/server/server.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -48,9 +47,8 @@ wss.on('connection', (ws) => {
   });
 });
 
-// Instead of exporting wss, we will handle WebSocket communication inside the route handler directly
 server.listen(PORT, () => {
   logger.info(`Server is running on port ${PORT}`);
 });
 
-module.exports = { app };  // No longer exporting wss
+module.exports = { app };

@@ -15,6 +15,7 @@ const readJsonFromFile = (filePath) => {
   try {
     if (!fs.existsSync(filePath)) {
       fs.writeFileSync(filePath, JSON.stringify([]));
+      logger.info(`${path.basename(filePath)} created as it did not exist.`);
     }
     const data = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(data || '[]');
@@ -50,25 +51,32 @@ const replacePlaceholders = (template, data) => {
 
 // Function to find the API provider configuration
 const findApiProvider = (providerName, model) => {
+  logger.info('Finding API provider configuration', { providerName, model });
   const apiProviders = readJsonFromFile(apiProvidersPath);
   const provider = apiProviders.find(p => p.name === providerName && p.models.includes(model));
-  if (!provider) throw new Error(`Provider or model not found for ${providerName} with model ${model}`);
+  if (!provider) {
+    logger.error(`Provider or model not found for ${providerName} with model ${model}`);
+    throw new Error(`Provider or model not found for ${providerName} with model ${model}`);
+  }
   return provider;
 };
 
 // Function to get the user's API key for a given provider
 const getUserApiKey = (userId, providerId) => {
-  logger.info('getUserApiKey function invoked', { userId, providerId });
+  logger.info('Retrieving user API key', { userId, providerId });
   const userApiProviders = readJsonFromFile(userApiProvidersPath);
   const userApiProvider = userApiProviders.find(uap => uap.userId === userId && uap.providerId === providerId);
-  if (!userApiProvider) throw new Error('API key not found for the selected provider.');
+  if (!userApiProvider) {
+    logger.error('API key not found for the selected provider', { userId, providerId });
+    throw new Error('API key not found for the selected provider.');
+  }
   return userApiProvider.apiKey;
 };
 
 // Function to send a message to an LLM API provider
 const sendMessage = async (conversationId, userInput, providerName, model, userId) => {
   try {
-    logger.info('sendMessage function invoked', { conversationId, providerName, model, userId });
+    logger.info('Sending message to LLM API provider', { conversationId, providerName, model, userId });
 
     const provider = findApiProvider(providerName, model);
     const apiKey = getUserApiKey(userId, provider.id);
@@ -112,6 +120,7 @@ const sendMessage = async (conversationId, userInput, providerName, model, userI
 // Function to add a message to a conversation
 const addMessageToConversationService = (conversationId, message) => {
   try {
+    logger.info('Adding message to conversation', { conversationId, message });
     const conversations = readConversationsFromFile();
     const conversation = conversations.find(conv => conv.id === conversationId);
 
@@ -120,14 +129,14 @@ const addMessageToConversationService = (conversationId, message) => {
       const newMessage = { id: uuidv4(), conversationId, ...message, timestamp: Date.now() };
       messages.push(newMessage);
       writeMessagesToFile(messages);
-      logger.info('Message added to messages file successfully:', newMessage);
+      logger.info('Message added to messages file successfully', { newMessage });
       return newMessage;
     } else {
       logger.error(`Conversation with ID ${conversationId} not found`);
       throw new Error('Conversation not found');
     }
   } catch (error) {
-    logger.error(`Error in addMessageToConversationService: ${error.message}`);
+    logger.error(`Error in addMessageToConversationService: ${error.message}`, { conversationId, message });
     throw error;
   }
 };
@@ -135,7 +144,10 @@ const addMessageToConversationService = (conversationId, message) => {
 // Function to get all conversations
 const getAllConversations = () => {
   try {
-    return readConversationsFromFile();
+    logger.info('Fetching all conversations');
+    const conversations = readConversationsFromFile();
+    logger.info('Conversations fetched successfully', { count: conversations.length });
+    return conversations;
   } catch (error) {
     logger.error(`Failed to fetch conversations: ${error.message}`);
     throw new Error('Failed to fetch conversations');
@@ -145,10 +157,13 @@ const getAllConversations = () => {
 // Function to get messages by conversation ID
 const getMessagesByConversationIdService = (conversationId) => {
   try {
+    logger.info('Fetching messages by conversation ID', { conversationId });
     const messages = readMessagesFromFile();
-    return messages.filter(msg => msg.conversationId === conversationId);
+    const conversationMessages = messages.filter(msg => msg.conversationId === conversationId);
+    logger.info('Messages fetched successfully', { conversationId, count: conversationMessages.length });
+    return conversationMessages;
   } catch (error) {
-    logger.error(`Error in getMessagesByConversationIdService: ${error.message}`);
+    logger.error(`Error in getMessagesByConversationIdService: ${error.message}`, { conversationId });
     throw error;
   }
 };
@@ -157,5 +172,5 @@ module.exports = {
   addMessageToConversationService,
   getAllConversations,
   getMessagesByConversationIdService,
-  sendMessage,  // Export the new sendMessage function
+  sendMessage,
 };

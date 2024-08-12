@@ -1,80 +1,119 @@
+const { check, validationResult } = require('express-validator');
 const {
   readUserApiProvidersFromFile,
   addUserApiProvider,
   findUserApiProviderById,
   modifyUserApiProvider,
   removeUserApiProvider,
-  findUserApiProvidersByUserId
+  findUserApiProvidersByUserId,
 } = require('../services/userApiProviderService');
 const { readApiProvidersFromFile } = require('../services/apiProviderService');
-const { readUsersFromFile } = require('../services/userService'); // Ensure this function is imported
+const { readUsersFromFile } = require('../services/userService');
 const logger = require('../utils/logger');
 
-const createUserApiProvider = (req, res) => {
-  const { userId, providerId, apiKey } = req.body;
-  if (!userId || !providerId || !apiKey) {
-    logger.warn('Missing required fields in createUserApiProvider');
-    return res.status(400).json({ error: 'userId, providerId, and apiKey are required' });
-  }
-  try {
-    const newUserApiProvider = addUserApiProvider({ userId, providerId, apiKey });
-    res.status(201).json(newUserApiProvider);
-  } catch (error) {
-    logger.error(`Error creating user API provider: ${error.message}`);
-    if (error.message === 'ProviderId already exists for this userId') {
-      return res.status(400).json({ error: error.message });
-    }
-    res.status(500).json({ error: 'Failed to create user API provider' });
-  }
-};
+// Validation rules
+const validateCreateUserApiProvider = [
+  check('userId').notEmpty().withMessage('userId is required'),
+  check('providerId').notEmpty().withMessage('providerId is required'),
+  check('apiKey').notEmpty().withMessage('apiKey is required'),
+];
 
-const createNewUserApiProvider = (req, res) => {
-  const { userId, providerName, providerId, apiKey } = req.body;
-  if (!userId || !providerName || !providerId) {
-    logger.warn('Missing required fields in createNewUserApiProvider');
-    return res.status(400).json({ error: 'userId, providerName, and providerId are required' });
-  }
+const validateCreateNewUserApiProvider = [
+  check('userId').notEmpty().withMessage('userId is required'),
+  check('providerName').notEmpty().withMessage('providerName is required'),
+  check('providerId').notEmpty().withMessage('providerId is required'),
+];
 
-  try {
-    const users = readUsersFromFile();
-    const userExists = users.some(user => user.id === userId);
+const validateUpdateUserApiProvider = [
+  check('apiKey').notEmpty().withMessage('apiKey is required'),
+];
 
-    if (!userExists) {
-      logger.warn('UserId does not exist');
-      return res.status(400).json({ error: 'userId does not exist' });
+// Controller functions with validation
+
+const createUserApiProvider = [
+  validateCreateUserApiProvider,
+  (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      logger.warn('Validation failed for createUserApiProvider', { errors: errors.array() });
+      return res.status(400).json({ errors: errors.array() });
     }
 
-    const apiProviders = readApiProvidersFromFile();
-    const matchingProvider = apiProviders.find(provider => provider.id === providerId && provider.name === providerName);
+    const { userId, providerId, apiKey } = req.body;
 
-    if (!matchingProvider) {
-      logger.warn('ProviderName or ProviderId does not match');
-      return res.status(400).json({ error: 'providerName or providerId does not match any existing provider' });
+    try {
+      const newUserApiProvider = addUserApiProvider({ userId, providerId, apiKey });
+      logger.info('User API provider created successfully', { userId, providerId });
+      res.status(201).json(newUserApiProvider);
+    } catch (error) {
+      logger.error(`Error creating user API provider: ${error.message}`);
+      if (error.message === 'ProviderId already exists for this userId') {
+        return res.status(400).json({ error: error.message });
+      }
+      res.status(500).json({ error: 'Failed to create user API provider' });
     }
-
-    const userApiProviders = readUserApiProvidersFromFile();
-    const existingProvider = userApiProviders.find(provider => provider.userId === userId && provider.providerId === providerId);
-
-    if (existingProvider) {
-      logger.warn('ProviderId already exists for this userId');
-      return res.status(400).json({ error: 'ProviderId already exists for this userId. Please delete the existing one before adding a new one.' });
-    }
-
-    const newUserApiProvider = addUserApiProvider({ userId, providerId, apiKey });
-    res.status(201).json(newUserApiProvider);
-  } catch (error) {
-    logger.error(`Error creating new user API provider: ${error.message}`);
-    res.status(500).json({ error: 'Failed to create new user API provider' });
   }
-};
+];
+
+const createNewUserApiProvider = [
+  validateCreateNewUserApiProvider,
+  (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      logger.warn('Validation failed for createNewUserApiProvider', { errors: errors.array() });
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    const { userId, providerName, providerId, apiKey } = req.body;
+
+    try {
+      const users = readUsersFromFile();
+      const userExists = users.some((user) => user.id === userId);
+
+      if (!userExists) {
+        logger.warn('UserId does not exist');
+        return res.status(400).json({ error: 'userId does not exist' });
+      }
+
+      const apiProviders = readApiProvidersFromFile();
+      const matchingProvider = apiProviders.find(
+        (provider) => provider.id === providerId && provider.name === providerName
+      );
+
+      if (!matchingProvider) {
+        logger.warn('ProviderName or ProviderId does not match');
+        return res.status(400).json({ error: 'providerName or providerId does not match any existing provider' });
+      }
+
+      const userApiProviders = readUserApiProvidersFromFile();
+      const existingProvider = userApiProviders.find(
+        (provider) => provider.userId === userId && provider.providerId === providerId
+      );
+
+      if (existingProvider) {
+        logger.warn('ProviderId already exists for this userId');
+        return res.status(400).json({ error: 'ProviderId already exists for this userId. Please delete the existing one before adding a new one.' });
+      }
+
+      const newUserApiProvider = addUserApiProvider({ userId, providerId, apiKey });
+      logger.info('New user API provider created successfully', { userId, providerId });
+      res.status(201).json(newUserApiProvider);
+    } catch (error) {
+      logger.error(`Error creating new user API provider: ${error.message}`);
+      res.status(500).json({ error: 'Failed to create new user API provider' });
+    }
+  }
+];
 
 const getUserApiProvider = (req, res) => {
   const { id } = req.params;
   try {
     const userApiProvider = findUserApiProviderById(id);
     if (userApiProvider) {
+      logger.info('User API provider fetched successfully', { id });
       res.json(userApiProvider);
     } else {
+      logger.warn('User API provider not found', { id });
       res.status(404).json({ error: 'User API provider not found' });
     }
   } catch (error) {
@@ -86,6 +125,7 @@ const getUserApiProvider = (req, res) => {
 const getAllUserApiProviders = (req, res) => {
   try {
     const userApiProviders = readUserApiProvidersFromFile();
+    logger.info('All user API providers fetched successfully');
     res.json(userApiProviders);
   } catch (error) {
     logger.error(`Error fetching user API providers: ${error.message}`);
@@ -98,8 +138,10 @@ const getUserApiProvidersByUserId = (req, res) => {
   try {
     const userApiProviders = findUserApiProvidersByUserId(userId);
     if (userApiProviders.length > 0) {
+      logger.info('User API providers fetched successfully for user', { userId });
       res.json(userApiProviders);
     } else {
+      logger.warn('User API providers not found for user', { userId });
       res.status(404).json({ error: 'User API providers not found for this user' });
     }
   } catch (error) {
@@ -108,40 +150,43 @@ const getUserApiProvidersByUserId = (req, res) => {
   }
 };
 
-const updateUserApiProvider = (req, res) => {
-  const { id } = req.params;
-  const { apiKey, ...otherFields } = req.body;
-
-  if (Object.keys(otherFields).length > 0) {
-    logger.warn('Attempt to update fields other than apiKey in updateUserApiProvider');
-    return res.status(400).json({ error: 'Only apiKey can be updated' });
-  }
-
-  if (!apiKey) {
-    logger.warn('Missing apiKey in updateUserApiProvider');
-    return res.status(400).json({ error: 'apiKey is required' });
-  }
-
-  try {
-    const updatedUserApiProvider = modifyUserApiProvider(id, { apiKey });
-    if (updatedUserApiProvider) {
-      res.json(updatedUserApiProvider);
-    } else {
-      res.status(404).json({ error: 'User API provider not found' });
+const updateUserApiProvider = [
+  validateUpdateUserApiProvider,
+  (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      logger.warn('Validation failed for updateUserApiProvider', { errors: errors.array() });
+      return res.status(400).json({ errors: errors.array() });
     }
-  } catch (error) {
-    logger.error(`Error updating user API provider: ${error.message}`);
-    res.status(500).json({ error: 'Failed to update user API provider' });
+
+    const { id } = req.params;
+    const { apiKey } = req.body;
+
+    try {
+      const updatedUserApiProvider = modifyUserApiProvider(id, { apiKey });
+      if (updatedUserApiProvider) {
+        logger.info('User API provider updated successfully', { id });
+        res.json(updatedUserApiProvider);
+      } else {
+        logger.warn('User API provider not found for update', { id });
+        res.status(404).json({ error: 'User API provider not found' });
+      }
+    } catch (error) {
+      logger.error(`Error updating user API provider: ${error.message}`);
+      res.status(500).json({ error: 'Failed to update user API provider' });
+    }
   }
-};
+];
 
 const deleteUserApiProvider = (req, res) => {
   const { id } = req.params;
   try {
     const success = removeUserApiProvider(id);
     if (success) {
+      logger.info('User API provider deleted successfully', { id });
       res.sendStatus(204);
     } else {
+      logger.warn('User API provider not found for deletion', { id });
       res.status(404).json({ error: 'User API provider not found' });
     }
   } catch (error) {
@@ -155,12 +200,14 @@ const deleteUserApiProviderByProviderId = (req, res) => {
   try {
     const success = removeUserApiProvider(id);
     if (success) {
+      logger.info('User API provider deleted successfully by providerId', { id });
       res.sendStatus(204);
     } else {
+      logger.warn('User API provider not found for deletion by providerId', { id });
       res.status(404).json({ error: 'User API provider not found' });
     }
   } catch (error) {
-    logger.error(`Error deleting user API provider: ${error.message}`);
+    logger.error(`Error deleting user API provider by providerId: ${error.message}`);
     res.status(500).json({ error: 'Failed to delete user API provider' });
   }
 };
@@ -173,5 +220,5 @@ module.exports = {
   deleteUserApiProvider,
   getAllUserApiProviders,
   getUserApiProvidersByUserId,
-  deleteUserApiProviderByProviderId
+  deleteUserApiProviderByProviderId,
 };

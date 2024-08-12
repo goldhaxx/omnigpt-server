@@ -69,5 +69,19 @@
     "password": "$2b$10$rzuBcBWxqQ0upol6m4WeqepapeGpN9qdEMwVcnykQrOsAIM3Zr.fu",
     "id": "e2a0a730-978f-4e95-b1a2-29f231370139",
     "created": "2024-08-11T08:15:43.275Z"
+  },
+  {
+    "username": "7",
+    "email": "updated@user.id",
+    "password": "$2b$10$0u0yBukDI.bl395Rt8wEA.V0fmPsIHYu7qCtyJtI9V6/o2I.MbwCy",
+    "id": "40f4ad25-fbfc-4023-8b29-19e62bfd0d0e",
+    "created": "2024-08-12T19:40:44.295Z"
+  },
+  {
+    "username": "9",
+    "email": "7@g.goo",
+    "password": "$2b$10$./uY7eTr4GR11rvIXEMScewfYuasmOfeOuRrsRLgImWOke1/hkNIu",
+    "id": "ec993722-590e-41c7-b167-962d32342edb",
+    "created": "2024-08-12T21:15:58.158Z"
   }
 ]
