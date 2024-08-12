@@ -1,13 +1,26 @@
+/**
+ * @file authController.js
+ * @description Controller for handling user authentication, specifically login functionality.
+ */
+
 const { check, validationResult } = require('express-validator');
 const { validateUserCredentials } = require('../services/userService');
 const logger = require('../utils/logger');
 
-// Validation rules for login
+/**
+ * Validation rules for login.
+ */
 const validateLogin = [
   check('username').notEmpty().withMessage('Username is required'),
   check('password').notEmpty().withMessage('Password is required'),
 ];
 
+/**
+ * Handles user login by validating credentials.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const login = [
   validateLogin,
   async (req, res) => {

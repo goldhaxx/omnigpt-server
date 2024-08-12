@@ -1,3 +1,9 @@
+/**
+ * @file userApiProviderController.js
+ * @description Controller for handling user API provider-related operations, including creating, updating,
+ * and deleting user-specific API providers.
+ */
+
 const { check, validationResult } = require('express-validator');
 const {
   readUserApiProvidersFromFile,
@@ -28,8 +34,12 @@ const validateUpdateUserApiProvider = [
   check('apiKey').notEmpty().withMessage('apiKey is required'),
 ];
 
-// Controller functions with validation
-
+/**
+ * Creates a new user API provider entry.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const createUserApiProvider = [
   validateCreateUserApiProvider,
   (req, res) => {
@@ -55,6 +65,12 @@ const createUserApiProvider = [
   }
 ];
 
+/**
+ * Creates a new user API provider entry, ensuring that the provider name and ID match.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const createNewUserApiProvider = [
   validateCreateNewUserApiProvider,
   (req, res) => {
@@ -105,6 +121,12 @@ const createNewUserApiProvider = [
   }
 ];
 
+/**
+ * Retrieves a specific user API provider by its ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const getUserApiProvider = (req, res) => {
   const { id } = req.params;
   try {
@@ -122,6 +144,12 @@ const getUserApiProvider = (req, res) => {
   }
 };
 
+/**
+ * Retrieves all user API providers.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const getAllUserApiProviders = (req, res) => {
   try {
     const userApiProviders = readUserApiProvidersFromFile();
@@ -133,6 +161,12 @@ const getAllUserApiProviders = (req, res) => {
   }
 };
 
+/**
+ * Retrieves all user API providers associated with a specific user ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const getUserApiProvidersByUserId = (req, res) => {
   const { userId } = req.params;
   try {
@@ -150,6 +184,12 @@ const getUserApiProvidersByUserId = (req, res) => {
   }
 };
 
+/**
+ * Updates the API key of an existing user API provider.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const updateUserApiProvider = [
   validateUpdateUserApiProvider,
   (req, res) => {
@@ -178,6 +218,12 @@ const updateUserApiProvider = [
   }
 ];
 
+/**
+ * Deletes a user API provider by its ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const deleteUserApiProvider = (req, res) => {
   const { id } = req.params;
   try {
@@ -195,6 +241,12 @@ const deleteUserApiProvider = (req, res) => {
   }
 };
 
+/**
+ * Deletes a user API provider by its provider ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const deleteUserApiProviderByProviderId = (req, res) => {
   const { id } = req.params;
   try {

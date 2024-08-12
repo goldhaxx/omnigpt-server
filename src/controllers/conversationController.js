@@ -1,3 +1,8 @@
+/**
+ * @file conversationController.js
+ * @description Controller for handling CRUD operations related to conversations.
+ */
+
 const { check, validationResult } = require('express-validator');
 const {
   getAllConversations,
@@ -9,12 +14,20 @@ const {
 } = require('../services/conversationService');
 const logger = require('../utils/logger');
 
-// Validation rules for creating and updating a conversation
+/**
+ * Validation rules for creating and updating a conversation.
+ */
 const validateConversation = [
   check('title').notEmpty().withMessage('Title is required'),
   check('userId').notEmpty().withMessage('User ID is required'),
 ];
 
+/**
+ * Fetches all conversations or conversations by a specific user ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const fetchConversations = (req, res) => {
   const { userId } = req.query;
   try {
@@ -28,6 +41,12 @@ const fetchConversations = (req, res) => {
   }
 };
 
+/**
+ * Creates a new conversation.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const createConversation = [
   validateConversation,
   (req, res) => {
@@ -49,6 +68,12 @@ const createConversation = [
   }
 ];
 
+/**
+ * Fetches a specific conversation by ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const getConversation = (req, res) => {
   const { id } = req.params;
   try {
@@ -67,6 +92,12 @@ const getConversation = (req, res) => {
   }
 };
 
+/**
+ * Updates an existing conversation by ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const updateConversation = [
   check('title').notEmpty().withMessage('Title is required'),
   (req, res) => {
@@ -95,6 +126,12 @@ const updateConversation = [
   }
 ];
 
+/**
+ * Deletes a conversation by ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const deleteConversation = (req, res) => {
   const { id } = req.params;
   try {

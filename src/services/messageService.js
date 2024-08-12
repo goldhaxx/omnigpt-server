@@ -1,3 +1,8 @@
+/**
+ * @file messageService.js
+ * @description Service for managing messages and conversations. This service includes functions for sending messages to LLM APIs, storing messages, and managing conversations.
+ */
+
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
@@ -10,7 +15,12 @@ const messagesPath = path.resolve(__dirname, '../data/messages.json');
 const apiProvidersPath = path.resolve(__dirname, '../data/api_providers.json');
 const userApiProvidersPath = path.resolve(__dirname, '../data/user_api_providers.json');
 
-// Function to read JSON data from a file
+/**
+ * Reads JSON data from a file.
+ * @param {string} filePath - The path to the file.
+ * @returns {Object|Array} The parsed JSON data from the file.
+ * @throws Will throw an error if the file cannot be read or parsed.
+ */
 const readJsonFromFile = (filePath) => {
   try {
     if (!fs.existsSync(filePath)) {
@@ -25,7 +35,12 @@ const readJsonFromFile = (filePath) => {
   }
 };
 
-// Function to write JSON data to a file
+/**
+ * Writes JSON data to a file.
+ * @param {string} filePath - The path to the file.
+ * @param {Object|Array} data - The JSON data to write.
+ * @throws Will throw an error if the file cannot be written.
+ */
 const writeJsonToFile = (filePath, data) => {
   try {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
@@ -44,12 +59,23 @@ const writeConversationsToFile = (conversations) => writeJsonToFile(conversation
 const readMessagesFromFile = () => readJsonFromFile(messagesPath);
 const writeMessagesToFile = (messages) => writeJsonToFile(messagesPath, messages);
 
-// Function to replace placeholders in request bodies and headers
+/**
+ * Replaces placeholders in a template with provided data.
+ * @param {Object} template - The template object with placeholders.
+ * @param {Object} data - The data to replace placeholders.
+ * @returns {Object} The template with placeholders replaced.
+ */
 const replacePlaceholders = (template, data) => {
   return JSON.parse(JSON.stringify(template).replace(/{{(.*?)}}/g, (_, key) => data[key]));
 };
 
-// Function to find the API provider configuration
+/**
+ * Finds the API provider configuration based on the provider name and model.
+ * @param {string} providerName - The name of the API provider.
+ * @param {string} model - The model to use.
+ * @returns {Object} The configuration of the API provider.
+ * @throws Will throw an error if the provider or model is not found.
+ */
 const findApiProvider = (providerName, model) => {
   logger.info('Finding API provider configuration', { providerName, model });
   const apiProviders = readJsonFromFile(apiProvidersPath);
@@ -61,7 +87,13 @@ const findApiProvider = (providerName, model) => {
   return provider;
 };
 
-// Function to get the user's API key for a given provider
+/**
+ * Retrieves the user's API key for a given provider.
+ * @param {string} userId - The user's ID.
+ * @param {string} providerId - The provider's ID.
+ * @returns {string} The API key for the provider.
+ * @throws Will throw an error if the API key is not found.
+ */
 const getUserApiKey = (userId, providerId) => {
   logger.info('Retrieving user API key', { userId, providerId });
   const userApiProviders = readJsonFromFile(userApiProvidersPath);
@@ -73,7 +105,16 @@ const getUserApiKey = (userId, providerId) => {
   return userApiProvider.apiKey;
 };
 
-// Function to send a message to an LLM API provider
+/**
+ * Sends a message to an LLM API provider and returns the response.
+ * @param {string} conversationId - The ID of the conversation.
+ * @param {string} userInput - The user's input message.
+ * @param {string} providerName - The name of the API provider.
+ * @param {string} model - The model to use.
+ * @param {string} userId - The user's ID.
+ * @returns {string} The response from the API provider.
+ * @throws Will throw an error if the API request fails.
+ */
 const sendMessage = async (conversationId, userInput, providerName, model, userId) => {
   try {
     logger.info('Sending message to LLM API provider', { conversationId, providerName, model, userId });
@@ -117,7 +158,13 @@ const sendMessage = async (conversationId, userInput, providerName, model, userI
   }
 };
 
-// Function to add a message to a conversation
+/**
+ * Adds a message to a conversation.
+ * @param {string} conversationId - The ID of the conversation.
+ * @param {Object} message - The message object containing content, role, provider, model, and timestamp.
+ * @returns {Object} The newly added message.
+ * @throws Will throw an error if the conversation is not found or the message cannot be added.
+ */
 const addMessageToConversationService = (conversationId, message) => {
   try {
     logger.info('Adding message to conversation', { conversationId, message });
@@ -141,7 +188,11 @@ const addMessageToConversationService = (conversationId, message) => {
   }
 };
 
-// Function to get all conversations
+/**
+ * Retrieves all conversations.
+ * @returns {Array} An array of all conversations.
+ * @throws Will throw an error if fetching the conversations fails.
+ */
 const getAllConversations = () => {
   try {
     logger.info('Fetching all conversations');
@@ -154,7 +205,12 @@ const getAllConversations = () => {
   }
 };
 
-// Function to get messages by conversation ID
+/**
+ * Retrieves messages by conversation ID.
+ * @param {string} conversationId - The ID of the conversation.
+ * @returns {Array} An array of messages for the specified conversation.
+ * @throws Will throw an error if fetching the messages fails.
+ */
 const getMessagesByConversationIdService = (conversationId) => {
   try {
     logger.info('Fetching messages by conversation ID', { conversationId });

@@ -1,3 +1,8 @@
+/**
+ * @file apiProviderController.js
+ * @description Controller for managing API providers, including creating, updating, fetching, and deleting providers.
+ */
+
 const { check, validationResult } = require('express-validator');
 const {
   readApiProvidersFromFile,
@@ -8,18 +13,30 @@ const {
 } = require('../services/apiProviderService');
 const logger = require('../utils/logger');
 
-// Validation rules for creating a provider
+/**
+ * Validation rules for creating a provider.
+ */
 const validateProviderCreation = [
   check('name').notEmpty().withMessage('Provider name is required'),
   check('models').isArray({ min: 1 }).withMessage('Models must be an array with at least one model'),
 ];
 
+/**
+ * Fetches all API providers.
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const getAllProviders = (req, res) => {
   logger.info('Fetching all API providers');
   const providers = readApiProvidersFromFile();
   res.json(providers);
 };
 
+/**
+ * Creates a new API provider.
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const createProvider = [
   validateProviderCreation,
   (req, res) => {
@@ -42,6 +59,11 @@ const createProvider = [
   }
 ];
 
+/**
+ * Fetches an API provider by ID.
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const getProviderById = (req, res) => {
   logger.info(`Fetching provider by ID: ${req.params.id}`);
   const provider = findApiProviderById(req.params.id);
@@ -53,6 +75,11 @@ const getProviderById = (req, res) => {
   }
 };
 
+/**
+ * Updates an API provider by ID.
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const updateProviderById = [
   check('models').isArray({ min: 1 }).withMessage('Models must be an array with at least one model'),
   (req, res) => {
@@ -80,6 +107,11 @@ const updateProviderById = [
   }
 ];
 
+/**
+ * Deletes an API provider by ID.
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const deleteProviderById = (req, res) => {
   logger.info(`Attempting to delete provider with ID: ${req.params.id}`);
   const success = removeApiProvider(req.params.id);

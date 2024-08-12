@@ -3842,3 +3842,30 @@
   [[32mSymbol(level)[39m]: [32m'info'[39m,
   [[32mSymbol(splat)[39m]: [ { id: [32m'24eb152f-08cd-46bc-a8d6-24798d830500'[39m } ]
 }
+2024-08-12 16:01:03 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 16:01:23 [_stream_writable.js] info: GET /user-api-providers/user/:userId route hit with UserID: 97be7a7c-7b1d-404e-b213-09cbb753e359
+2024-08-12 16:01:23 [_stream_writable.js] info: Fetching user API providers by userId {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m } ]
+}
+2024-08-12 16:01:23 [_stream_writable.js] info: Reading user API providers from file
+2024-08-12 16:01:23 [_stream_writable.js] info: User API providers fetched {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  count: [33m4[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m, count: [33m4[39m } ]
+}
+2024-08-12 16:01:23 [_stream_writable.js] info: User API providers fetched successfully for user {
+  userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m,
+  [[32mSymbol(level)[39m]: [32m'info'[39m,
+  [[32mSymbol(splat)[39m]: [ { userId: [32m'97be7a7c-7b1d-404e-b213-09cbb753e359'[39m } ]
+}
+2024-08-12 16:02:20 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 16:04:30 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 16:07:58 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 16:09:37 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 16:10:35 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 16:12:07 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 16:13:13 [_stream_writable.js] info: Server is running on port 3001
+2024-08-12 16:14:07 [_stream_writable.js] info: Server is running on port 3001

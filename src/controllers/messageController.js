@@ -1,3 +1,9 @@
+/**
+ * @file messageController.js
+ * @description Controller for handling message-related operations, including sending messages to LLM APIs,
+ * saving conversations, and retrieving messages.
+ */
+
 const { check, validationResult } = require('express-validator');
 const {
   sendMessage,
@@ -8,7 +14,9 @@ const {
 } = require('../services/messageService');
 const logger = require('../utils/logger');
 
-// Validation rules for sending a message
+/**
+ * Validation rules for sending a message.
+ */
 const validateSendMessage = [
   check('conversationId').notEmpty().withMessage('conversationId is required'),
   check('userInput').notEmpty().withMessage('userInput is required'),
@@ -17,6 +25,12 @@ const validateSendMessage = [
   check('userId').notEmpty().withMessage('userId is required'),
 ];
 
+/**
+ * Handles sending a message to the selected LLM API.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const handleSendMessage = [
   validateSendMessage,
   async (req, res) => {
@@ -51,6 +65,12 @@ const handleSendMessage = [
   }
 ];
 
+/**
+ * Handles saving a conversation.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const handleSaveConversation = [
   check('conversation').notEmpty().withMessage('Conversation is required'),
   (req, res) => {
@@ -72,6 +92,12 @@ const handleSaveConversation = [
   }
 ];
 
+/**
+ * Fetches all conversations.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const handleGetConversations = (req, res) => {
   try {
     const conversations = getAllConversations();
@@ -83,6 +109,12 @@ const handleGetConversations = (req, res) => {
   }
 };
 
+/**
+ * Adds a message to a conversation.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const addMessageToConversation = [
   check('conversationId').notEmpty().withMessage('conversationId is required'),
   check('message').notEmpty().withMessage('message is required'),
@@ -108,6 +140,12 @@ const addMessageToConversation = [
   }
 ];
 
+/**
+ * Fetches messages by conversation ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const getMessagesByConversationId = (req, res) => {
   try {
     const { conversationId } = req.params;

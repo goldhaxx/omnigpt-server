@@ -1,3 +1,8 @@
+/**
+ * @file server.js
+ * @description This file initializes the Express server, sets up middleware, routes, and WebSocket server for real-time communication.
+ */
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -12,9 +17,11 @@ const logger = require('../utils/logger');
 
 const app = express();
 
+// Middleware setup
 app.use(cors());
 app.use(bodyParser.json());
 
+// API Routes
 app.use('/api', userRoutes);
 app.use('/api', apiProviderRoutes);
 app.use('/api', userApiProviderRoutes);
@@ -22,6 +29,7 @@ app.use('/api', conversationRoutes);
 app.use('/api', messageRoutes);
 app.use('/api', authRoutes);
 
+// Logging all requests
 app.use((req, res, next) => {
   logger.info(`Request: ${req.method} ${req.url}`);
   next();
@@ -32,9 +40,11 @@ const PORT = process.env.PORT || 3001;
 const http = require('http');
 const WebSocket = require('ws');
 
+// HTTP and WebSocket server setup
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
+// WebSocket connection handling
 wss.on('connection', (ws) => {
   logger.info('New WebSocket connection established');
 
@@ -47,6 +57,7 @@ wss.on('connection', (ws) => {
   });
 });
 
+// Start the server
 server.listen(PORT, () => {
   logger.info(`Server is running on port ${PORT}`);
 });

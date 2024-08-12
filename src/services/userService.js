@@ -1,3 +1,8 @@
+/**
+ * @file userService.js
+ * @description Service for managing users, including operations like adding, modifying, and removing users, as well as validating user credentials.
+ */
+
 const path = require('path');
 const bcrypt = require('bcrypt');
 const { v4: uuidv4 } = require('uuid');
@@ -6,6 +11,11 @@ const logger = require('../utils/logger');
 
 const usersPath = path.resolve(__dirname, '../data/users.json');
 
+/**
+ * Reads all users from the JSON file.
+ * @returns {Array} An array of users.
+ * @throws Will throw an error if reading the file fails.
+ */
 const readUsersFromFile = () => {
     try {
         logger.info('Reading users from file');
@@ -16,6 +26,12 @@ const readUsersFromFile = () => {
     }
 };
 
+/**
+ * Adds a new user with a hashed password.
+ * @param {Object} user - The user object containing username, email, and password.
+ * @returns {Object} The newly added user.
+ * @throws Will throw an error if the username already exists.
+ */
 const addUser = async (user) => {
     logger.info('Adding a new user', { username: user.username });
     const users = readUsersFromFile();
@@ -32,18 +48,34 @@ const addUser = async (user) => {
     return newUser;
 };
 
+/**
+ * Finds a user by their ID.
+ * @param {string} id - The ID of the user.
+ * @returns {Object|null} The user object if found, otherwise null.
+ */
 const findUserById = (id) => {
     logger.info('Finding user by ID', { userId: id });
     const users = readUsersFromFile();
     return users.find(user => user.id === id);
 };
 
+/**
+ * Finds a user by their username.
+ * @param {string} username - The username to search for.
+ * @returns {Object|null} The user object if found, otherwise null.
+ */
 const findUserByUsername = (username) => {
     logger.info('Finding user by username', { username });
     const users = readUsersFromFile();
     return users.find(user => user.username === username);
 };
 
+/**
+ * Modifies an existing user.
+ * @param {string} id - The ID of the user to modify.
+ * @param {Object} updates - The updates to apply to the user.
+ * @returns {Object|null} The updated user if found, otherwise null.
+ */
 const modifyUser = (id, updates) => {
     logger.info('Modifying user', { userId: id, updates });
     const users = readUsersFromFile();
@@ -58,6 +90,12 @@ const modifyUser = (id, updates) => {
     return null;
 };
 
+/**
+ * Removes a user by their ID.
+ * @param {string} id - The ID of the user to remove.
+ * @returns {boolean} True if the user was removed, false if not found.
+ * @throws Will throw an error if removing the user fails.
+ */
 const removeUser = (id) => {
     logger.info('Removing user', { userId: id });
     let users = readUsersFromFile();
@@ -73,7 +111,13 @@ const removeUser = (id) => {
     return success;
 };
 
-// Function to validate user credentials
+/**
+ * Validates user credentials by comparing the provided password with the stored hashed password.
+ * @param {string} username - The username to validate.
+ * @param {string} password - The password to validate.
+ * @returns {string|null} The user ID if credentials are valid, otherwise null.
+ * @throws Will throw an error if validation fails.
+ */
 const validateUserCredentials = async (username, password) => {
     try {
         logger.info('Validating user credentials', { username });
@@ -104,5 +148,5 @@ module.exports = {
     modifyUser,
     removeUser,
     readUsersFromFile,
-    validateUserCredentials, // Exporting the validateUserCredentials function
+    validateUserCredentials,
 };

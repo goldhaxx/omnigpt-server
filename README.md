@@ -1,70 +1,222 @@
-# Getting Started with Create React App
+# OmniGPT Server
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+OmniGPT Server is a robust backend service designed to facilitate interactions with multiple Large Language Model (LLM) APIs. The server enables the creation, management, and querying of user data, conversations, and API keys, while ensuring seamless communication with LLM providers such as OpenAI and Anthropic. The service is built using Node.js, Express, and various supporting libraries to ensure scalability, security, and ease of use.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [API Endpoints](#api-endpoints)
+- [Validation and Error Handling](#validation-and-error-handling)
+- [Logging](#logging)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Management**: Create, update, delete, and manage users.
+- **Conversation Management**: Handle conversations between users and LLMs, including message history.
+- **API Provider Management**: Add, update, and delete API providers, allowing integration with multiple LLMs.
+- **WebSocket Support**: Real-time communication and logging via WebSocket.
+- **Input Validation**: Robust validation using `express-validator` to ensure the integrity of data.
+- **Logging**: Comprehensive logging of all operations and requests for easy debugging and monitoring.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+├── README.md
+├── package.json
+├── server
+│   ├── server.js                 # Server entry point
+│   ├── messageBroker.js          # WebSocket message broker
+├── controllers                   # Express controllers
+│   ├── apiProviderController.js
+│   ├── conversationController.js
+│   ├── userController.js
+│   ├── authController.js
+│   ├── messageController.js
+│   ├── userApiProviderController.js
+├── routes                        # Express routes
+│   ├── authRoutes.js
+│   ├── userApiProviderRoutes.js
+│   ├── messageRoutes.js
+│   ├── userRoutes.js
+│   ├── apiProviderRoutes.js
+│   ├── conversationRoutes.js
+├── services                      # Business logic and service functions
+│   ├── userService.js
+│   ├── apiKeyService.js
+│   ├── userApiProviderService.js
+│   ├── conversationService.js
+│   ├── messageService.js
+│   ├── apiProviderService.js
+├── utils                         # Utility functions
+│   ├── fileUtils.js
+│   ├── logger.js
+├── data                          # JSON data storage
+│   ├── users.json
+│   ├── conversations.json
+│   ├── messages.json
+│   ├── api_providers.json
+│   ├── user_api_providers.json
+│   ├── apiKeys.json
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (v14.x or higher)
+- **npm** (v6.x or higher)
+- **Git** (for cloning the repository)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Steps
 
-### `npm run eject`
+1. **Clone the repository**:
+    
+    `git clone https://github.com/your-username/omnigpt-server.git cd omnigpt-server`
+    
+2. **Install dependencies**:
+    
+    `npm install`
+    
+3. **Start the server**:
+    
+    `npm start`
+    
+4. The server should now be running on `http://localhost:3001`.
+    
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Environment Variables
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You can configure the server using environment variables. Create a `.env` file in the root directory of the project:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+env
 
-## Learn More
+`PORT=3001`
+`NODE_ENV=development`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Data Storage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project stores data in JSON files located in the `data/` directory. These files include `users.json`, `conversations.json`, `messages.json`, `api_providers.json`, `user_api_providers.json`, and `apiKeys.json`. Ensure that these files are writable by the server process.
 
-### Code Splitting
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Authentication
 
-### Analyzing the Bundle Size
+- **POST /api/login**
+    - Logs in a user with their username and password.
+    - Request body: `{ "username": "yourUsername", "password": "yourPassword" }`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Users
 
-### Making a Progressive Web App
+- **POST /api/users**
+    
+    - Creates a new user.
+    - Request body: `{ "username": "newUser", "email": "user@example.com", "password": "securePassword" }`
+- **GET /api/users**
+    
+    - Fetches all users.
+- **GET /api/users/**
+    
+    - Fetches a user by ID.
+- **PUT /api/users/**
+    
+    - Updates user details by ID.
+- **DELETE /api/users/**
+    
+    - Deletes a user by ID.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Conversations
 
-### Advanced Configuration
+- **GET /api/conversations**
+    
+    - Fetches all conversations or conversations by a specific user using `?userId=USER_ID`.
+- **POST /api/conversations**
+    
+    - Creates a new conversation.
+    - Request body: `{ "title": "New Conversation", "userId": "USER_ID" }`
+- **GET /api/conversations/**
+    
+    - Fetches a conversation by ID.
+- **PUT /api/conversations/**
+    
+    - Updates a conversation's title by ID.
+- **DELETE /api/conversations/**
+    
+    - Deletes a conversation by ID.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Messages
 
-### Deployment
+- **POST /api/send-message**
+    
+    - Sends a message to an LLM API and stores the conversation.
+    - Request body: `{ "conversationId": "CONVO_ID", "userInput": "Hello", "provider": "openai", "model": "gpt-4", "userId": "USER_ID" }`
+- **GET /api/messages/**
+    
+    - Fetches all messages for a specific conversation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### API Providers
 
-### `npm run build` fails to minify
+- **POST /api/providers**
+    
+    - Adds a new API provider.
+    - Request body: `{ "name": "ProviderName", "models": ["model1", "model2"] }`
+- **GET /api/providers**
+    
+    - Fetches all API providers.
+- **GET /api/providers/**
+    
+    - Fetches an API provider by ID.
+- **PUT /api/providers/**
+    
+    - Updates the models for an API provider by ID.
+- **DELETE /api/providers/**
+    
+    - Deletes an API provider by ID.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### User API Providers
+
+- **POST /api/user-api-providers**
+    
+    - Associates a user with an API provider.
+    - Request body: `{ "userId": "USER_ID", "providerId": "PROVIDER_ID", "apiKey": "API_KEY" }`
+- **GET /api/user-api-providers**
+    
+    - Fetches all user API providers.
+- **GET /api/user-api-providers/**
+    
+    - Fetches a user API provider by ID.
+- **DELETE /api/user-api-providers/**
+    
+    - Deletes a user API provider by ID.
+
+## Validation and Error Handling
+
+- All user inputs are validated using `express-validator` to ensure data integrity.
+- Comprehensive error handling is implemented across all services, with detailed logs stored in the `app.log` file.
+
+## Logging
+
+- The server uses the `winston` library for logging. Logs are output to both the console and a file (`data/app.log`).
+- Log entries include timestamps, log levels, filenames, and detailed metadata for easy debugging.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request. Ensure that your code adheres to the project's coding standards and is well-documented.
+
+### How to Contribute
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch-name`.
+3. Make your changes.
+4. Commit your changes: `git commit -m 'Add new feature'`.
+5. Push to the branch: `git push origin feature-branch-name`.
+6. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

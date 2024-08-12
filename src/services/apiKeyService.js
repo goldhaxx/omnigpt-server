@@ -1,3 +1,8 @@
+/**
+ * @file apiKeyService.js
+ * @description Service for managing API keys. This service provides functions to get and set API keys stored in a JSON file.
+ */
+
 const fs = require('fs');
 const path = require('path');
 const logger = require('../utils/logger');
@@ -5,6 +10,12 @@ const logger = require('../utils/logger');
 const apiKeyPath = path.resolve(__dirname, '../data/apiKeys.json');
 
 module.exports = {
+  /**
+   * @function getApiKey
+   * @description Retrieves the API key for a specified provider from the apiKeys.json file.
+   * @param {string} provider - The name of the API provider.
+   * @returns {string|null} The API key for the provider, or null if not found.
+   */
   getApiKey(provider) {
     logger.info('Fetching API key', { provider });
 
@@ -29,6 +40,12 @@ module.exports = {
     }
   },
 
+  /**
+   * @function setApiKey
+   * @description Sets the API key for a specified provider and saves it to the apiKeys.json file.
+   * @param {string} provider - The name of the API provider.
+   * @param {string} key - The API key to set for the provider.
+   */
   setApiKey(provider, key) {
     logger.info('Setting API key', { provider });
 

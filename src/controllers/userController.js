@@ -1,3 +1,9 @@
+/**
+ * @file userController.js
+ * @description Controller for handling user-related operations, including user creation, retrieval,
+ * updating, and deletion. Includes input validation using express-validator.
+ */
+
 const { check, validationResult } = require('express-validator');
 const {
   addUser,
@@ -6,7 +12,7 @@ const {
   removeUser,
   readUsersFromFile,
 } = require('../services/userService');
-const logger = require('../utils/logger'); // Import the logger module
+const logger = require('../utils/logger');
 
 // Validation rules for creating a user
 const validateUserCreation = [
@@ -17,7 +23,12 @@ const validateUserCreation = [
     .withMessage('Password must be at least 12 characters long and include uppercase letters, lowercase letters, numbers, and special characters.'),
 ];
 
-// Controller methods with validation
+/**
+ * Creates a new user.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const createUser = [
   validateUserCreation,
   async (req, res) => {
@@ -45,12 +56,24 @@ const createUser = [
   }
 ];
 
+/**
+ * Retrieves all users.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const getUsers = (req, res) => {
   logger.info('Fetching all users');
   const users = readUsersFromFile();
   res.json(users);
 };
 
+/**
+ * Retrieves a user by their ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const getUserById = (req, res) => {
   const { id } = req.params;
   logger.info(`Fetching user by ID: ${id}`);
@@ -63,6 +86,12 @@ const getUserById = (req, res) => {
   }
 };
 
+/**
+ * Updates a user by their ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const updateUser = [
   check('id').notEmpty().withMessage('User ID is required'),
   (req, res) => {
@@ -86,6 +115,12 @@ const updateUser = [
   }
 ];
 
+/**
+ * Deletes a user by their ID.
+ * 
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
 const deleteUser = [
   check('id').notEmpty().withMessage('User ID is required'),
   (req, res) => {
